@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-30T19:51:28.243757",
+    "engine": "NexusCTI v1.0",
+    "framework": "Hybrid GNN + Text-Grounded RAG"
+  },
+  "investigation": {
+    "query_ioc": "185.225.17.42",
+    "multi_hop_depth": 4,
+    "hallucination_risk": "MINIMAL (Dual Grounded)",
+    "synergistic_rationale": "Adversary attribution confirmed for APT29 (Cozy Bear / NOBELIUM) with 48.9% fused confidence. Structural verification traces a 4-hop relational trail ([Indicator] 185.225.17.42 --(rev_resolves_to)--> [Indicator] freescanonline[.]com --(rev_shares_infra)--> [Indicator] avsvmcloud[.]com --(rev_communicates_with)--> [Malware] SUNBURST --(rev_uses)--> [ThreatActor] APT29 (Cozy Bear / NOBELIUM)), which directly corroborates authoritative textual disclosures from Cybersecurity and Infrastructure Security Agency (CISA)."
+  },
+  "top_attribution": {
+    "actor_id": "actor_apt29",
+    "actor_name": "APT29 (Cozy Bear / NOBELIUM)",
+    "fused_confidence": 0.4891,
+    "structural_confidence": 0.2079,
+    "textual_confidence": 0.5586,
+    "cross_validation_score": 1.0,
+    "verdict": "INCONCLUSIVE",
+    "graph_trail": {
+      "source_ioc_id": "ioc_ip_185_225_17_42",
+      "source_ioc_name": "185.225.17.42",
+      "target_actor_id": "actor_apt29",
+      "target_actor_name": "APT29 (Cozy Bear / NOBELIUM)",
+      "hops": [
+        {
+          "step": 1,
+          "source_id": "ioc_ip_185_225_17_42",
+          "source_name": "185.225.17.42",
+          "source_type": "Indicator",
+          "relation": "rev_resolves_to",
+          "target_id": "ioc_domain_freescan",
+          "target_name": "freescanonline[.]com",
+          "target_type": "Indicator",
+          "citation": "ThreatConnect Research",
+          "rationale": "Reverse DNS IP-to-domain mapping"
+        },
+        {
+          "step": 2,
+          "source_id": "ioc_domain_freescan",
+          "source_name": "freescanonline[.]com",
+          "source_type": "Indicator",
+          "relation": "rev_shares_infra",
+          "target_id": "ioc_domain_avsvmcloud",
+          "target_name": "avsvmcloud[.]com",
+          "target_type": "Indicator",
+          "citation": "SSL Certificate Serial Overlap",
+          "rationale": "Infrastructure cluster pivot"
+        },
+        {
+          "step": 3,
+          "source_id": "ioc_domain_avsvmcloud",
+          "source_name": "avsvmcloud[.]com",
+          "source_type": "Indicator",
+          "relation": "rev_communicates_with",
+          "target_id": "mal_sunburst",
+          "target_name": "SUNBURST",
+          "target_type": "Malware",
+          "citation": "FireEye DGA Telemetry",
+          "rationale": "C2 server receiving command telemetry from malware"
+        },
+        {
+          "step": 4,
+          "source_id": "mal_sunburst",
+          "source_name": "SUNBURST",
+          "source_type": "Malware",
+          "relation": "rev_uses",
+          "target_id": "actor_apt29",
+          "target_name": "APT29 (Cozy Bear / NOBELIUM)",
+          "target_type": "ThreatActor",
+          "citation": "FireEye Mandiant SUNBURST Report",
+          "rationale": "Malware family operated by threat actor"
+        }
+      ],
+      "hop_count": 4,
+      "path_confidence": 0.3204,
+      "chain_summary": "Discovered 4-hop structural trail linking '185.225.17.42' to 'APT29 (Cozy Bear / NOBELIUM)'."
+    },
+    "narrative_proofs": [
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c3",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "date": "2020-12-17",
+        "target_actor": "actor_apt29",
+        "relevant_text": "Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20.140.8.11 and shifts secondary staging to freescanonline[.]com, which resolves to 185.225.17.42. The threat actors leveraged memory-only dropper TEARDROP to inject custom Cobalt Strike BEACON payloads directly into memory, bypassing traditional endpoint defenses.",
+        "matched_iocs": [
+          "185.225.17.42"
+        ],
+        "retrieval_score": 1.555,
+        "direct_quote": "Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20."
+      },
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c2",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "date": "2020-12-17",
+        "target_actor": "actor_apt29",
+        "relevant_text": "Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[.]com. Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20.140.8.11 and shifts secondary staging to freescanonline[.]com, which resolves to 185.225.17.42.",
+        "matched_iocs": [
+          "185.225.17.42"
+        ],
+        "retrieval_score": 0.9677,
+        "direct_quote": "Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[."
+      },
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c0",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "date": "2020-12-17",
+        "target_actor": "actor_apt29",
+        "relevant_text": "The Cybersecurity and Infrastructure Security Agency (CISA) has determined that APT29 (also known as NOBELIUM, Cozy Bear, and Midnight Blizzard), an Advanced Persistent Threat actor sponsored by the Russian Foreign Intelligence Service (SVR), executed an extraordinarily sophisticated supply-chain attack.",
+        "matched_iocs": [],
+        "retrieval_score": 0.9524,
+        "direct_quote": "The Cybersecurity and Infrastructure Security Agency (CISA) has determined that APT29 (also known as NOBELIUM, Cozy Bear, and Midnight Blizzard), an Advanced Persistent Threat actor sponsored by the Russian Foreign Intelligence Service (SVR), executed an extraordinarily sophisticated supply-chain attack."
+      },
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c1",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "date": "2020-12-17",
+        "target_actor": "actor_apt29",
+        "relevant_text": "The adversary inserted a malicious backdoor designated SUNBURST (solorigate) into legitimate SolarWinds Orion software builds (version 2019.4 HF 5 through 2020.2.1). Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[.]com.",
+        "matched_iocs": [],
+        "retrieval_score": 0.9375,
+        "direct_quote": "The adversary inserted a malicious backdoor designated SUNBURST (solorigate) into legitimate SolarWinds Orion software builds (version 2019."
+      }
+    ]
+  },
+  "all_candidates": [
+    {
+      "actor_id": "actor_apt29",
+      "actor_name": "APT29 (Cozy Bear / NOBELIUM)",
+      "fused_confidence": 0.4891,
+      "structural_confidence": 0.2079,
+      "textual_confidence": 0.5586,
+      "cross_validation_score": 1.0,
+      "verdict": "INCONCLUSIVE",
+      "graph_trail": {
+        "source_ioc_id": "ioc_ip_185_225_17_42",
+        "source_ioc_name": "185.225.17.42",
+        "target_actor_id": "actor_apt29",
+        "target_actor_name": "APT29 (Cozy Bear / NOBELIUM)",
+        "hops": [
+          {
+            "step": 1,
+            "source_id": "ioc_ip_185_225_17_42",
+            "source_name": "185.225.17.42",
+            "source_type": "Indicator",
+            "relation": "rev_resolves_to",
+            "target_id": "ioc_domain_freescan",
+            "target_name": "freescanonline[.]com",
+            "target_type": "Indicator",
+            "citation": "ThreatConnect Research",
+            "rationale": "Reverse DNS IP-to-domain mapping"
+          },
+          {
+            "step": 2,
+            "source_id": "ioc_domain_freescan",
+            "source_name": "freescanonline[.]com",
+            "source_type": "Indicator",
+            "relation": "rev_shares_infra",
+            "target_id": "ioc_domain_avsvmcloud",
+            "target_name": "avsvmcloud[.]com",
+            "target_type": "Indicator",
+            "citation": "SSL Certificate Serial Overlap",
+            "rationale": "Infrastructure cluster pivot"
+          },
+          {
+            "step": 3,
+            "source_id": "ioc_domain_avsvmcloud",
+            "source_name": "avsvmcloud[.]com",
+            "source_type": "Indicator",
+            "relation": "rev_communicates_with",
+            "target_id": "mal_sunburst",
+            "target_name": "SUNBURST",
+            "target_type": "Malware",
+            "citation": "FireEye DGA Telemetry",
+            "rationale": "C2 server receiving command telemetry from malware"
+          },
+          {
+            "step": 4,
+            "source_id": "mal_sunburst",
+            "source_name": "SUNBURST",
+            "source_type": "Malware",
+            "relation": "rev_uses",
+            "target_id": "actor_apt29",
+            "target_name": "APT29 (Cozy Bear / NOBELIUM)",
+            "target_type": "ThreatActor",
+            "citation": "FireEye Mandiant SUNBURST Report",
+            "rationale": "Malware family operated by threat actor"
+          }
+        ],
+        "hop_count": 4,
+        "path_confidence": 0.3204,
+        "chain_summary": "Discovered 4-hop structural trail linking '185.225.17.42' to 'APT29 (Cozy Bear / NOBELIUM)'."
+      },
+      "narrative_proofs": [
+        {
+          "chunk_id": "rpt_cisa_apt29_solarwinds_c3",
+          "doc_id": "rpt_cisa_apt29_solarwinds",
+          "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+          "date": "2020-12-17",
+          "target_actor": "actor_apt29",
+          "relevant_text": "Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20.140.8.11 and shifts secondary staging to freescanonline[.]com, which resolves to 185.225.17.42. The threat actors leveraged memory-only dropper TEARDROP to inject custom Cobalt Strike BEACON payloads directly into memory, bypassing traditional endpoint defenses.",
+          "matched_iocs": [
+            "185.225.17.42"
+          ],
+          "retrieval_score": 1.555,
+          "direct_quote": "Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20."
+        },
+        {
+          "chunk_id": "rpt_cisa_apt29_solarwinds_c2",
+          "doc_id": "rpt_cisa_apt29_solarwinds",
+          "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+          "date": "2020-12-17",
+          "target_actor": "actor_apt29",
+          "relevant_text": "Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[.]com. Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20.140.8.11 and shifts secondary staging to freescanonline[.]com, which resolves to 185.225.17.42.",
+          "matched_iocs": [
+            "185.225.17.42"
+          ],
+          "retrieval_score": 0.9677,
+          "direct_quote": "Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[."
+        },
+        {
+          "chunk_id": "rpt_cisa_apt29_solarwinds_c0",
+          "doc_id": "rpt_cisa_apt29_solarwinds",
+          "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+          "date": "2020-12-17",
+          "target_actor": "actor_apt29",
+          "relevant_text": "The Cybersecurity and Infrastructure Security Agency (CISA) has determined that APT29 (also known as NOBELIUM, Cozy Bear, and Midnight Blizzard), an Advanced Persistent Threat actor sponsored by the Russian Foreign Intelligence Service (SVR), executed an extraordinarily sophisticated supply-chain attack.",
+          "matched_iocs": [],
+          "retrieval_score": 0.9524,
+          "direct_quote": "The Cybersecurity and Infrastructure Security Agency (CISA) has determined that APT29 (also known as NOBELIUM, Cozy Bear, and Midnight Blizzard), an Advanced Persistent Threat actor sponsored by the Russian Foreign Intelligence Service (SVR), executed an extraordinarily sophisticated supply-chain attack."
+        },
+        {
+          "chunk_id": "rpt_cisa_apt29_solarwinds_c1",
+          "doc_id": "rpt_cisa_apt29_solarwinds",
+          "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+          "date": "2020-12-17",
+          "target_actor": "actor_apt29",
+          "relevant_text": "The adversary inserted a malicious backdoor designated SUNBURST (solorigate) into legitimate SolarWinds Orion software builds (version 2019.4 HF 5 through 2020.2.1). Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[.]com.",
+          "matched_iocs": [],
+          "retrieval_score": 0.9375,
+          "direct_quote": "The adversary inserted a malicious backdoor designated SUNBURST (solorigate) into legitimate SolarWinds Orion software builds (version 2019."
+        }
+      ]
+    },
+    {
+      "actor_id": "actor_apt28",
+      "actor_name": "APT28 (Fancy Bear / STRONTIUM)",
+      "fused_confidence": 0.3169,
+      "structural_confidence": 0.1657,
+      "textual_confidence": 0.2924,
+      "cross_validation_score": 0.7,
+      "verdict": "INCONCLUSIVE",
+      "graph_trail": null,
+      "narrative_proofs": [
+        {
+          "chunk_id": "rpt_mandiant_apt28_fancybear_c0",
+          "doc_id": "rpt_mandiant_apt28_fancybear",
+          "source": "Mandiant Threat Intelligence",
+          "date": "2023-04-12",
+          "target_actor": "actor_apt28",
+          "relevant_text": "Mandiant has tracked persistent cyber espionage operations conducted by Russian GRU Unit 26165 (publicly known as APT28, Fancy Bear, Forest Blizzard). Recent telemetry indicates a pivot in initial access targeting Ukrainian defense forces, Eastern European ministries of foreign affairs, and NATO partners. The adversary utilizes spearphishing emails containing malicious ZIP archives or macro-enabled documents masquerading as diplomatic invites.",
+          "matched_iocs": [],
+          "retrieval_score": 1.5205,
+          "direct_quote": "Mandiant has tracked persistent cyber espionage operations conducted by Russian GRU Unit 26165 (publicly known as APT28, Fancy Bear, Forest Blizzard)."
+        }
+      ]
+    },
+    {
+      "actor_id": "actor_volt_typhoon",
+      "actor_name": "Volt Typhoon (Vanguard Panda)",
+      "fused_confidence": 0.1508,
+      "structural_confidence": 0.2517,
+      "textual_confidence": 0.05,
+      "cross_validation_score": 0.1,
+      "verdict": "INCONCLUSIVE",
+      "graph_trail": null,
+      "narrative_proofs": []
+    },
+    {
+      "actor_id": "actor_lazarus",
+      "actor_name": "Lazarus Group (HIDDEN COBRA)",
+      "fused_confidence": 0.1374,
+      "structural_confidence": 0.1451,
+      "textual_confidence": 0.149,
+      "cross_validation_score": 0.1,
+      "verdict": "INCONCLUSIVE",
+      "graph_trail": null,
+      "narrative_proofs": []
+    },
+    {
+      "actor_id": "actor_fin7",
+      "actor_name": "FIN7 (Carbanak / ELBRUS)",
+      "fused_confidence": 0.1001,
+      "structural_confidence": 0.1392,
+      "textual_confidence": 0.05,
+      "cross_validation_score": 0.1,
+      "verdict": "INCONCLUSIVE",
+      "graph_trail": null,
+      "narrative_proofs": []
+    },
+    {
+      "actor_id": "actor_sandworm",
+      "actor_name": "Sandworm (APT44 / Seashell Blizzard)",
+      "fused_confidence": 0.0782,
+      "structural_confidence": 0.0904,
+      "textual_confidence": 0.05,
+      "cross_validation_score": 0.1,
+      "verdict": "INCONCLUSIVE",
+      "graph_trail": null,
+      "narrative_proofs": []
+    }
+  ],
+  "graph_trail": {
+    "source_ioc_id": "ioc_ip_185_225_17_42",
+    "source_ioc_name": "185.225.17.42",
+    "target_actor_id": "actor_apt29",
+    "target_actor_name": "APT29 (Cozy Bear / NOBELIUM)",
+    "hops": [
+      {
+        "step": 1,
+        "source_id": "ioc_ip_185_225_17_42",
+        "source_name": "185.225.17.42",
+        "source_type": "Indicator",
+        "relation": "rev_resolves_to",
+        "target_id": "ioc_domain_freescan",
+        "target_name": "freescanonline[.]com",
+        "target_type": "Indicator",
+        "citation": "ThreatConnect Research",
+        "rationale": "Reverse DNS IP-to-domain mapping"
+      },
+      {
+        "step": 2,
+        "source_id": "ioc_domain_freescan",
+        "source_name": "freescanonline[.]com",
+        "source_type": "Indicator",
+        "relation": "rev_shares_infra",
+        "target_id": "ioc_domain_avsvmcloud",
+        "target_name": "avsvmcloud[.]com",
+        "target_type": "Indicator",
+        "citation": "SSL Certificate Serial Overlap",
+        "rationale": "Infrastructure cluster pivot"
+      },
+      {
+        "step": 3,
+        "source_id": "ioc_domain_avsvmcloud",
+        "source_name": "avsvmcloud[.]com",
+        "source_type": "Indicator",
+        "relation": "rev_communicates_with",
+        "target_id": "mal_sunburst",
+        "target_name": "SUNBURST",
+        "target_type": "Malware",
+        "citation": "FireEye DGA Telemetry",
+        "rationale": "C2 server receiving command telemetry from malware"
+      },
+      {
+        "step": 4,
+        "source_id": "mal_sunburst",
+        "source_name": "SUNBURST",
+        "source_type": "Malware",
+        "relation": "rev_uses",
+        "target_id": "actor_apt29",
+        "target_name": "APT29 (Cozy Bear / NOBELIUM)",
+        "target_type": "ThreatActor",
+        "citation": "FireEye Mandiant SUNBURST Report",
+        "rationale": "Malware family operated by threat actor"
+      }
+    ],
+    "hop_count": 4,
+    "path_confidence": 0.3204,
+    "chain_summary": "Discovered 4-hop structural trail linking '185.225.17.42' to 'APT29 (Cozy Bear / NOBELIUM)'."
+  },
+  "narrative_proofs": [
+    {
+      "chunk_id": "rpt_cisa_apt29_solarwinds_c3",
+      "doc_id": "rpt_cisa_apt29_solarwinds",
+      "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "date": "2020-12-17",
+      "target_actor": "actor_apt29",
+      "relevant_text": "Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20.140.8.11 and shifts secondary staging to freescanonline[.]com, which resolves to 185.225.17.42. The threat actors leveraged memory-only dropper TEARDROP to inject custom Cobalt Strike BEACON payloads directly into memory, bypassing traditional endpoint defenses.",
+      "matched_iocs": [
+        "185.225.17.42"
+      ],
+      "retrieval_score": 1.555,
+      "direct_quote": "Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20."
+    },
+    {
+      "chunk_id": "rpt_cisa_apt29_solarwinds_c2",
+      "doc_id": "rpt_cisa_apt29_solarwinds",
+      "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "date": "2020-12-17",
+      "target_actor": "actor_apt29",
+      "relevant_text": "Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[.]com. Upon establishing communication, the malware dynamically resolves intermediate IP addresses including 20.140.8.11 and shifts secondary staging to freescanonline[.]com, which resolves to 185.225.17.42.",
+      "matched_iocs": [
+        "185.225.17.42"
+      ],
+      "retrieval_score": 0.9677,
+      "direct_quote": "Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[."
+    },
+    {
+      "chunk_id": "rpt_cisa_apt29_solarwinds_c0",
+      "doc_id": "rpt_cisa_apt29_solarwinds",
+      "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "date": "2020-12-17",
+      "target_actor": "actor_apt29",
+      "relevant_text": "The Cybersecurity and Infrastructure Security Agency (CISA) has determined that APT29 (also known as NOBELIUM, Cozy Bear, and Midnight Blizzard), an Advanced Persistent Threat actor sponsored by the Russian Foreign Intelligence Service (SVR), executed an extraordinarily sophisticated supply-chain attack.",
+      "matched_iocs": [],
+      "retrieval_score": 0.9524,
+      "direct_quote": "The Cybersecurity and Infrastructure Security Agency (CISA) has determined that APT29 (also known as NOBELIUM, Cozy Bear, and Midnight Blizzard), an Advanced Persistent Threat actor sponsored by the Russian Foreign Intelligence Service (SVR), executed an extraordinarily sophisticated supply-chain attack."
+    },
+    {
+      "chunk_id": "rpt_cisa_apt29_solarwinds_c1",
+      "doc_id": "rpt_cisa_apt29_solarwinds",
+      "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "date": "2020-12-17",
+      "target_actor": "actor_apt29",
+      "relevant_text": "The adversary inserted a malicious backdoor designated SUNBURST (solorigate) into legitimate SolarWinds Orion software builds (version 2019.4 HF 5 through 2020.2.1). Once executed on victim networks, SUNBURST lies dormant for up to two weeks before initiating DNS queries to the primary C2 domain avsvmcloud[.]com.",
+      "matched_iocs": [],
+      "retrieval_score": 0.9375,
+      "direct_quote": "The adversary inserted a malicious backdoor designated SUNBURST (solorigate) into legitimate SolarWinds Orion software builds (version 2019."
+    }
+  ]
+}

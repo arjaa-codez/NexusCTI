@@ -1,0 +1,241 @@
+{
+  "audit_timestamp": "2026-10-11T22:55:00+05:30",
+  "phase": "Phase 9.8",
+  "master_database_manifest": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/data_level0.bin": {
+      "sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8",
+      "size_bytes": 167600
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/header.bin": {
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+      "size_bytes": 100
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/length.bin": {
+      "sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06",
+      "size_bytes": 400
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/link_lists.bin": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "chroma.sqlite3": {
+      "sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc",
+      "size_bytes": 294912
+    }
+  },
+  "master_canonical_content_hash": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+  "master_sqlite_change_counter": 30,
+  "master_invariance_verified": true,
+  "snapshot_consistency_verified": true,
+  "retrieval_equivalence_reproduced": true,
+  "query_evaluations": [
+    {
+      "query_id": "T1_SolarWinds_APT29",
+      "query_text": "SolarWinds backdoor SUNBURST 185.225.17.42",
+      "gnn_actor": "APT29",
+      "top_k": 2,
+      "retrieved_ids": [
+        "apt29_bundle--apt29-solarwinds-sunburst-2020_1",
+        "apt29_bundle--apt29-solarwinds-sunburst-2020_0"
+      ],
+      "raw_distances": [
+        1.0009583234786987,
+        1.0163183212280273
+      ],
+      "threat_actors": [
+        "APT29",
+        "APT29"
+      ],
+      "displayed_similarities": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_id": "T2_Industroyer2_Sandworm",
+      "query_text": "Sandworm wiper high voltage substation Industroyer2",
+      "gnn_actor": "Sandworm Team",
+      "top_k": 2,
+      "retrieved_ids": [
+        "sandworm_team_bundle--sandworm-industroyer2-2022_0"
+      ],
+      "raw_distances": [
+        0.9678243398666382
+      ],
+      "threat_actors": [
+        "Sandworm Team"
+      ],
+      "displayed_similarities": [
+        0.0322
+      ]
+    },
+    {
+      "query_id": "T3_AppleJeus_Lazarus",
+      "query_text": "AppleJeus cryptocurrency exchange trojanized application",
+      "gnn_actor": "Lazarus Group",
+      "top_k": 2,
+      "retrieved_ids": [
+        "lazarus_group_bundle--lazarus-applejeus-crypto-2022_0"
+      ],
+      "raw_distances": [
+        1.0124127864837646
+      ],
+      "threat_actors": [
+        "Lazarus Group"
+      ],
+      "displayed_similarities": [
+        0.0
+      ]
+    },
+    {
+      "query_id": "T4_VoltTyphoon_CriticalInfra",
+      "query_text": "Volt Typhoon living off the land wmic powershell cve",
+      "gnn_actor": "Volt Typhoon",
+      "top_k": 2,
+      "retrieved_ids": [
+        "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0"
+      ],
+      "raw_distances": [
+        0.9257402420043945
+      ],
+      "threat_actors": [
+        "Volt Typhoon"
+      ],
+      "displayed_similarities": [
+        0.0743
+      ]
+    },
+    {
+      "query_id": "T5_FIN7_Carbanak",
+      "query_text": "FIN7 financial POS malware Carbanak cash out",
+      "gnn_actor": "FIN7",
+      "top_k": 2,
+      "retrieved_ids": [
+        "fin7_bundle--fin7-carbanak-financial-2021_0"
+      ],
+      "raw_distances": [
+        1.0338159799575806
+      ],
+      "threat_actors": [
+        "FIN7"
+      ],
+      "displayed_similarities": [
+        0.0
+      ]
+    },
+    {
+      "query_id": "T6_APT28_FancyBear",
+      "query_text": "APT28 Fancy Bear Zebrocy spearphishing credential harvesting",
+      "gnn_actor": "APT28",
+      "top_k": 2,
+      "retrieved_ids": [
+        "apt28_bundle--apt28-fancybear-zebrocy-2023_0"
+      ],
+      "raw_distances": [
+        1.0493464469909668
+      ],
+      "threat_actors": [
+        "APT28"
+      ],
+      "displayed_similarities": [
+        0.0
+      ]
+    },
+    {
+      "query_id": "T7_Unknown_Actor_Filter",
+      "query_text": "generic ransomware c2 beaconing payload",
+      "gnn_actor": "Unknown",
+      "top_k": 3,
+      "retrieved_ids": [
+        "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+        "lazarus_group_bundle--lazarus-applejeus-crypto-2022_0",
+        "apt29_bundle--apt29-solarwinds-sunburst-2020_1"
+      ],
+      "raw_distances": [
+        0.8914778232574463,
+        0.910602331161499,
+        0.9317000508308411
+      ],
+      "threat_actors": [
+        "Volt Typhoon",
+        "Lazarus Group",
+        "APT29"
+      ],
+      "displayed_similarities": [
+        0.1085,
+        0.0894,
+        0.0683
+      ]
+    },
+    {
+      "query_id": "T8_NonExistent_Actor",
+      "query_text": "threat actor not in registry",
+      "gnn_actor": "NovelUnseenActor",
+      "top_k": 3,
+      "retrieved_ids": [
+        "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+        "lazarus_group_bundle--lazarus-applejeus-crypto-2022_0",
+        "sandworm_team_bundle--sandworm-industroyer2-2022_0"
+      ],
+      "raw_distances": [
+        0.9180170893669128,
+        0.9277985095977783,
+        1.0044182538986206
+      ],
+      "threat_actors": [
+        "Volt Typhoon",
+        "Lazarus Group",
+        "Sandworm Team"
+      ],
+      "displayed_similarities": [
+        0.082,
+        0.0722,
+        0.0
+      ]
+    },
+    {
+      "query_id": "T9_Empty_Query_String",
+      "query_text": "",
+      "gnn_actor": "APT28",
+      "top_k": 2,
+      "retrieved_ids": [
+        "apt28_bundle--apt28-fancybear-zebrocy-2023_0"
+      ],
+      "raw_distances": [
+        0.9715884327888489
+      ],
+      "threat_actors": [
+        "APT28"
+      ],
+      "displayed_similarities": [
+        0.0284
+      ]
+    },
+    {
+      "query_id": "T10_Special_Chars_Query",
+      "query_text": "!@#$%^&*()_+~`{}[]:;'<>?,./",
+      "gnn_actor": null,
+      "top_k": 3,
+      "retrieved_ids": [
+        "apt29_bundle--apt29-solarwinds-sunburst-2020_0",
+        "apt28_bundle--apt28-fancybear-zebrocy-2023_0",
+        "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0"
+      ],
+      "raw_distances": [
+        0.9310818910598755,
+        0.945958137512207,
+        0.9472570419311523
+      ],
+      "threat_actors": [
+        "APT29",
+        "APT28",
+        "Volt Typhoon"
+      ],
+      "displayed_similarities": [
+        0.0689,
+        0.054,
+        0.0527
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "audit_timestamp": "2026-10-11T03:00:00+05:30",
+  "active_database_file": "cyber_attribution_engine\\data\\chroma_db\\chroma.sqlite3",
+  "raw_binary_sha256": "1ddc579d0d8324cd11970189d5652acca303f5840ab7dd7a6ede53bfa4744e11",
+  "header_forensics": {
+    "sqlite_magic": "SQLite format 3",
+    "page_size_bytes": 4096,
+    "file_change_counter_bytes_24_27": 20,
+    "database_size_pages_bytes_28_31": 72,
+    "schema_cookie_bytes_40_43": 52,
+    "sqlite_version_number": 3046000
+  },
+  "root_cause_of_binary_mismatch": "SQLite header bytes 24-27 (file change counter) incremented automatically when ChromaDB's PersistentClient opened the file in standard read-write mode. The schema_cookie (bytes 40-43) remained completely unchanged, and all underlying tables, documents, and embeddings are 100% invariant.",
+  "canonical_content_verification": {
+    "collections_count": 1,
+    "collections": [
+      {
+        "id": "cd6345d4-cc6a-4d4d-b527-5a34fd4de2ee",
+        "name": "cti_threat_reports",
+        "dimension": 384,
+        "database_id": "00000000-0000-0000-0000-000000000000",
+        "config_json_str": "{}",
+        "schema_str": "{\"defaults\":{\"string\":{\"fts_index\":{\"enabled\":false,\"config\":{}},\"string_inverted_index\":{\"enabled\":true,\"config\":{}}},\"float_list\":{\"vector_index\":{\"enabled\":false,\"config\":{\"space\":\"cosine\",\"embedding_function\":{\"type\":\"known\",\"name\":\"default\",\"config\":{}},\"hnsw\":{\"ef_construction\":100,\"max_neighbors\":16,\"ef_search\":100,\"num_threads\":12,\"batch_size\":100,\"sync_threshold\":1000,\"resize_factor\":1.2}}}},\"sparse_vector\":{\"sparse_vector_index\":{\"enabled\":false,\"config\":{\"embedding_function\":{\"type\":\"unknown\"},\"bm25\":false}}},\"int\":{\"int_inverted_index\":{\"enabled\":true,\"config\":{}}},\"float\":{\"float_inverted_index\":{\"enabled\":true,\"config\":{}}},\"bool\":{\"bool_inverted_index\":{\"enabled\":true,\"config\":{}}}},\"keys\":{\"#embedding\":{\"float_list\":{\"vector_index\":{\"enabled\":true,\"config\":{\"space\":\"cosine\",\"embedding_function\":{\"type\":\"known\",\"name\":\"default\",\"config\":{}},\"source_key\":\"#document\",\"hnsw\":{\"ef_construction\":100,\"max_neighbors\":16,\"ef_search\":100,\"num_threads\":12,\"batch_size\":100,\"sync_threshold\":1000,\"resize_factor\":1.2}}}}},\"source_file\":{\"string\":{\"fts_index\":{\"enabled\":false,\"config\":{}},\"string_inverted_index\":{\"enabled\":true,\"config\":{}}}},\"chunk_index\":{\"int\":{\"int_inverted_index\":{\"enabled\":true,\"config\":{}}}},\"report_id\":{\"string\":{\"fts_index\":{\"enabled\":false,\"config\":{}},\"string_inverted_index\":{\"enabled\":true,\"config\":{}}}},\"threat_actor\":{\"string\":{\"fts_index\":{\"enabled\":false,\"config\":{}},\"string_inverted_index\":{\"enabled\":true,\"config\":{}}}},\"origin\":{\"string\":{\"fts_index\":{\"enabled\":false,\"config\":{}},\"string_inverted_index\":{\"enabled\":true,\"config\":{}}}},\"#document\":{\"string\":{\"fts_index\":{\"enabled\":true,\"config\":{}},\"string_inverted_index\":{\"enabled\":false,\"config\":{}}}},\"aliases\":{\"string\":{\"fts_index\":{\"enabled\":false,\"config\":{}},\"string_inverted_index\":{\"enabled\":true,\"config\":{}}}}}}"
+      }
+    ],
+    "embeddings_count": 7,
+    "embedding_ids": [
+      "apt29_bundle--apt29-solarwinds-sunburst-2020_0",
+      "apt29_bundle--apt29-solarwinds-sunburst-2020_1",
+      "sandworm_team_bundle--sandworm-industroyer2-2022_0",
+      "lazarus_group_bundle--lazarus-applejeus-crypto-2022_0",
+      "apt28_bundle--apt28-fancybear-zebrocy-2023_0",
+      "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+      "fin7_bundle--fin7-carbanak-financial-2021_0"
+    ],
+    "metadata_count": 49,
+    "deterministic_content_sha256": "9a88316a55600e9bd06bfef9559c53b9dfc34d99522a5a2781cbccee742bc46e",
+    "content_equivalence_status": "VERIFIED_CONTENT_INVARIANT"
+  },
+  "verification_procedure": {
+    "pre_evaluation_protocol": "Verify deterministic content SHA-256 equals canonical content hash before benchmark run.",
+    "connection_mode_protocol": "Open SQLite connection using URI mode ?mode=ro to prevent page header mutation.",
+    "post_evaluation_protocol": "Verify that content SHA-256 matches exactly post-evaluation."
+  }
+}

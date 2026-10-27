@@ -1,0 +1,41 @@
+{
+  "audit_timestamp": "2026-10-11T03:10:00+05:30",
+  "dry_run_environment": "Python 3.13.5 (Isolated Development Partition)",
+  "metrics": {
+    "n_cases": 15,
+    "contingency_table": {
+      "a": 9,
+      "b": 3,
+      "c": 0,
+      "d": 3,
+      "discordant_pairs": 3
+    },
+    "full_hybrid_top1_acc": 0.6667,
+    "full_hybrid_top3_acc": 0.8,
+    "retrieval_top1_acc": 0.5333,
+    "retrieval_top3_acc": 0.6,
+    "paired_risk_difference": 0.2,
+    "directional_condition_met": true,
+    "exact_mcnemar_p_value": 0.25,
+    "mcnemar_significant_0_05": false,
+    "agresti_min_95_ci": [
+      -0.0673,
+      0.4202
+    ],
+    "missing_or_failed_cases_handled": 2
+  },
+  "blinding_audit": {
+    "test_set_cases_evaluated": 0,
+    "test_set_labels_exposed": 0,
+    "inference_access_to_ground_truth": false,
+    "quarantine_status": "STRICTLY_ENFORCED"
+  },
+  "missing_data_policy_validation": {
+    "policy": "Assign Rank = 99 to any failed, timed-out, or missing prediction record",
+    "test_cases": [
+      "cand_dev_case_14 (Timeout)",
+      "cand_dev_case_15 (Empty Output)"
+    ],
+    "result": "VERIFIED_DETERMINISTIC_PASS"
+  }
+}

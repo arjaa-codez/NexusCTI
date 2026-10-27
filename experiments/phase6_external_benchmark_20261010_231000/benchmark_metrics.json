@@ -1,0 +1,112 @@
+{
+  "timestamp": "2026-10-10T23:10:00+05:30",
+  "experiment": "NexusCTI Phase 6 External Benchmark Evaluation",
+  "benchmark_architectures_comparison": {
+    "Graph-only": {
+      "frozen_test_task_a_closed_set": {
+        "total_cases": 8,
+        "top1_accuracy": 12.5,
+        "top1_count": "1/8",
+        "top3_accuracy": 37.5,
+        "top3_count": "3/8",
+        "mrr": 0.3583
+      },
+      "frozen_test_task_b_open_set": {
+        "total_cases": 4,
+        "proper_abstention_rate": 100.0,
+        "abstention_count": "4/4",
+        "false_attribution_rate": 0.0
+      },
+      "all_task_a_scenarios_combined": {
+        "total_cases": 12,
+        "top1_accuracy": 16.67,
+        "mrr": 0.4083
+      }
+    },
+    "Retrieval-only": {
+      "frozen_test_task_a_closed_set": {
+        "total_cases": 8,
+        "top1_accuracy": 50.0,
+        "top1_count": "4/8",
+        "top3_accuracy": 62.5,
+        "top3_count": "5/8",
+        "mrr": 0.6333
+      },
+      "frozen_test_task_b_open_set": {
+        "total_cases": 4,
+        "proper_abstention_rate": 100.0,
+        "abstention_count": "4/4",
+        "false_attribution_rate": 0.0
+      },
+      "all_task_a_scenarios_combined": {
+        "total_cases": 12,
+        "top1_accuracy": 33.33,
+        "mrr": 0.5042
+      }
+    },
+    "GNN-only": {
+      "frozen_test_task_a_closed_set": {
+        "total_cases": 8,
+        "top1_accuracy": 12.5,
+        "top1_count": "1/8",
+        "top3_accuracy": 37.5,
+        "top3_count": "3/8",
+        "mrr": 0.3583
+      },
+      "frozen_test_task_b_open_set": {
+        "total_cases": 4,
+        "proper_abstention_rate": 100.0,
+        "abstention_count": "4/4",
+        "false_attribution_rate": 0.0
+      },
+      "all_task_a_scenarios_combined": {
+        "total_cases": 12,
+        "top1_accuracy": 8.33,
+        "mrr": 0.3528
+      }
+    },
+    "Graph + RAG": {
+      "frozen_test_task_a_closed_set": {
+        "total_cases": 8,
+        "top1_accuracy": 50.0,
+        "top1_count": "4/8",
+        "top3_accuracy": 62.5,
+        "top3_count": "5/8",
+        "mrr": 0.6333
+      },
+      "frozen_test_task_b_open_set": {
+        "total_cases": 4,
+        "proper_abstention_rate": 100.0,
+        "abstention_count": "4/4",
+        "false_attribution_rate": 0.0
+      },
+      "all_task_a_scenarios_combined": {
+        "total_cases": 12,
+        "top1_accuracy": 33.33,
+        "mrr": 0.5042
+      }
+    },
+    "Full Hybrid": {
+      "frozen_test_task_a_closed_set": {
+        "total_cases": 8,
+        "top1_accuracy": 50.0,
+        "top1_count": "4/8",
+        "top3_accuracy": 87.5,
+        "top3_count": "7/8",
+        "mrr": 0.6771
+      },
+      "frozen_test_task_b_open_set": {
+        "total_cases": 4,
+        "proper_abstention_rate": 100.0,
+        "abstention_count": "4/4",
+        "false_attribution_rate": 0.0
+      },
+      "all_task_a_scenarios_combined": {
+        "total_cases": 12,
+        "top1_accuracy": 33.33,
+        "mrr": 0.5583
+      }
+    }
+  },
+  "statistical_significance_note": "With N=8 frozen Task A cases and N=4 frozen Task B cases, confidence intervals span \u00b115%. Results represent preliminary frozen empirical validation rather than large-scale asymptotic certainty."
+}

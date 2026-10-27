@@ -1,0 +1,141 @@
+discordance_scenario,discordance_rate_q,advantage_scenario,conditional_win_prob_theta,expected_delta_percent,sample_size_N,exact_mcnemar_power_percent,mc_estimated_power_percent,mc_standard_error_percent,prob_practical_effect_ge_15_percent
+Low Discordance,0.15,Null (No Advantage),0.5,0.0,24,0.35,0.33,0.057,3.16
+Low Discordance,0.15,Null (No Advantage),0.5,0.0,40,1.27,1.32,0.114,1.25
+Low Discordance,0.15,Null (No Advantage),0.5,0.0,60,2.05,1.78,0.132,0.25
+Low Discordance,0.15,Null (No Advantage),0.5,0.0,80,2.44,2.4,0.153,0.05
+Low Discordance,0.15,Null (No Advantage),0.5,0.0,100,2.73,2.99,0.17,0.01
+Low Discordance,0.15,Null (No Advantage),0.5,0.0,150,2.95,3.08,0.173,0.0
+Low Discordance,0.15,Null (No Advantage),0.5,0.0,200,3.08,3.21,0.176,0.0
+Low Discordance,0.15,Modest Advantage,0.6,3.0,24,0.59,0.58,0.076,6.96
+Low Discordance,0.15,Modest Advantage,0.6,3.0,40,2.35,2.46,0.155,3.96
+Low Discordance,0.15,Modest Advantage,0.6,3.0,60,4.35,4.22,0.201,1.34
+Low Discordance,0.15,Modest Advantage,0.6,3.0,80,5.97,5.95,0.237,0.47
+Low Discordance,0.15,Modest Advantage,0.6,3.0,100,7.59,8.01,0.271,0.17
+Low Discordance,0.15,Modest Advantage,0.6,3.0,150,10.88,10.91,0.312,0.01
+Low Discordance,0.15,Modest Advantage,0.6,3.0,200,14.31,14.01,0.347,0.0
+Low Discordance,0.15,Moderate Advantage,0.7,6.0,24,1.47,1.35,0.115,13.24
+Low Discordance,0.15,Moderate Advantage,0.7,6.0,40,6.3,5.75,0.233,9.96
+Low Discordance,0.15,Moderate Advantage,0.7,6.0,60,12.92,13.53,0.342,5.06
+Low Discordance,0.15,Moderate Advantage,0.7,6.0,80,19.19,19.19,0.394,2.67
+Low Discordance,0.15,Moderate Advantage,0.7,6.0,100,25.63,25.02,0.433,1.44
+Low Discordance,0.15,Moderate Advantage,0.7,6.0,150,39.69,40.34,0.491,0.24
+Low Discordance,0.15,Moderate Advantage,0.7,6.0,200,52.44,52.46,0.499,0.08
+Low Discordance,0.15,Large Advantage,0.8,9.0,24,3.42,3.39,0.181,22.47
+Low Discordance,0.15,Large Advantage,0.8,9.0,40,15.12,15.54,0.362,20.72
+Low Discordance,0.15,Large Advantage,0.8,9.0,60,31.33,31.09,0.463,14.29
+Low Discordance,0.15,Large Advantage,0.8,9.0,80,45.46,45.16,0.498,10.18
+Low Discordance,0.15,Large Advantage,0.8,9.0,100,57.89,56.79,0.495,7.39
+Low Discordance,0.15,Large Advantage,0.8,9.0,150,78.99,79.66,0.403,2.75
+Low Discordance,0.15,Large Advantage,0.8,9.0,200,90.2,90.03,0.3,1.7
+Low Discordance,0.15,Observed Phase 8 Advantage,0.8571,10.71,24,5.3,5.24,0.223,29.12
+Low Discordance,0.15,Observed Phase 8 Advantage,0.8571,10.71,40,23.35,23.75,0.426,29.28
+Low Discordance,0.15,Observed Phase 8 Advantage,0.8571,10.71,60,46.81,46.77,0.499,23.09
+Low Discordance,0.15,Observed Phase 8 Advantage,0.8571,10.71,80,64.42,65.21,0.476,18.69
+Low Discordance,0.15,Observed Phase 8 Advantage,0.8571,10.71,100,77.18,77.15,0.42,15.37
+Low Discordance,0.15,Observed Phase 8 Advantage,0.8571,10.71,150,93.27,93.41,0.248,8.1
+Low Discordance,0.15,Observed Phase 8 Advantage,0.8571,10.71,200,98.17,98.38,0.126,6.45
+Moderate-Low Discordance,0.2,Null (No Advantage),0.5,0.0,24,0.8,0.77,0.087,5.34
+Moderate-Low Discordance,0.2,Null (No Advantage),0.5,0.0,40,1.87,1.94,0.138,2.55
+Moderate-Low Discordance,0.2,Null (No Advantage),0.5,0.0,60,2.44,2.64,0.16,0.71
+Moderate-Low Discordance,0.2,Null (No Advantage),0.5,0.0,80,2.82,2.98,0.17,0.21
+Moderate-Low Discordance,0.2,Null (No Advantage),0.5,0.0,100,2.94,3.04,0.172,0.06
+Moderate-Low Discordance,0.2,Null (No Advantage),0.5,0.0,150,3.08,3.28,0.178,0.0
+Moderate-Low Discordance,0.2,Null (No Advantage),0.5,0.0,200,3.46,3.72,0.189,0.0
+Moderate-Low Discordance,0.2,Modest Advantage,0.6,4.0,24,1.41,1.4,0.117,11.95
+Moderate-Low Discordance,0.2,Modest Advantage,0.6,4.0,40,3.77,3.95,0.195,8.23
+Moderate-Low Discordance,0.2,Modest Advantage,0.6,4.0,60,5.96,5.8,0.234,3.88
+Moderate-Low Discordance,0.2,Modest Advantage,0.6,4.0,80,8.12,8.09,0.273,1.9
+Moderate-Low Discordance,0.2,Modest Advantage,0.6,4.0,100,9.88,10.07,0.301,0.95
+Moderate-Low Discordance,0.2,Modest Advantage,0.6,4.0,150,14.29,14.37,0.351,0.14
+Moderate-Low Discordance,0.2,Modest Advantage,0.6,4.0,200,19.79,19.68,0.398,0.04
+Moderate-Low Discordance,0.2,Moderate Advantage,0.7,8.0,24,3.62,3.66,0.188,22.63
+Moderate-Low Discordance,0.2,Moderate Advantage,0.7,8.0,40,10.8,10.69,0.309,20.12
+Moderate-Low Discordance,0.2,Moderate Advantage,0.7,8.0,60,19.18,19.08,0.393,13.79
+Moderate-Low Discordance,0.2,Moderate Advantage,0.7,8.0,80,27.76,28.18,0.45,9.75
+Moderate-Low Discordance,0.2,Moderate Advantage,0.7,8.0,100,35.35,35.66,0.479,7.03
+Moderate-Low Discordance,0.2,Moderate Advantage,0.7,8.0,150,52.45,51.53,0.5,2.64
+Moderate-Low Discordance,0.2,Moderate Advantage,0.7,8.0,200,67.7,67.35,0.469,1.56
+Moderate-Low Discordance,0.2,Large Advantage,0.8,12.0,24,8.55,8.23,0.275,37.44
+Moderate-Low Discordance,0.2,Large Advantage,0.8,12.0,40,26.2,26.35,0.441,39.13
+Moderate-Low Discordance,0.2,Large Advantage,0.8,12.0,60,45.51,46.17,0.499,34.31
+Moderate-Low Discordance,0.2,Large Advantage,0.8,12.0,80,61.68,62.19,0.485,30.7
+Moderate-Low Discordance,0.2,Large Advantage,0.8,12.0,100,73.57,74.07,0.438,27.78
+Moderate-Low Discordance,0.2,Large Advantage,0.8,12.0,150,90.28,90.11,0.299,19.57
+Moderate-Low Discordance,0.2,Large Advantage,0.8,12.0,200,97.04,97.06,0.169,18.26
+Moderate-Low Discordance,0.2,Observed Phase 8 Advantage,0.8571,14.28,24,13.28,13.01,0.336,47.36
+Moderate-Low Discordance,0.2,Observed Phase 8 Advantage,0.8571,14.28,40,39.74,39.86,0.49,52.28
+Moderate-Low Discordance,0.2,Observed Phase 8 Advantage,0.8571,14.28,60,64.57,63.94,0.48,50.12
+Moderate-Low Discordance,0.2,Observed Phase 8 Advantage,0.8571,14.28,80,80.68,80.52,0.396,48.6
+Moderate-Low Discordance,0.2,Observed Phase 8 Advantage,0.8571,14.28,100,89.97,90.38,0.295,47.4
+Moderate-Low Discordance,0.2,Observed Phase 8 Advantage,0.8571,14.28,150,98.21,98.19,0.133,41.36
+Moderate-Low Discordance,0.2,Observed Phase 8 Advantage,0.8571,14.28,200,99.75,99.82,0.042,43.43
+Moderate Discordance,0.25,Null (No Advantage),0.5,0.0,24,1.29,1.32,0.114,7.48
+Moderate Discordance,0.25,Null (No Advantage),0.5,0.0,40,2.22,2.02,0.141,4.04
+Moderate Discordance,0.25,Null (No Advantage),0.5,0.0,60,2.74,2.93,0.169,1.4
+Moderate Discordance,0.25,Null (No Advantage),0.5,0.0,80,2.95,3.06,0.172,0.51
+Moderate Discordance,0.25,Null (No Advantage),0.5,0.0,100,2.97,3.09,0.173,0.19
+Moderate Discordance,0.25,Null (No Advantage),0.5,0.0,150,3.37,3.62,0.187,0.01
+Moderate Discordance,0.25,Null (No Advantage),0.5,0.0,200,3.66,3.84,0.192,0.0
+Moderate Discordance,0.25,Modest Advantage,0.6,5.0,24,2.36,2.23,0.148,17.0
+Moderate Discordance,0.25,Modest Advantage,0.6,5.0,40,4.91,5.25,0.223,13.17
+Moderate Discordance,0.25,Modest Advantage,0.6,5.0,60,7.61,7.07,0.256,7.64
+Moderate Discordance,0.25,Modest Advantage,0.6,5.0,80,9.88,9.63,0.295,4.59
+Moderate Discordance,0.25,Modest Advantage,0.6,5.0,100,11.92,11.84,0.323,2.82
+Moderate Discordance,0.25,Modest Advantage,0.6,5.0,150,18.4,18.6,0.389,0.7
+Moderate Discordance,0.25,Modest Advantage,0.6,5.0,200,24.97,24.79,0.432,0.29
+Moderate Discordance,0.25,Moderate Advantage,0.7,10.0,24,6.29,6.58,0.248,31.9
+Moderate Discordance,0.25,Moderate Advantage,0.7,10.0,40,15.02,14.74,0.355,31.12
+Moderate Discordance,0.25,Moderate Advantage,0.7,10.0,60,25.67,25.05,0.433,25.32
+Moderate Discordance,0.25,Moderate Advantage,0.7,10.0,80,35.37,35.14,0.477,21.1
+Moderate Discordance,0.25,Moderate Advantage,0.7,10.0,100,43.99,43.32,0.496,17.84
+Moderate Discordance,0.25,Moderate Advantage,0.7,10.0,150,64.29,64.82,0.478,10.56
+Moderate Discordance,0.25,Moderate Advantage,0.7,10.0,200,78.68,78.59,0.41,8.53
+Moderate Discordance,0.25,Large Advantage,0.8,15.0,24,15.08,14.47,0.352,51.11
+Moderate Discordance,0.25,Large Advantage,0.8,15.0,40,36.37,35.88,0.48,56.18
+Moderate Discordance,0.25,Large Advantage,0.8,15.0,60,58.09,58.29,0.493,55.05
+Moderate Discordance,0.25,Large Advantage,0.8,15.0,80,73.68,73.5,0.441,54.37
+Moderate Discordance,0.25,Large Advantage,0.8,15.0,100,83.67,83.3,0.373,53.91
+Moderate Discordance,0.25,Large Advantage,0.8,15.0,150,96.01,96.27,0.189,49.77
+Moderate Discordance,0.25,Large Advantage,0.8,15.0,200,99.2,99.17,0.091,52.77
+Moderate Discordance,0.25,Observed Phase 8 Advantage,0.8571,17.85,24,23.35,22.5,0.418,62.85
+Moderate Discordance,0.25,Observed Phase 8 Advantage,0.8571,17.85,40,53.64,53.19,0.499,70.82
+Moderate Discordance,0.25,Observed Phase 8 Advantage,0.8571,17.85,60,77.52,77.9,0.415,72.78
+Moderate Discordance,0.25,Observed Phase 8 Advantage,0.8571,17.85,80,90.11,90.53,0.293,74.61
+Moderate Discordance,0.25,Observed Phase 8 Advantage,0.8571,17.85,100,95.72,95.7,0.203,76.28
+Moderate Discordance,0.25,Observed Phase 8 Advantage,0.8571,17.85,150,99.6,99.59,0.064,77.23
+Moderate Discordance,0.25,Observed Phase 8 Advantage,0.8571,17.85,200,99.97,100.0,0.0,82.65
+High Discordance (Phase 8 Baseline),0.2917,Null (No Advantage),0.5,0.0,24,1.64,1.54,0.123,9.14
+High Discordance (Phase 8 Baseline),0.2917,Null (No Advantage),0.5,0.0,40,2.41,2.27,0.149,5.3
+High Discordance (Phase 8 Baseline),0.2917,Null (No Advantage),0.5,0.0,60,2.91,2.75,0.164,2.09
+High Discordance (Phase 8 Baseline),0.2917,Null (No Advantage),0.5,0.0,80,2.95,2.85,0.166,0.86
+High Discordance (Phase 8 Baseline),0.2917,Null (No Advantage),0.5,0.0,100,3.05,2.74,0.163,0.36
+High Discordance (Phase 8 Baseline),0.2917,Null (No Advantage),0.5,0.0,150,3.57,3.55,0.185,0.03
+High Discordance (Phase 8 Baseline),0.2917,Null (No Advantage),0.5,0.0,200,3.73,3.8,0.191,0.01
+High Discordance (Phase 8 Baseline),0.2917,Modest Advantage,0.6,5.83,24,3.13,3.01,0.171,21.03
+High Discordance (Phase 8 Baseline),0.2917,Modest Advantage,0.6,5.83,40,5.78,5.57,0.229,17.44
+High Discordance (Phase 8 Baseline),0.2917,Modest Advantage,0.6,5.83,60,8.86,8.97,0.286,11.41
+High Discordance (Phase 8 Baseline),0.2917,Modest Advantage,0.6,5.83,80,11.2,11.62,0.32,7.71
+High Discordance (Phase 8 Baseline),0.2917,Modest Advantage,0.6,5.83,100,13.86,14.04,0.347,5.32
+High Discordance (Phase 8 Baseline),0.2917,Modest Advantage,0.6,5.83,150,21.83,21.48,0.411,1.83
+High Discordance (Phase 8 Baseline),0.2917,Modest Advantage,0.6,5.83,200,28.99,28.93,0.453,0.95
+High Discordance (Phase 8 Baseline),0.2917,Moderate Advantage,0.7,11.67,24,8.61,8.48,0.279,39.07
+High Discordance (Phase 8 Baseline),0.2917,Moderate Advantage,0.7,11.67,40,18.45,18.58,0.389,39.97
+High Discordance (Phase 8 Baseline),0.2917,Moderate Advantage,0.7,11.67,60,30.84,31.52,0.465,35.55
+High Discordance (Phase 8 Baseline),0.2917,Moderate Advantage,0.7,11.67,80,41.13,42.07,0.494,32.2
+High Discordance (Phase 8 Baseline),0.2917,Moderate Advantage,0.7,11.67,100,51.08,51.03,0.5,29.48
+High Discordance (Phase 8 Baseline),0.2917,Moderate Advantage,0.7,11.67,150,72.42,72.05,0.449,21.9
+High Discordance (Phase 8 Baseline),0.2917,Moderate Advantage,0.7,11.67,200,85.04,85.19,0.355,20.39
+High Discordance (Phase 8 Baseline),0.2917,Large Advantage,0.8,17.5,24,20.79,20.55,0.404,60.77
+High Discordance (Phase 8 Baseline),0.2917,Large Advantage,0.8,17.5,40,44.11,43.82,0.496,67.77
+High Discordance (Phase 8 Baseline),0.2917,Large Advantage,0.8,17.5,60,66.92,66.74,0.471,69.25
+High Discordance (Phase 8 Baseline),0.2917,Large Advantage,0.8,17.5,80,80.84,80.56,0.396,70.72
+High Discordance (Phase 8 Baseline),0.2917,Large Advantage,0.8,17.5,100,89.5,89.74,0.303,72.1
+High Discordance (Phase 8 Baseline),0.2917,Large Advantage,0.8,17.5,150,98.22,98.28,0.13,72.52
+High Discordance (Phase 8 Baseline),0.2917,Large Advantage,0.8,17.5,200,99.74,99.76,0.049,77.67
+High Discordance (Phase 8 Baseline),0.2917,Observed Phase 8 Advantage,0.8571,20.83,24,31.99,31.15,0.463,72.92
+High Discordance (Phase 8 Baseline),0.2917,Observed Phase 8 Advantage,0.8571,20.83,40,63.18,62.86,0.483,81.62
+High Discordance (Phase 8 Baseline),0.2917,Observed Phase 8 Advantage,0.8571,20.83,60,85.19,84.96,0.357,85.08
+High Discordance (Phase 8 Baseline),0.2917,Observed Phase 8 Advantage,0.8571,20.83,80,94.39,94.54,0.227,87.78
+High Discordance (Phase 8 Baseline),0.2917,Observed Phase 8 Advantage,0.8571,20.83,100,98.0,97.97,0.141,89.92
+High Discordance (Phase 8 Baseline),0.2917,Observed Phase 8 Advantage,0.8571,20.83,150,99.9,99.91,0.03,92.52
+High Discordance (Phase 8 Baseline),0.2917,Observed Phase 8 Advantage,0.8571,20.83,200,100.0,100.0,0.0,95.88

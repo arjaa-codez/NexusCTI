@@ -1,0 +1,80 @@
+{
+  "id": "bundle--lazarus-applejeus-crypto-2022",
+  "type": "bundle",
+  "spec_version": "2.1",
+  "threat_actor": "Lazarus Group",
+  "aliases": [
+    "HIDDEN COBRA",
+    "Labyrinth Chollima",
+    "APT38",
+    "Diamond Sleet"
+  ],
+  "origin": "North Korea Reconnaissance General Bureau (RGB)",
+  "confidence_base": 0.95,
+  "narrative": "Joint Cybersecurity Advisory CISA AA22-110A documents North Korean state-sponsored cyber operations targeting cryptocurrency and blockchain firms. Lazarus Group distributes the AppleJeus malware suite hidden inside trojanized trading applications distributed via domain secure-crypto-wallet[.]org and trading-desk-pro[.]com. C2 infrastructure is hosted on IP 175.45.176.8 (Ryugyong-dong Pyongyang allocation) and compromised intermediary VPSs. Lazarus operators exploit Apache Log4j CVE-2021-44228 to gain initial access to server clusters, deploying BLINDINGCAN and AppleJeus implants utilizing multi-stage payload obfuscation (MITRE ATT&CK T1566.002 Spearphishing Link and T1027 Obfuscated Files or Information) to facilitate illicit digital asset theft.",
+  "triples": [
+    {
+      "source_type": "ip",
+      "source": "175.45.176.8",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "secure-crypto-wallet.org"
+    },
+    {
+      "source_type": "ip",
+      "source": "175.45.176.8",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "trading-desk-pro.com"
+    },
+    {
+      "source_type": "domain",
+      "source": "secure-crypto-wallet.org",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "AppleJeus"
+    },
+    {
+      "source_type": "domain",
+      "source": "trading-desk-pro.com",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "BLINDINGCAN"
+    },
+    {
+      "source_type": "cve",
+      "source": "CVE-2021-44228",
+      "relation": "exploited_by",
+      "target_type": "malware",
+      "target": "AppleJeus"
+    },
+    {
+      "source_type": "malware",
+      "source": "AppleJeus",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "Lazarus Group"
+    },
+    {
+      "source_type": "malware",
+      "source": "BLINDINGCAN",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "Lazarus Group"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "Lazarus Group",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1566.002"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "Lazarus Group",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1027"
+    }
+  ]
+}

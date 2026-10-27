@@ -1,0 +1,40 @@
+{
+  "audit_timestamp": "2026-10-11T01:15:00+05:30",
+  "python_environment_match": true,
+  "all_source_code_hashes_match": true,
+  "code_hashes_detail": {
+    "nexuscti/service.py": {
+      "recorded_sha256": "f9fcf4b6971f4f88ff3b3e2ccedffcc7406fe6ce269996f92e311f10a2b92613",
+      "current_sha256": "f9fcf4b6971f4f88ff3b3e2ccedffcc7406fe6ce269996f92e311f10a2b92613",
+      "match": true
+    },
+    "nexuscti/gnn/trainer.py": {
+      "recorded_sha256": "51fd0eed7768875ef91666e07726e964ba472b74466ff27b26b7f3e29c5c0ac4",
+      "current_sha256": "51fd0eed7768875ef91666e07726e964ba472b74466ff27b26b7f3e29c5c0ac4",
+      "match": true
+    },
+    "nexuscti/gnn/graph_builder.py": {
+      "recorded_sha256": "6e53faee0f34783d324be6246c1a1c64a13e3e6311a1ca36183cc25b5228e5cb",
+      "current_sha256": "6e53faee0f34783d324be6246c1a1c64a13e3e6311a1ca36183cc25b5228e5cb",
+      "match": true
+    },
+    "nexuscti/rag/dense_retriever.py": {
+      "recorded_sha256": "87b237954c9c80e0ff235492c90a6d563b6eeee349774c07036fba8a1c70b248",
+      "current_sha256": "87b237954c9c80e0ff235492c90a6d563b6eeee349774c07036fba8a1c70b248",
+      "match": true
+    },
+    "nexuscti/fusion/engine.py": {
+      "recorded_sha256": "ce3102da13ad6074ca88ef46abd1bff011e92d3e19835ff1e83065a97f8e50b1",
+      "current_sha256": "ce3102da13ad6074ca88ef46abd1bff011e92d3e19835ff1e83065a97f8e50b1",
+      "match": true
+    },
+    "experiments/phase6_external_benchmark_20261010_231000/run_phase6_benchmark.py": {
+      "recorded_sha256": "15b601ee7a7c4fecfc4dc54153a98d818ff34c445e975489df24492b180797a4",
+      "current_sha256": "15b601ee7a7c4fecfc4dc54153a98d818ff34c445e975489df24492b180797a4",
+      "match": true
+    }
+  },
+  "deterministic_hashing_verified": "MD5 bucketed hashing in SemanticTextEncoder verified deterministic",
+  "metric_recalculation_reproducibility": "100% REPRODUCIBLE (Identical Top-1, Top-3, MRR values verified directly from predictions CSV)",
+  "overall_reproducibility_verdict": "VERIFIED_REPRODUCIBLE"
+}

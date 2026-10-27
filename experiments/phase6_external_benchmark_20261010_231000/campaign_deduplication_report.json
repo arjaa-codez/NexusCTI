@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-10T23:10:00+05:30",
+  "total_candidate_reports_verified": 16,
+  "independent_campaigns_count": 16,
+  "deduplication_audit": {
+    "baseline_corpus_reports": 6,
+    "baseline_corpus_unique_iocs": 23,
+    "external_benchmark_unique_iocs": 33,
+    "exact_indicator_overlap_count": 0,
+    "exact_overlapping_indicators": [],
+    "overlap_ratio": "0 / 33 (0.0% overlap with training infrastructure)"
+  },
+  "cross_report_synthesis_check": {
+    "repackaged_or_duplicate_reports_identified": 0,
+    "independent_primary_advisories": 16,
+    "publishers_represented": [
+      "CISA",
+      "Microsoft MSRC",
+      "Mandiant",
+      "UK NCSC",
+      "FBI",
+      "NSA"
+    ]
+  },
+  "methodological_guarantee": "All 16 external reports document distinct, temporally separate campaigns (2020-2024) with zero reused IP addresses, domains, or hashes from the Phase 1-5 baseline."
+}

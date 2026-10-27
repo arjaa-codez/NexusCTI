@@ -1,0 +1,135 @@
+{
+  "frozen_system_manifest_verification": {
+    "manifest_path": "experiments\\phase9_benchmark_preparation_20261011_020400\\frozen_system_manifest.json",
+    "total_files": 16,
+    "verified_matches": 15,
+    "mismatches": 1,
+    "files": {
+      "graph_and_weights/graph_metadata.json": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\processed_graph\\graph_metadata.json",
+        "expected_sha256": "f4794b9dbb7a392249c1717b54aeda791a924809da0b0457682b823fa1d9c14a",
+        "actual_sha256": "f4794b9dbb7a392249c1717b54aeda791a924809da0b0457682b823fa1d9c14a",
+        "size_bytes": 10345
+      },
+      "graph_and_weights/hetero_graph.pt": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\processed_graph\\hetero_graph.pt",
+        "expected_sha256": "b8b09d30a76badaad617810d8687604720c15de72f8ac67e5076719e1b1e7748",
+        "actual_sha256": "b8b09d30a76badaad617810d8687604720c15de72f8ac67e5076719e1b1e7748",
+        "size_bytes": 22445
+      },
+      "graph_and_weights/rgcn_weights.pt": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\processed_graph\\rgcn_weights.pt",
+        "expected_sha256": "dd438fad443bcfeffd1a34ce02f6d7150c93e909a864c62378e7ed90aff3adcf",
+        "actual_sha256": "dd438fad443bcfeffd1a34ce02f6d7150c93e909a864c62378e7ed90aff3adcf",
+        "size_bytes": 182036
+      },
+      "training_reports/cisa_aa20_352a_apt29_solarwinds.json": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa20_352a_apt29_solarwinds.json",
+        "expected_sha256": "c1d97558b13c79b679841cdeae582e9fd927f8154f40ff0b18d85d84d572b585",
+        "actual_sha256": "c1d97558b13c79b679841cdeae582e9fd927f8154f40ff0b18d85d84d572b585",
+        "size_bytes": 2884
+      },
+      "training_reports/cisa_aa22_054a_sandworm_industroyer.json": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa22_054a_sandworm_industroyer.json",
+        "expected_sha256": "3f833f54f7e0570035f020f886e92742481172cd1f45b6d5142ca3329991e975",
+        "actual_sha256": "3f833f54f7e0570035f020f886e92742481172cd1f45b6d5142ca3329991e975",
+        "size_bytes": 2735
+      },
+      "training_reports/cisa_aa22_110a_lazarus_applejeus.json": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa22_110a_lazarus_applejeus.json",
+        "expected_sha256": "71e28d423f8528fd91d639d4e643d450cedd0034cb877babd67dc97320539f22",
+        "actual_sha256": "71e28d423f8528fd91d639d4e643d450cedd0034cb877babd67dc97320539f22",
+        "size_bytes": 2760
+      },
+      "training_reports/cisa_aa23_074a_apt28_fancybear.json": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa23_074a_apt28_fancybear.json",
+        "expected_sha256": "e9f77621c56a6147f3380bca2c5a27494b1e827031fb9d07d268cd6e141d22ce",
+        "actual_sha256": "e9f77621c56a6147f3380bca2c5a27494b1e827031fb9d07d268cd6e141d22ce",
+        "size_bytes": 2645
+      },
+      "training_reports/cisa_aa24_038a_volt_typhoon.json": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa24_038a_volt_typhoon.json",
+        "expected_sha256": "9425e3ae6e98b1681b9402aca97ea2afe17f00d3e66073aa9f75cae79088d775",
+        "actual_sha256": "9425e3ae6e98b1681b9402aca97ea2afe17f00d3e66073aa9f75cae79088d775",
+        "size_bytes": 2804
+      },
+      "training_reports/mandiant_m_trends_fin7.json": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\mandiant_m_trends_fin7.json",
+        "expected_sha256": "9f96f73760f945d81d300df863a00c1446a92d8405b3b85717d890833bf1f9eb",
+        "actual_sha256": "9f96f73760f945d81d300df863a00c1446a92d8405b3b85717d890833bf1f9eb",
+        "size_bytes": 2494
+      },
+      "vector_retrieval/chroma_sqlite3": {
+        "status": "HASH_MISMATCH",
+        "path": "cyber_attribution_engine\\data\\chroma_db\\chroma.sqlite3",
+        "expected_sha256": "f1619bf2182fe2cdeef65be2e6785262b5e2e5e0f83a7bbdfa3f9cb67a0232a5",
+        "actual_sha256": "1ddc579d0d8324cd11970189d5652acca303f5840ab7dd7a6ede53bfa4744e11",
+        "size_bytes": 294912
+      },
+      "source_code/__init__.py": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\src\\__init__.py",
+        "expected_sha256": "15f8e99100af011eb817cc801107959628cbf35ddc5e7a5768ef85565a423410",
+        "actual_sha256": "15f8e99100af011eb817cc801107959628cbf35ddc5e7a5768ef85565a423410",
+        "size_bytes": 174
+      },
+      "source_code/api.py": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\src\\api.py",
+        "expected_sha256": "c2fe7672d4ae39670e6ef461a236bea2f84bf7a684aaa8a808810ad7447b7843",
+        "actual_sha256": "c2fe7672d4ae39670e6ef461a236bea2f84bf7a684aaa8a808810ad7447b7843",
+        "size_bytes": 11903
+      },
+      "source_code/fusion_layer.py": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\src\\fusion_layer.py",
+        "expected_sha256": "72419e5ee896dd11c74c7cb7f13302b4f33393d73ded1c6d147d9c413119d38d",
+        "actual_sha256": "72419e5ee896dd11c74c7cb7f13302b4f33393d73ded1c6d147d9c413119d38d",
+        "size_bytes": 13094
+      },
+      "source_code/gnn_model.py": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\src\\gnn_model.py",
+        "expected_sha256": "b9df21d3180ff6d1dfc644cfa39dbdf4b4259af7f428dc01a10d047c3210ca1f",
+        "actual_sha256": "b9df21d3180ff6d1dfc644cfa39dbdf4b4259af7f428dc01a10d047c3210ca1f",
+        "size_bytes": 16786
+      },
+      "source_code/graph_builder.py": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\src\\graph_builder.py",
+        "expected_sha256": "b41b64b0f479b2cc7eba9e91cbc51bced48533c5729af8a59f04f6f0d60f4ce0",
+        "actual_sha256": "b41b64b0f479b2cc7eba9e91cbc51bced48533c5729af8a59f04f6f0d60f4ce0",
+        "size_bytes": 13172
+      },
+      "source_code/rag_engine.py": {
+        "status": "VERIFIED_MATCH",
+        "path": "cyber_attribution_engine\\src\\rag_engine.py",
+        "expected_sha256": "a01697cca819c854e113daf7e4c69dd82d8649b1b3664969b1ad549860207b38",
+        "actual_sha256": "a01697cca819c854e113daf7e4c69dd82d8649b1b3664969b1ad549860207b38",
+        "size_bytes": 7960
+      }
+    }
+  },
+  "retrieval_encoder_provenance": {
+    "active_runtime_module": "cyber_attribution_engine/src/rag_engine.py",
+    "declared_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "sentence_transformers_installed_and_functional": true,
+    "runtime_fallback_present": true,
+    "fallback_mechanism": "hash(w) % 384 (Python built-in SipHash with randomized process seed unless PYTHONHASHSEED is set)",
+    "legacy_module_status": {
+      "path": "nexuscti/rag/dense_retriever.py",
+      "class_present": "SemanticTextEncoder (MD5-based deterministic bucket projection)",
+      "imported_by_active_engine": false,
+      "verdict": "VERIFIED DEAD CODE (Not imported by cyber_attribution_engine.src.api, gnn_model, or rag_engine)"
+    }
+  }
+}

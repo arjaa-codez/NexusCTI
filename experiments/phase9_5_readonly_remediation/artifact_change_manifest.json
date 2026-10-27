@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-11T22:12:00+05:30",
+  "phase": "Phase 9.5",
+  "protocol_version": "NexusCTI Protocol v2.1-amended (Pre-evaluation)",
+  "remediation_target": "ChromaDB PersistentClient Read-Only Storage Access",
+  "artifacts": {
+    "check_chroma_ranks.py": {
+      "sha256": "85ee809b8c9dbabe0f3c2b5801da2779c83e433524adf4c813f006678236f770",
+      "size_bytes": 619,
+      "purpose": "Forensic rank verification across all 7 corpus documents in ChromaDB"
+    },
+    "chromadb_version_and_source_audit.md": {
+      "sha256": "d03a07beda56e442dc0622ca9ed3258b8f2d7c137508ff5f9f31d291616ef1b0",
+      "size_bytes": 7971,
+      "purpose": "Comprehensive source code audit of ChromaDB 1.5.9 and SQLite initialization"
+    },
+    "debug_ties.py": {
+      "sha256": "e5e846946176d720ae606522ab3c686d02125f886b9389a62231d7ffb4feb3c1",
+      "size_bytes": 779,
+      "purpose": "Tie-breaking inspection script for edge cases T8 and T10"
+    },
+    "inspect_db.py": {
+      "sha256": "710da5c0f761f866c354ea6692b40e1753827d057373e1d221b5ba8180099188",
+      "size_bytes": 1334,
+      "purpose": "Schema and content inspection of frozen chroma.sqlite3 database"
+    },
+    "inspect_segments.py": {
+      "sha256": "da2469a0d00ca45d9d30c438413b7201ea7d509fcfe2d235909b46444554f699",
+      "size_bytes": 722,
+      "purpose": "HNSW and metadata segment mapping audit for collection cti_threat_reports"
+    },
+    "phase9_5_decision.md": {
+      "sha256": "bd126c208798c042cb1acb04e0289f735460394a46162e1987d2c6bbb03af409",
+      "size_bytes": 5414,
+      "purpose": "Formal Phase 9.5 final decision document and protocol gate"
+    },
+    "remediation_options_comparison.md": {
+      "sha256": "6da7a274eef179c8cd3a6ccd820d45da589dbafb70b3eb4e32b1a177883c90b9",
+      "size_bytes": 8700,
+      "purpose": "Comparative technical evaluation of Remediation Options A, B, C, and D"
+    },
+    "remediation_telemetry.json": {
+      "sha256": "36091bedfe8ce6ed47ff074a58348fabb91bdf0011000c0ea6bdc63eea628914",
+      "size_bytes": 5937,
+      "purpose": "Machine-readable empirical validation telemetry for all 10 query test cases"
+    },
+    "run_phase9_5_validation.py": {
+      "sha256": "5844ce1f8e718790a2aaca9182bc704404465f50b307ad7eb3df1dad0a650fcf",
+      "size_bytes": 10777,
+      "purpose": "Automated validation runner executing test suite on write-protected database"
+    },
+    "runtime_equivalence_report.md": {
+      "sha256": "57bad10141bf35ffe3a67f4bbcade6f3faa1bc7b7bfeade31c369da1ceb81f4a",
+      "size_bytes": 8281,
+      "purpose": "Mathematical and empirical retrieval equivalence report"
+    },
+    "scratch_validation_results.md": {
+      "sha256": "0fe8ea3f7a2a1f701f998f650ae05f2944b2b6a269440007a4f68ea8c760e488",
+      "size_bytes": 5975,
+      "purpose": "Empirical validation telemetry and write-prevention audit findings"
+    },
+    "test_refined_adapter.py": {
+      "sha256": "a95a7fc717aa57a5ae1c524b2c345edf3356be7fedd82764cacde38c8ee50d0c",
+      "size_bytes": 4477,
+      "purpose": "Refined sorting validation script matching ChromaDB unrounded distances"
+    },
+    "test_remediation_comparison.py": {
+      "sha256": "ebb5adb6e16ddeb374825461d1fb92643313d1d6e8447a49e03beb738060e34a",
+      "size_bytes": 5064,
+      "purpose": "Side-by-side prototype test comparing original vs adapter outputs"
+    }
+  },
+  "protected_original_artifacts": {
+    "cyber_attribution_engine/data/chroma_db/chroma.sqlite3": {
+      "canonical_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+      "status": "UNTOUCHED_AND_PROTECTED"
+    },
+    "prospective_test_cases": {
+      "task_a_test_cases": 100,
+      "task_b_test_cases": 30,
+      "ground_truth_labels": "UNACCESSED_AND_UNTOUCHED"
+    }
+  }
+}

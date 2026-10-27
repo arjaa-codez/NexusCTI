@@ -1,0 +1,80 @@
+{
+  "id": "bundle--apt29-solarwinds-sunburst-2020",
+  "type": "bundle",
+  "spec_version": "2.1",
+  "threat_actor": "APT29",
+  "aliases": [
+    "Cozy Bear",
+    "Nobelium",
+    "Midnight Blizzard",
+    "UNC2452"
+  ],
+  "origin": "Russian Foreign Intelligence Service (SVR)",
+  "confidence_base": 0.94,
+  "narrative": "In December 2020, CISA released Alert AA20-352A regarding an Advanced Persistent Threat (APT) actor attributed as APT29 / Nobelium / Cozy Bear conducting a global supply chain compromise via SolarWinds Orion. The threat actor inserted a malicious backdoor known as SUNBURST (Solorigate) into Orion platform software builds. Upon execution, SUNBURST stayed dormant for up to two weeks before resolving primary command-and-control (C2) domains including avsvmcloud[.]com, using dynamically constructed DGA subdomains to exfiltrate host reconnaissance. Secondary stagers including TEARDROP and Raindrop memory-only droppers communicated with C2 IP 185.225.17.42 and backup infrastructure freescanonline[.]com (hosted at 20.140.8.11). APT29 systematically exploited Exchange vulnerabilities (CVE-2021-26855 ProxyLogon) for lateral movement and forged SAML tokens to compromise cloud identities (MITRE ATT&CK T1195.002 Supply Chain Compromise and T1078 Valid Accounts).",
+  "triples": [
+    {
+      "source_type": "ip",
+      "source": "185.225.17.42",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "avsvmcloud.com"
+    },
+    {
+      "source_type": "ip",
+      "source": "20.140.8.11",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "freescanonline.com"
+    },
+    {
+      "source_type": "domain",
+      "source": "avsvmcloud.com",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "SUNBURST"
+    },
+    {
+      "source_type": "domain",
+      "source": "freescanonline.com",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "TEARDROP"
+    },
+    {
+      "source_type": "cve",
+      "source": "CVE-2021-26855",
+      "relation": "exploited_by",
+      "target_type": "malware",
+      "target": "SUNBURST"
+    },
+    {
+      "source_type": "malware",
+      "source": "SUNBURST",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "APT29"
+    },
+    {
+      "source_type": "malware",
+      "source": "TEARDROP",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "APT29"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "APT29",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1195.002"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "APT29",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1078"
+    }
+  ]
+}

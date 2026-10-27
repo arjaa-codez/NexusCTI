@@ -1,0 +1,151 @@
+{
+  "timestamp": "2026-10-10T22:50:00+05:30",
+  "experiment_root": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments",
+  "recalculated_metrics_across_5_runs": {
+    "Vector-only": {
+      "mean_top1": 50.0,
+      "std_top1": 0.0,
+      "min_top1": 50.0,
+      "max_top1": 50.0,
+      "mean_mrr": 0.625,
+      "std_mrr": 0.0,
+      "is_deterministic": true
+    },
+    "Graph-only": {
+      "mean_top1": 100.0,
+      "std_top1": 0.0,
+      "min_top1": 100.0,
+      "max_top1": 100.0,
+      "mean_mrr": 1.0,
+      "std_mrr": 0.0,
+      "is_deterministic": true
+    },
+    "GNN-only": {
+      "mean_top1": 63.33,
+      "std_top1": 8.5,
+      "min_top1": 50.0,
+      "max_top1": 75.0,
+      "mean_mrr": 0.7917,
+      "std_mrr": 0.0465,
+      "is_deterministic": false
+    },
+    "Graph + RAG": {
+      "mean_top1": 66.67,
+      "std_top1": 0.0,
+      "min_top1": 66.67,
+      "max_top1": 66.67,
+      "mean_mrr": 0.8056,
+      "std_mrr": 0.0,
+      "is_deterministic": false
+    },
+    "Full Hybrid": {
+      "mean_top1": 100.0,
+      "std_top1": 0.0,
+      "min_top1": 100.0,
+      "max_top1": 100.0,
+      "mean_mrr": 1.0,
+      "std_mrr": 0.0,
+      "is_deterministic": true
+    }
+  },
+  "per_actor_accuracy": {
+    "actor_apt29": {
+      "total_cases": 2,
+      "correct_attributions": 2,
+      "accuracy": 100.0
+    },
+    "actor_sandworm": {
+      "total_cases": 3,
+      "correct_attributions": 3,
+      "accuracy": 100.0
+    },
+    "actor_lazarus": {
+      "total_cases": 2,
+      "correct_attributions": 2,
+      "accuracy": 100.0
+    },
+    "actor_apt28": {
+      "total_cases": 2,
+      "correct_attributions": 2,
+      "accuracy": 100.0
+    },
+    "actor_fin7": {
+      "total_cases": 2,
+      "correct_attributions": 2,
+      "accuracy": 100.0
+    },
+    "actor_volt_typhoon": {
+      "total_cases": 1,
+      "correct_attributions": 1,
+      "accuracy": 100.0
+    }
+  },
+  "per_category_accuracy": {
+    "1_hop_direct": {
+      "total_cases": 3,
+      "correct_attributions": 3,
+      "accuracy": 100.0
+    },
+    "2_hop_stager": {
+      "total_cases": 3,
+      "correct_attributions": 3,
+      "accuracy": 100.0
+    },
+    "3_hop_infra_pivot": {
+      "total_cases": 3,
+      "correct_attributions": 3,
+      "accuracy": 100.0
+    },
+    "4_hop_deep_chain": {
+      "total_cases": 3,
+      "correct_attributions": 3,
+      "accuracy": 100.0
+    }
+  },
+  "multihop_metric_denominator_audit": {
+    "total_multihop_cases": 11,
+    "total_benchmark_cases": 12,
+    "multihop_cases_ratio": "11/12",
+    "multihop_correct": 11,
+    "multihop_accuracy": 100.0
+  },
+  "confidence_calibration_and_abstention": {
+    "mean_brier_score": 0.2677,
+    "mean_cross_entropy": 0.7288,
+    "sample_size": 12,
+    "calibration_assessment": "The fused confidence score is an ad-hoc linear combination of structural and textual similarity weights (0.45 GNN + 0.55 Topology, blended with RAG). It does not represent a mathematically calibrated posterior probability P(Y=a|X). With N=12 cases, reliability diagrams and ECE cannot yield statistically significant conclusions.",
+    "abstention_stress_results": [
+      {
+        "stress_id": "stress_insufficient_unseen",
+        "fused_confidence": 0.3452,
+        "verdict": "INCONCLUSIVE",
+        "expected_verdict": "INCONCLUSIVE",
+        "abstention_success": true
+      },
+      {
+        "stress_id": "stress_shared_log4shell",
+        "fused_confidence": 0.4251,
+        "verdict": "INCONCLUSIVE",
+        "expected_verdict": "INCONCLUSIVE",
+        "abstention_success": true
+      }
+    ]
+  },
+  "discrepancy_root_cause_analysis": {
+    "vector_only": {
+      "saved_in_phase3": 66.67,
+      "observed_range": "50.0% - 50.0%",
+      "root_cause": "SemanticTextEncoder uses Python's built-in abs(hash(word)) % 8192 without setting PYTHONHASHSEED. In Python 3, string hash seeds are randomized per process session (SipHash), altering bucket index lookups across process restarts. Furthermore, evaluating on raw IOC string vs query sentence shifts top-1 hits from 58.33% to 66.67%."
+    },
+    "gnn_only": {
+      "saved_in_phase3": 58.33,
+      "observed_range": "50.0% - 75.0%",
+      "root_cause": "GNNAttributionTrainer previously initialized HeteroThreatGNN neural weights without a fixed global manual seed in train(). Over 20 or 120 epochs of Adam optimization on a 65-node graph, slight weight initialization differences cause margin shifts between competing actors for boundary cases (test_case_01 and test_case_04)."
+    },
+    "graph_plus_rag": {
+      "saved_in_phase3": 75.0,
+      "observed_range": "66.67% - 66.67%",
+      "root_cause": "Direct linear combination of deterministic graph scores with non-deterministic SemanticTextEncoder scores inherits the process hash variance from dense retrieval."
+    }
+  }
+}

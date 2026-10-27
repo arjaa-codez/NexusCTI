@@ -1,0 +1,23 @@
+{
+  "manifest_version": "1.0",
+  "experiment_id": "scientific_audit_20261010_223000",
+  "date": "2026-10-10",
+  "environment": {
+    "os": "Windows 11",
+    "shell": "PowerShell 5.1",
+    "python_executable": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\.venv\\Scripts\\python.exe",
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "execution_command": ".\\.venv\\Scripts\\python.exe -u experiments/scientific_audit_20261010_223000/run_ablations.py",
+  "total_cases_evaluated": 12,
+  "evaluation_metrics_produced": [
+    "Top-1",
+    "Top-3",
+    "Top-5",
+    "Multi-Hop Success",
+    "Hallucination Rate",
+    "MRR",
+    "Runtime"
+  ],
+  "status": "COMPLETED_REPRODUCIBLE"
+}

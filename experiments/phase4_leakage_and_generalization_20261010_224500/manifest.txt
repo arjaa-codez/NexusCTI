@@ -1,0 +1,5 @@
+# Phase 4 Experiment Run Manifest
+timestamp: 2026-10-10T22:45:00+05:30
+experiment_id: phase4_leakage_and_generalization_20261010_224500
+parent_experiment: experiments/scientific_audit_20261010_223000
+objective: Blind Generalization, GNN Supervision Leakage Stress Tests, Evidence Quality Audit, and Ambiguous Abstention Testing

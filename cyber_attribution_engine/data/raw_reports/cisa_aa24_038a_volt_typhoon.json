@@ -1,0 +1,79 @@
+{
+  "id": "bundle--volt-typhoon-critical-infra-2024",
+  "type": "bundle",
+  "spec_version": "2.1",
+  "threat_actor": "Volt Typhoon",
+  "aliases": [
+    "Vanguard Panda",
+    "Bronze Silhouette",
+    "Insidious Taurus"
+  ],
+  "origin": "People's Republic of China State-Sponsored Actor",
+  "confidence_base": 0.96,
+  "narrative": "Joint Advisory CISA AA24-038A details PRC state-sponsored group Volt Typhoon compromising critical infrastructure sectors across the United States (communications, energy, transportation, water). Volt Typhoon emphasizes living-off-the-land (LotL) techniques, abusing built-in Windows admin binaries (wmic, netsh, ntdsutil) rather than traditional malware. To build resilient proxy networks, the group deploys the KV-botnet and Fast Reverse Proxy (FRP) across end-of-life SOHO routers routing through 198.51.100.44 and 203.0.113.88 with dynamic domains like cisco-gateway-mesh[.]org. The actor exploits FortiOS SSL-VPN vulnerability CVE-2023-27997 for edge appliance infiltration and maintains years-long persistence via stolen administrator credentials (MITRE ATT&CK T1078 Valid Accounts and T1572 Protocol Tunneling).",
+  "triples": [
+    {
+      "source_type": "ip",
+      "source": "198.51.100.44",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "cisco-gateway-mesh.org"
+    },
+    {
+      "source_type": "ip",
+      "source": "203.0.113.88",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "cisco-gateway-mesh.org"
+    },
+    {
+      "source_type": "domain",
+      "source": "cisco-gateway-mesh.org",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "KV-botnet"
+    },
+    {
+      "source_type": "domain",
+      "source": "cisco-gateway-mesh.org",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "FRP-Proxy"
+    },
+    {
+      "source_type": "cve",
+      "source": "CVE-2023-27997",
+      "relation": "exploited_by",
+      "target_type": "malware",
+      "target": "KV-botnet"
+    },
+    {
+      "source_type": "malware",
+      "source": "KV-botnet",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "Volt Typhoon"
+    },
+    {
+      "source_type": "malware",
+      "source": "FRP-Proxy",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "Volt Typhoon"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "Volt Typhoon",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1078"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "Volt Typhoon",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1572"
+    }
+  ]
+}

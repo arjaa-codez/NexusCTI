@@ -1,0 +1,72 @@
+{
+  "id": "bundle--fin7-carbanak-financial-2021",
+  "type": "bundle",
+  "spec_version": "2.1",
+  "threat_actor": "FIN7",
+  "aliases": [
+    "Carbanak Group",
+    "Navigator Group",
+    "ELBRUS"
+  ],
+  "origin": "Eastern European Financially Motivated Cybercrime Syndicate",
+  "confidence_base": 0.91,
+  "narrative": "Mandiant threat analysis and DOJ indictments identify FIN7 as a prolific financially motivated syndicate operating under front companies like Combi Security. FIN7 conducts highly targeted spearphishing against hospitality, restaurant, and retail sectors to steal millions of payment card records. Initial lures deliver weaponized Word docs dropping GRIFFON lightweight JScript backdoors communicating with doc-secure-share[.]info on IP 193.106.191.4. FIN7 actively weaponizes ZeroLogon CVE-2020-1472 against Active Directory Domain Controllers to achieve domain dominance, subsequently staging Carbanak malware to siphon Point-of-Sale (POS) transactions (MITRE ATT&CK T1566.001 Spearphishing Attachment and T1059.003 Windows Command Shell).",
+  "triples": [
+    {
+      "source_type": "ip",
+      "source": "193.106.191.4",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "doc-secure-share.info"
+    },
+    {
+      "source_type": "domain",
+      "source": "doc-secure-share.info",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "GRIFFON"
+    },
+    {
+      "source_type": "domain",
+      "source": "doc-secure-share.info",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "Carbanak"
+    },
+    {
+      "source_type": "cve",
+      "source": "CVE-2020-1472",
+      "relation": "exploited_by",
+      "target_type": "malware",
+      "target": "Carbanak"
+    },
+    {
+      "source_type": "malware",
+      "source": "GRIFFON",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "FIN7"
+    },
+    {
+      "source_type": "malware",
+      "source": "Carbanak",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "FIN7"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "FIN7",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1566.001"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "FIN7",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1059.003"
+    }
+  ]
+}

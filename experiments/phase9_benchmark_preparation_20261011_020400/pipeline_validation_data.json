@@ -1,0 +1,225 @@
+{
+  "audit_timestamp": "2026-10-11T02:04:00+05:30",
+  "software_environment": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "scipy": "1.17.1",
+    "numpy": "2.4.3"
+  },
+  "synthetic_test_outcomes": {
+    "test_case_1_all_correct": {
+      "counts": {
+        "a": 50,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "N": 50,
+        "n_d": 0
+      },
+      "marginal_hybrid_percent": 100.0,
+      "marginal_retrieval_percent": 100.0,
+      "risk_difference_percent": 0.0,
+      "exact_mcnemar_p": 1.0,
+      "statistically_significant_0_05": false,
+      "conditional_odds_ratio": 1.0,
+      "exact_odds_ratio_95_ci": [
+        0.0,
+        "inf"
+      ],
+      "agresti_min_95_ci_percent": [
+        -3.77,
+        3.77
+      ],
+      "cc_wald_95_ci_percent": [
+        -0.0,
+        0.0
+      ],
+      "meets_practical_threshold_15": false,
+      "description": "All concordant correct (b=0, c=0)"
+    },
+    "test_case_2_all_incorrect": {
+      "counts": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 50,
+        "N": 50,
+        "n_d": 0
+      },
+      "marginal_hybrid_percent": 0.0,
+      "marginal_retrieval_percent": 0.0,
+      "risk_difference_percent": 0.0,
+      "exact_mcnemar_p": 1.0,
+      "statistically_significant_0_05": false,
+      "conditional_odds_ratio": 1.0,
+      "exact_odds_ratio_95_ci": [
+        0.0,
+        "inf"
+      ],
+      "agresti_min_95_ci_percent": [
+        -3.77,
+        3.77
+      ],
+      "cc_wald_95_ci_percent": [
+        -0.0,
+        0.0
+      ],
+      "meets_practical_threshold_15": false,
+      "description": "All concordant incorrect (b=0, c=0)"
+    },
+    "test_case_3_hybrid_monopoly": {
+      "counts": {
+        "a": 20,
+        "b": 25,
+        "c": 0,
+        "d": 20,
+        "N": 65,
+        "n_d": 25
+      },
+      "marginal_hybrid_percent": 69.23,
+      "marginal_retrieval_percent": 30.77,
+      "risk_difference_percent": 38.46,
+      "exact_mcnemar_p": 0.0,
+      "statistically_significant_0_05": true,
+      "conditional_odds_ratio": "inf",
+      "exact_odds_ratio_95_ci": [
+        6.289,
+        "inf"
+      ],
+      "agresti_min_95_ci_percent": [
+        25.37,
+        49.26
+      ],
+      "cc_wald_95_ci_percent": [
+        25.1,
+        48.75
+      ],
+      "meets_practical_threshold_15": true,
+      "description": "Zero cell c=0 (Infinite Odds Ratio)"
+    },
+    "test_case_4_retrieval_monopoly": {
+      "counts": {
+        "a": 20,
+        "b": 0,
+        "c": 25,
+        "d": 20,
+        "N": 65,
+        "n_d": 25
+      },
+      "marginal_hybrid_percent": 30.77,
+      "marginal_retrieval_percent": 69.23,
+      "risk_difference_percent": -38.46,
+      "exact_mcnemar_p": 0.0,
+      "statistically_significant_0_05": true,
+      "conditional_odds_ratio": 0.0,
+      "exact_odds_ratio_95_ci": [
+        0.0,
+        0.159
+      ],
+      "agresti_min_95_ci_percent": [
+        -49.26,
+        -25.37
+      ],
+      "cc_wald_95_ci_percent": [
+        -48.75,
+        -25.1
+      ],
+      "meets_practical_threshold_15": false,
+      "description": "Zero cell b=0 (Zero Odds Ratio)"
+    },
+    "test_case_5_balanced_discordance": {
+      "counts": {
+        "a": 30,
+        "b": 10,
+        "c": 10,
+        "d": 30,
+        "N": 80,
+        "n_d": 20
+      },
+      "marginal_hybrid_percent": 50.0,
+      "marginal_retrieval_percent": 50.0,
+      "risk_difference_percent": 0.0,
+      "exact_mcnemar_p": 1.0,
+      "statistically_significant_0_05": false,
+      "conditional_odds_ratio": 1.0,
+      "exact_odds_ratio_95_ci": [
+        0.374,
+        2.677
+      ],
+      "agresti_min_95_ci_percent": [
+        -10.95,
+        10.95
+      ],
+      "cc_wald_95_ci_percent": [
+        -10.96,
+        10.96
+      ],
+      "meets_practical_threshold_15": false,
+      "description": "Equal discordance (b=c=10, Delta=0%)"
+    },
+    "test_case_6_strong_hybrid_advantage": {
+      "counts": {
+        "a": 30,
+        "b": 20,
+        "c": 5,
+        "d": 30,
+        "N": 85,
+        "n_d": 25
+      },
+      "marginal_hybrid_percent": 58.82,
+      "marginal_retrieval_percent": 41.18,
+      "risk_difference_percent": 17.65,
+      "exact_mcnemar_p": 0.004077,
+      "statistically_significant_0_05": true,
+      "conditional_odds_ratio": 4.0,
+      "exact_odds_ratio_95_ci": [
+        1.457,
+        13.639
+      ],
+      "agresti_min_95_ci_percent": [
+        6.34,
+        28.14
+      ],
+      "cc_wald_95_ci_percent": [
+        5.57,
+        27.37
+      ],
+      "meets_practical_threshold_15": true,
+      "description": "Strong advantage (b=20, c=5, N=85)"
+    },
+    "test_case_7_small_sample_parity": {
+      "counts": {
+        "a": 5,
+        "b": 1,
+        "c": 1,
+        "d": 5,
+        "N": 12,
+        "n_d": 2
+      },
+      "marginal_hybrid_percent": 50.0,
+      "marginal_retrieval_percent": 50.0,
+      "risk_difference_percent": 0.0,
+      "exact_mcnemar_p": 1.0,
+      "statistically_significant_0_05": false,
+      "conditional_odds_ratio": 1.0,
+      "exact_odds_ratio_95_ci": [
+        0.013,
+        78.497
+      ],
+      "agresti_min_95_ci_percent": [
+        -24.25,
+        24.25
+      ],
+      "cc_wald_95_ci_percent": [
+        -23.1,
+        23.1
+      ],
+      "meets_practical_threshold_15": false,
+      "description": "Small sample tie (b=1, c=1, N=12)"
+    }
+  },
+  "missing_data_resilience": {
+    "test_description": "Handling missing prediction or out-of-vocabulary candidate output",
+    "policy": "Any missing, non-parseable, or timed-out prediction is automatically assigned Rank = 99 (Incorrect).",
+    "status": "VERIFIED_DETERMINISTIC_PASS"
+  }
+}

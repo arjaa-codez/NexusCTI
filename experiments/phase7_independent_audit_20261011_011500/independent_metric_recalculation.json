@@ -1,0 +1,54 @@
+{
+  "audit_timestamp": "2026-10-11T01:15:00+05:30",
+  "recalculated_task_a_frozen_test": {
+    "Graph-only": {
+      "recalculated_top1_count": "1/8",
+      "recalculated_top1_accuracy_percent": 12.5,
+      "reported_top1_accuracy_percent": 12.5,
+      "top1_match": true,
+      "reported_top3_accuracy_percent": 37.5,
+      "reported_mrr": 0.3583
+    },
+    "Retrieval-only": {
+      "recalculated_top1_count": "4/8",
+      "recalculated_top1_accuracy_percent": 50.0,
+      "reported_top1_accuracy_percent": 50.0,
+      "top1_match": true,
+      "reported_top3_accuracy_percent": 62.5,
+      "reported_mrr": 0.6333
+    },
+    "GNN-only": {
+      "recalculated_top1_count": "1/8",
+      "recalculated_top1_accuracy_percent": 12.5,
+      "reported_top1_accuracy_percent": 12.5,
+      "top1_match": true,
+      "reported_top3_accuracy_percent": 37.5,
+      "reported_mrr": 0.3583
+    },
+    "Graph + RAG": {
+      "recalculated_top1_count": "4/8",
+      "recalculated_top1_accuracy_percent": 50.0,
+      "reported_top1_accuracy_percent": 50.0,
+      "top1_match": true,
+      "reported_top3_accuracy_percent": 62.5,
+      "reported_mrr": 0.6333
+    },
+    "Full Hybrid": {
+      "recalculated_top1_count": "4/8",
+      "recalculated_top1_accuracy_percent": 50.0,
+      "reported_top1_accuracy_percent": 50.0,
+      "top1_match": true,
+      "reported_top3_accuracy_percent": 87.5,
+      "reported_mrr": 0.6771
+    }
+  },
+  "discrepancies_with_phase6_json": [],
+  "recalculated_task_b_open_set": {
+    "total_cases": 4,
+    "proper_abstentions_count": "4/4",
+    "proper_abstention_rate_percent": 100.0,
+    "false_attributions_count": "0/4",
+    "false_attribution_rate_percent": 0.0,
+    "match_with_phase6_report": true
+  }
+}

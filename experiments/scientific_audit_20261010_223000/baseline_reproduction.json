@@ -1,0 +1,71 @@
+{
+  "audit_metadata": {
+    "experiment_id": "scientific_audit_20261010_223000",
+    "timestamp": "2026-10-10T22:13:28+05:30",
+    "execution_command": ".\\.venv\\Scripts\\python.exe -u run_benchmark.py",
+    "python_version": "3.13.5",
+    "pytorch_version": "2.1.0+",
+    "environment": "Windows 11 / PowerShell 5.1 / Miniconda-backed .venv",
+    "random_seed": 42
+  },
+  "reproduced_metrics_summary": {
+    "Naive Vector-only RAG": {
+      "top1_accuracy": 41.67,
+      "top1_count": "5/12",
+      "top3_accuracy": 83.33,
+      "top3_count": "10/12",
+      "top5_accuracy": 83.33,
+      "top5_count": "10/12",
+      "multihop_reasoning_success": 36.36,
+      "multihop_count": "4/11",
+      "hallucination_rate": 58.33,
+      "hallucination_count": "7/12",
+      "mrr": 0.5972
+    },
+    "Standalone GNN Classifier": {
+      "top1_accuracy": 75.0,
+      "top1_count": "9/12",
+      "top3_accuracy": 100.0,
+      "top3_count": "12/12",
+      "top5_accuracy": 100.0,
+      "top5_count": "12/12",
+      "multihop_reasoning_success": 72.73,
+      "multihop_count": "8/11",
+      "hallucination_rate": 25.0,
+      "hallucination_count": "3/12",
+      "mrr": 0.8472
+    },
+    "NexusCTI Hybrid (GNN + RAG)": {
+      "top1_accuracy": 91.67,
+      "top1_count": "11/12",
+      "top3_accuracy": 100.0,
+      "top3_count": "12/12",
+      "top5_accuracy": 100.0,
+      "top5_count": "12/12",
+      "multihop_reasoning_success": 90.91,
+      "multihop_count": "10/11",
+      "hallucination_rate": 8.33,
+      "hallucination_count": "1/12",
+      "mrr": 0.9444
+    }
+  },
+  "prior_literature_claim_comparison": {
+    "historical_report_claim": {
+      "vector_rag_top1": 25.0,
+      "standalone_gnn_top1": 41.67,
+      "hybrid_top1": 91.67,
+      "vector_rag_mrr": 0.4514,
+      "standalone_gnn_mrr": 0.6806,
+      "hybrid_mrr": 0.9583
+    },
+    "reproduced_audit_reality": {
+      "vector_rag_top1": 41.67,
+      "standalone_gnn_top1": 75.0,
+      "hybrid_top1": 91.67,
+      "vector_rag_mrr": 0.5972,
+      "standalone_gnn_mrr": 0.8472,
+      "hybrid_mrr": 0.9444
+    },
+    "discrepancy_analysis": "The standalone GNN baseline in the actual codebase performs significantly better (75.0% vs reported 41.67%) because the knowledge graph contains high-fidelity 2-hop stager edges directly connecting hashes to malware. Vector RAG also performs better (41.67% vs reported 25.0%) due to unigram indicator overlaps in report passages. The hybrid maintains 91.67% accuracy (11/12 passed)."
+  }
+}

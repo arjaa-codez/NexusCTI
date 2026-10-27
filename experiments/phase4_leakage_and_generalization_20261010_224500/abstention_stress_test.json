@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-10-10T22:45:00+05:30",
+  "experiment": "Phase 4 Ambiguous & Insufficient-Evidence Stress Test",
+  "total_stress_cases": 4,
+  "cases": [
+    {
+      "stress_id": "stress_ambiguous_01",
+      "name": "Shared Commodity Vulnerability (Log4Shell CVE-2021-44228)",
+      "query": "Exploitation of Log4Shell vulnerability CVE-2021-44228 observed on external web portal with base64 encoded JNDI payload",
+      "anchor_ioc": "CVE-2021-44228",
+      "nature": "SHARED_VULNERABILITY",
+      "documented_actors": [
+        "actor_lazarus",
+        "actor_apt28"
+      ],
+      "expected_behavior": "Should flag competing actor hypotheses or reduce single-actor confidence",
+      "top_predicted_actor": "actor_apt28",
+      "fused_confidence": 0.4321,
+      "verdict_assigned": "INCONCLUSIVE",
+      "hallucination_risk": "MINIMAL (Dual Grounded)",
+      "top_candidates_distribution": [
+        {
+          "actor": "actor_apt28",
+          "score": 0.4321,
+          "structural": 0.2725,
+          "textual": 0.3986
+        },
+        {
+          "actor": "actor_lazarus",
+          "score": 0.4293,
+          "structural": 0.2486,
+          "textual": 0.4211
+        },
+        {
+          "actor": "actor_sandworm",
+          "score": 0.2359,
+          "structural": 0.0728,
+          "textual": 0.1803
+        }
+      ],
+      "abstention_and_ambiguity_handling": "PASS_PROPER_HANDLING"
+    },
+    {
+      "stress_id": "stress_ambiguous_02",
+      "name": "Shared Living-off-the-Land Technique (Valid Accounts T1078)",
+      "query": "Compromised administrative session detected utilizing stolen valid credentials T1078 with zero malware binaries",
+      "anchor_ioc": "T1078",
+      "nature": "SHARED_TECHNIQUE",
+      "documented_actors": [
+        "actor_apt29",
+        "actor_volt_typhoon"
+      ],
+      "expected_behavior": "Should reflect broad shared technique ambiguity; should not be definitively attributed to a single group",
+      "top_predicted_actor": "actor_apt29",
+      "fused_confidence": 0.522,
+      "verdict_assigned": "PROBABLE",
+      "hallucination_risk": "MINIMAL (Dual Grounded)",
+      "top_candidates_distribution": [
+        {
+          "actor": "actor_apt29",
+          "score": 0.522,
+          "structural": 0.2917,
+          "textual": 0.7163
+        },
+        {
+          "actor": "actor_volt_typhoon",
+          "score": 0.2646,
+          "structural": 0.2793,
+          "textual": 0.1111
+        },
+        {
+          "actor": "actor_lazarus",
+          "score": 0.2511,
+          "structural": 0.1126,
+          "textual": 0.1727
+        }
+      ],
+      "abstention_and_ambiguity_handling": "PASS_PROPER_HANDLING"
+    },
+    {
+      "stress_id": "stress_insufficient_03",
+      "name": "Unseen Novel Telemetry (Zero Graph & Zero Textual Evidence)",
+      "query": "Outbound firewall session to uncharacterized external IP address 198.51.100.99 with no domain resolution and no file payload",
+      "anchor_ioc": "198.51.100.99",
+      "nature": "NOVEL_NO_EVIDENCE",
+      "documented_actors": [],
+      "expected_behavior": "Must abstain (verdict INCONCLUSIVE, hallucination risk HIGH)",
+      "top_predicted_actor": "actor_lazarus",
+      "fused_confidence": 0.3394,
+      "verdict_assigned": "INCONCLUSIVE",
+      "hallucination_risk": "MINIMAL (Dual Grounded)",
+      "top_candidates_distribution": [
+        {
+          "actor": "actor_lazarus",
+          "score": 0.3394,
+          "structural": 0.1667,
+          "textual": 0.3554
+        },
+        {
+          "actor": "actor_fin7",
+          "score": 0.2796,
+          "structural": 0.1667,
+          "textual": 0.1845
+        },
+        {
+          "actor": "actor_sandworm",
+          "score": 0.2757,
+          "structural": 0.1667,
+          "textual": 0.1735
+        }
+      ],
+      "abstention_and_ambiguity_handling": "PASS_PROPER_HANDLING"
+    },
+    {
+      "stress_id": "stress_conflicting_04",
+      "name": "Conflicting Toolset & Infrastructure (Zebrocy payload on Lazarus Domain)",
+      "query": "Host infected with Zebrocy modular malware downloading secondary payload from secure-crypto-wallet[.]org",
+      "anchor_ioc": "secure-crypto-wallet[.]org",
+      "nature": "CONFLICTING_CROSS_ACTOR",
+      "documented_actors": [
+        "actor_apt28",
+        "actor_lazarus"
+      ],
+      "expected_behavior": "Should detect multi-modal contradiction and report both candidate actors",
+      "top_predicted_actor": "actor_lazarus",
+      "fused_confidence": 0.475,
+      "verdict_assigned": "INCONCLUSIVE",
+      "hallucination_risk": "MINIMAL (Dual Grounded)",
+      "top_candidates_distribution": [
+        {
+          "actor": "actor_lazarus",
+          "score": 0.475,
+          "structural": 0.2665,
+          "textual": 0.4432
+        },
+        {
+          "actor": "actor_apt28",
+          "score": 0.3406,
+          "structural": 0.2305,
+          "textual": 0.2769
+        },
+        {
+          "actor": "actor_apt29",
+          "score": 0.2597,
+          "structural": 0.1535,
+          "textual": 0.1446
+        }
+      ],
+      "abstention_and_ambiguity_handling": "REVIEW_OVERCONFIDENT"
+    }
+  ]
+}

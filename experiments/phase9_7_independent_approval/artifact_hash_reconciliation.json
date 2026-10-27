@@ -1,0 +1,60 @@
+{
+  "audit_timestamp": "2026-10-11T22:30:00+05:30",
+  "phase9_6_recomputed_hashes": {
+    "runtime_architecture_decision.md": {
+      "sha256": "614eae78533d470a2dd78d837a326ed411565ddd2bf4e5e5c155043b01b4bc18",
+      "size_bytes": 6779
+    },
+    "native_snapshot_equivalence.md": {
+      "sha256": "ef997f596c5e169d81405202d0975729ec8ea0a8164a03b9ec7989dd06f4111c",
+      "size_bytes": 7156
+    },
+    "adapter_tie_discrepancy.md": {
+      "sha256": "2012865e7f6c10ebf41a841ebf6225c0d4f8896c00aff50f2963ca0c752c8c7b",
+      "size_bytes": 6674
+    },
+    "protocol_amendment_proposal.md": {
+      "sha256": "31b4a48e8c0e4250c37b4bd7bf9d22536b2b964648f4a329b9f6e3fc0ca63e4b",
+      "size_bytes": 6776
+    },
+    "phase9_6_decision.md": {
+      "sha256": "1ad34380d2ae6f317c706e2c64969a8f44221a79d7b4b40465509d9e74f7719b",
+      "size_bytes": 5420
+    },
+    "run_phase9_6_reconciliation.py": {
+      "sha256": "49049501db7fa566ac07ab4e06541cdc8eea2a342f7dcdaf2cf0420bf62a41af",
+      "size_bytes": 15076
+    },
+    "snapshot_reconciliation_telemetry.json": {
+      "sha256": "be922574d93bcc2622cd5873a2937e346821f146cabe33dd5c1be6c15a639db5",
+      "size_bytes": 7720
+    },
+    "frozen_master_and_snapshot_manifest.json": {
+      "sha256": "1c69385bc08ff33062429b78a524de3c1cc5300dfbfe2daf28846a56508c4d40",
+      "size_bytes": 5395
+    }
+  },
+  "master_database_hashes": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/data_level0.bin": {
+      "sha256": "c15e52bd7767a3ddd677a4e6c5260b219ca05307497bc836cba80f219614cc07",
+      "size_bytes": 167600
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/header.bin": {
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+      "size_bytes": 100
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/length.bin": {
+      "sha256": "a23bdec10dfe4348ed5b4f55392f3a23b51ce054bac765cc75e2993718dd9729",
+      "size_bytes": 400
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/link_lists.bin": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "chroma.sqlite3": {
+      "sha256": "a93e9561add3b86c064642d0fc6b9dc21222e6322ea91e03d233e76060bfb8d3",
+      "size_bytes": 294912
+    }
+  },
+  "master_isolation_verified": true
+}

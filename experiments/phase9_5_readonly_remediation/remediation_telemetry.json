@@ -1,0 +1,208 @@
+{
+  "audit_timestamp": "2026-10-11T03:38:00+05:30",
+  "tested_adapter": "ReadOnlyChromaAdapter",
+  "target_scratch_db": "experiments\\phase9_5_readonly_remediation\\scratch\\chroma_remediation_test.sqlite3",
+  "filesystem_write_protection": "STRICTLY_ENFORCED (chmod 0o444 / attrib +r)",
+  "hash_invariance": {
+    "pre_raw_sha256": "4860151a865b40d15bef1d1c9e55744c72a7065f2cc230fb25193c3c5bdbcdfe",
+    "post_raw_sha256": "4860151a865b40d15bef1d1c9e55744c72a7065f2cc230fb25193c3c5bdbcdfe",
+    "raw_hash_invariant": true,
+    "pre_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+    "post_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+    "content_hash_invariant": true,
+    "pre_change_counter": 22,
+    "post_change_counter": 22,
+    "change_counter_delta": 0
+  },
+  "runtime_equivalence": {
+    "total_queries_tested": 10,
+    "all_queries_bit_identical": false,
+    "query_details": [
+      {
+        "test_id": "T1_SolarWinds_APT29",
+        "query": "SolarWinds backdoor SUNBURST 185.225.17.42",
+        "gnn_top_group": "APT29",
+        "top_k": 2,
+        "orig_count": 2,
+        "ro_count": 2,
+        "orig_top1_actor": "APT29",
+        "ro_top1_actor": "APT29",
+        "orig_similarities": [
+          0.0,
+          0.0
+        ],
+        "ro_similarities": [
+          0.0,
+          0.0
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T2_Industroyer2_Sandworm",
+        "query": "Sandworm wiper high voltage substation Industroyer2",
+        "gnn_top_group": "Sandworm Team",
+        "top_k": 2,
+        "orig_count": 1,
+        "ro_count": 1,
+        "orig_top1_actor": "Sandworm Team",
+        "ro_top1_actor": "Sandworm Team",
+        "orig_similarities": [
+          0.0322
+        ],
+        "ro_similarities": [
+          0.0322
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T3_AppleJeus_Lazarus",
+        "query": "AppleJeus cryptocurrency exchange trojanized application",
+        "gnn_top_group": "Lazarus Group",
+        "top_k": 2,
+        "orig_count": 1,
+        "ro_count": 1,
+        "orig_top1_actor": "Lazarus Group",
+        "ro_top1_actor": "Lazarus Group",
+        "orig_similarities": [
+          0.0
+        ],
+        "ro_similarities": [
+          0.0
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T4_VoltTyphoon_CriticalInfra",
+        "query": "Volt Typhoon living off the land wmic powershell cve",
+        "gnn_top_group": "Volt Typhoon",
+        "top_k": 2,
+        "orig_count": 1,
+        "ro_count": 1,
+        "orig_top1_actor": "Volt Typhoon",
+        "ro_top1_actor": "Volt Typhoon",
+        "orig_similarities": [
+          0.0743
+        ],
+        "ro_similarities": [
+          0.0743
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T5_FIN7_Carbanak",
+        "query": "FIN7 financial POS malware Carbanak cash out",
+        "gnn_top_group": "FIN7",
+        "top_k": 2,
+        "orig_count": 1,
+        "ro_count": 1,
+        "orig_top1_actor": "FIN7",
+        "ro_top1_actor": "FIN7",
+        "orig_similarities": [
+          0.0
+        ],
+        "ro_similarities": [
+          0.0
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T6_APT28_FancyBear",
+        "query": "APT28 Fancy Bear Zebrocy spearphishing credential harvesting",
+        "gnn_top_group": "APT28",
+        "top_k": 2,
+        "orig_count": 1,
+        "ro_count": 1,
+        "orig_top1_actor": "APT28",
+        "ro_top1_actor": "APT28",
+        "orig_similarities": [
+          0.0
+        ],
+        "ro_similarities": [
+          0.0
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T7_Unknown_Actor_Filter",
+        "query": "generic ransomware c2 beaconing payload",
+        "gnn_top_group": "Unknown",
+        "top_k": 3,
+        "orig_count": 3,
+        "ro_count": 3,
+        "orig_top1_actor": "Volt Typhoon",
+        "ro_top1_actor": "Volt Typhoon",
+        "orig_similarities": [
+          0.1085,
+          0.0894,
+          0.0683
+        ],
+        "ro_similarities": [
+          0.1085,
+          0.0894,
+          0.0683
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T8_NonExistent_Actor",
+        "query": "threat actor not in registry",
+        "gnn_top_group": "NovelUnseenActor",
+        "top_k": 3,
+        "orig_count": 3,
+        "ro_count": 3,
+        "orig_top1_actor": "Volt Typhoon",
+        "ro_top1_actor": "Volt Typhoon",
+        "orig_similarities": [
+          0.082,
+          0.0722,
+          0.0
+        ],
+        "ro_similarities": [
+          0.082,
+          0.0722,
+          0.0
+        ],
+        "bit_identical": false
+      },
+      {
+        "test_id": "T9_Empty_Query_String",
+        "query": "",
+        "gnn_top_group": "APT28",
+        "top_k": 2,
+        "orig_count": 1,
+        "ro_count": 1,
+        "orig_top1_actor": "APT28",
+        "ro_top1_actor": "APT28",
+        "orig_similarities": [
+          0.0284
+        ],
+        "ro_similarities": [
+          0.0284
+        ],
+        "bit_identical": true
+      },
+      {
+        "test_id": "T10_Special_Chars_Query",
+        "query": "!@#$%^&*()_+~`{}[]:;'<>?,./",
+        "gnn_top_group": null,
+        "top_k": 3,
+        "orig_count": 3,
+        "ro_count": 3,
+        "orig_top1_actor": "APT29",
+        "ro_top1_actor": "APT29",
+        "orig_similarities": [
+          0.0689,
+          0.054,
+          0.0527
+        ],
+        "ro_similarities": [
+          0.0689,
+          0.054,
+          0.0527
+        ],
+        "bit_identical": false
+      }
+    ]
+  },
+  "remediation_status": "FAILED"
+}

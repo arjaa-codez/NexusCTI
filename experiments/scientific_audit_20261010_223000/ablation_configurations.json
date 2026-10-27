@@ -1,0 +1,44 @@
+{
+  "experiment_id": "scientific_audit_20261010_223000",
+  "total_configurations": 5,
+  "configurations": {
+    "Config A": {
+      "name": "Vector-only RAG",
+      "modules": [
+        "DenseRetriever"
+      ],
+      "scoring": "CosSim Sum"
+    },
+    "Config B": {
+      "name": "Graph-only (Topological)",
+      "modules": [
+        "NetworkX ShortestPath"
+      ],
+      "scoring": "1/(1+d)"
+    },
+    "Config C": {
+      "name": "GNN-only (Neural)",
+      "modules": [
+        "HeteroThreatGNN"
+      ],
+      "scoring": "Softmax dot-product"
+    },
+    "Config D": {
+      "name": "Graph + RAG (Non-Neural)",
+      "modules": [
+        "NetworkX",
+        "DenseRetriever"
+      ],
+      "scoring": "0.5*Graph + 0.5*RAG"
+    },
+    "Config E": {
+      "name": "Full Hybrid (NexusCTI)",
+      "modules": [
+        "HeteroThreatGNN",
+        "DenseRetriever",
+        "CrossValidation"
+      ],
+      "scoring": "0.45*GNN + 0.35*RAG + 0.20*CV"
+    }
+  }
+}

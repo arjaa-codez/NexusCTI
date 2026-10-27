@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-10T23:10:00+05:30",
+  "training_graph_nodes_count": 65,
+  "external_benchmark_cases_audited": 16,
+  "exact_indicator_overlap_count": 0,
+  "substring_containment_matches_in_training_graph": 1,
+  "details": [
+    {
+      "case_id": "bench_ext_04",
+      "ioc": "185.141.63.120",
+      "node_id": "ioc_ip_185_141_63_12"
+    }
+  ],
+  "conclusion": "SUBSTRING_OVERLAP_DETECTED: 1 indicator(s) triggered a substring match in graph resolution due to prefix containment (e.g. 185.141.63.120 matched 185.141.63.12). Exact string deduplication confirmed 0 exact overlaps (0.0%). All flagged cases (e.g. bench_ext_04) are partitioned in VALIDATION_SET and strictly excluded from the FROZEN_TEST evaluation."
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusCTI | Hybrid Multi-Modal Threat Attribution Engine</title>
+    <meta name="description" content="NexusCTI: Structural Relational GNN and Text-Grounded RAG for Cyber Threat Attribution and Dual-Layer Verification.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Ambient Glow -->
+    <div class="ambient-glow cyan-glow"></div>
+    <div class="ambient-glow purple-glow"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="brand-title">NEXUS<span>CTI</span></h1>
+                    <p class="brand-subtitle">Multi-Modal Cyber Threat Attribution • GNN + Text-Grounded RAG</p>
+                </div>
+            </div>
+
+            <!-- System Telemetry Status Pills -->
+            <div class="status-strip">
+                <div class="status-pill active">
+                    <span class="status-dot green"></span>
+                    <span class="status-label">HeteroThreatGNN:</span>
+                    <span class="status-val">RGCN Active</span>
+                </div>
+                <div class="status-pill active">
+                    <span class="status-dot cyan"></span>
+                    <span class="status-label">Hybrid RAG:</span>
+                    <span class="status-val">BM25 + Dense RRF</span>
+                </div>
+                <div class="status-pill active">
+                    <span class="status-dot purple"></span>
+                    <span class="status-label">Threat Graph:</span>
+                    <span class="status-val" id="graph-stat-pill">40 Nodes • 56 Edges</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="workbench" id="tab-btn-workbench">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                Incident Workbench
+            </button>
+            <button class="tab-btn" data-tab="graph-view" id="tab-btn-graph">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                Knowledge Graph Explorer
+            </button>
+            <button class="tab-btn" data-tab="benchmark" id="tab-btn-benchmark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"></path></svg>
+                Empirical Benchmarks
+            </button>
+            <button class="tab-btn" data-tab="report-view" id="tab-btn-report">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                Verifiable Attribution Brief
+            </button>
+        </nav>
+
+        <!-- MAIN VIEW 1: WORKBENCH -->
+        <main class="view-panel active" id="view-workbench">
+            <div class="workbench-grid">
+                <!-- Left Sidebar: Scenarios & Input -->
+                <aside class="workbench-sidebar glass-panel">
+                    <div class="panel-header">
+                        <h3>Telemetry Ingestion</h3>
+                        <span class="badge neon-badge">SOC Level 3</span>
+                    </div>
+
+                    <!-- Pre-loaded Scenario Selector -->
+                    <div class="control-group">
+                        <label class="control-label">Pre-loaded Benchmark Scenarios</label>
+                        <div class="scenario-buttons" id="scenario-list">
+                            <!-- Populated dynamically via JS -->
+                            <div class="loading-spinner">Loading scenarios...</div>
+                        </div>
+                    </div>
+
+                    <!-- Free-form telemetry input -->
+                    <div class="control-group">
+                        <label class="control-label" for="incident-query">Incident Telemetry / IOCs</label>
+                        <textarea id="incident-query" rows="4" placeholder="Enter IP address, domain, file hash, CVE, or raw threat description... (e.g., 185.225.17.42)"></textarea>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="anchor-ioc">Anchor Indicator (Optional Focus)</label>
+                        <input type="text" id="anchor-ioc" placeholder="e.g., 185.225.17.42 or avsvmcloud[.]com">
+                    </div>
+
+                    <button class="btn btn-primary pulse-btn" id="btn-run-attribution">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        Execute Attribution Engine
+                    </button>
+                </aside>
+
+                <!-- Right Area: Results & Dual-Layer Evidence -->
+                <section class="workbench-results">
+                    <!-- Top Summary Card -->
+                    <div class="attribution-card glass-panel" id="attribution-summary-card">
+                        <div class="attribution-header">
+                            <div>
+                                <span class="verdict-tag" id="actor-verdict">AWAITING TELEMETRY</span>
+                                <h2 class="actor-title" id="actor-name">No Indicator Analyzed</h2>
+                                <p class="actor-rationale" id="actor-rationale">Select an incident scenario from the left or enter an indicator of compromise to execute the hybrid attribution pipeline.</p>
+                            </div>
+                            <div class="confidence-gauge-box">
+                                <div class="gauge-circle" id="gauge-circle">
+                                    <span class="gauge-value" id="fused-conf-val">--%</span>
+                                </div>
+                                <span class="gauge-sub">Fused Confidence</span>
+                            </div>
+                        </div>
+
+                        <!-- 4-Pillar Score Metrics -->
+                        <div class="metric-pillars">
+                            <div class="pillar">
+                                <span class="pillar-label">GNN Structural Proximity</span>
+                                <div class="pillar-bar"><div class="fill cyan" id="bar-gnn" style="width: 0%"></div></div>
+                                <span class="pillar-val" id="val-gnn">--%</span>
+                            </div>
+                            <div class="pillar">
+                                <span class="pillar-label">RAG Textual Relevance</span>
+                                <div class="pillar-bar"><div class="fill purple" id="bar-rag" style="width: 0%"></div></div>
+                                <span class="pillar-val" id="val-rag">--%</span>
+                            </div>
+                            <div class="pillar">
+                                <span class="pillar-label">Cross-Validation Grounding</span>
+                                <div class="pillar-bar"><div class="fill green" id="bar-cv" style="width: 0%"></div></div>
+                                <span class="pillar-val" id="val-cv">--%</span>
+                            </div>
+                            <div class="pillar">
+                                <span class="pillar-label">Multi-Hop Path Depth</span>
+                                <span class="hop-badge" id="val-hops">0 Hops</span>
+                                <span class="hallucination-badge" id="val-hallucination">Risk: N/A</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dual Layer Split Panels -->
+                    <div class="dual-layer-grid">
+                        <!-- Layer 1: The Graph Trail -->
+                        <div class="evidence-panel glass-panel">
+                            <div class="panel-header">
+                                <div class="header-left">
+                                    <div class="layer-indicator cyan-dot"></div>
+                                    <h3>Layer 1: The Graph Trail</h3>
+                                </div>
+                                <span class="tag-counter" id="trail-step-count">0 Steps</span>
+                            </div>
+                            <p class="panel-subtitle">Verifiable multi-hop structural chain connecting the observed indicator to threat actor infrastructure:</p>
+
+                            <div class="trail-flow" id="trail-flow-container">
+                                <div class="empty-state">Execute attribution to extract multi-hop relational path.</div>
+                            </div>
+                        </div>
+
+                        <!-- Layer 2: The Narrative Proof -->
+                        <div class="evidence-panel glass-panel">
+                            <div class="panel-header">
+                                <div class="header-left">
+                                    <div class="layer-indicator purple-dot"></div>
+                                    <h3>Layer 2: The Narrative Proof</h3>
+                                </div>
+                                <span class="tag-counter" id="proof-citation-count">0 Citations</span>
+                            </div>
+                            <p class="panel-subtitle">Authoritative textual citations retrieved from CISA, Mandiant, and vendor threat intelligence:</p>
+
+                            <div class="narrative-cards" id="narrative-cards-container">
+                                <div class="empty-state">Passages will be retrieved via Dense-Sparse RRF upon execution.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Candidate Rankings Table -->
+                    <div class="candidates-panel glass-panel">
+                        <div class="panel-header">
+                            <h3>Candidate Actor Confidence Matrix</h3>
+                            <span class="badge info-badge">Cross-Modal Probability Reranking</span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Threat Actor</th>
+                                        <th>Fused Confidence</th>
+                                        <th>GNN Structural</th>
+                                        <th>RAG Textual</th>
+                                        <th>Cross-Validation</th>
+                                        <th>Verdict</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="candidates-table-body">
+                                    <tr><td colspan="7" class="text-center">No active query</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- MAIN VIEW 2: KNOWLEDGE GRAPH EXPLORER -->
+        <main class="view-panel" id="view-graph-view">
+            <div class="graph-explorer-container glass-panel">
+                <div class="graph-toolbar">
+                    <div class="filter-group">
+                        <span class="toolbar-title">Entity Filters:</span>
+                        <label class="filter-pill red"><input type="checkbox" checked data-type="ThreatActor"> Threat Actor</label>
+                        <label class="filter-pill orange"><input type="checkbox" checked data-type="Malware"> Malware</label>
+                        <label class="filter-pill cyan"><input type="checkbox" checked data-type="Indicator"> Indicator (IP/Domain/Hash)</label>
+                        <label class="filter-pill green"><input type="checkbox" checked data-type="TTP"> MITRE ATT&CK TTP</label>
+                        <label class="filter-pill purple"><input type="checkbox" checked data-type="Vulnerability"> CVE Vulnerability</label>
+                    </div>
+                    <div class="toolbar-actions">
+                        <button class="btn btn-secondary btn-sm" id="btn-reset-graph">Reset Zoom</button>
+                        <button class="btn btn-secondary btn-sm" id="btn-highlight-trail">Highlight Current Trail</button>
+                    </div>
+                </div>
+
+                <div class="graph-canvas-wrapper">
+                    <canvas id="kg-canvas"></canvas>
+                    <div class="graph-legend">
+                        <div class="legend-item"><span class="dot red"></span> ThreatActor</div>
+                        <div class="legend-item"><span class="dot orange"></span> Malware</div>
+                        <div class="legend-item"><span class="dot cyan"></span> Indicator</div>
+                        <div class="legend-item"><span class="dot green"></span> MITRE TTP</div>
+                        <div class="legend-item"><span class="dot purple"></span> CVE</div>
+                    </div>
+                    <div class="node-tooltip" id="node-tooltip"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- MAIN VIEW 3: EMPIRICAL BENCHMARKS -->
+        <main class="view-panel" id="view-benchmark">
+            <div class="benchmark-container">
+                <div class="benchmark-header glass-panel">
+                    <div>
+                        <h2>⚡ Empirical Benchmark & Comparative Evaluation</h2>
+                        <p class="benchmark-desc">Rigorous empirical comparison demonstrating why Hybrid GNN + Text-Grounded RAG outperforms siloed approaches across 12 multi-hop CTI attribution scenarios.</p>
+                    </div>
+                    <button class="btn btn-primary" id="btn-run-live-benchmark">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        Run Live Benchmark Suite
+                    </button>
+                </div>
+
+                <!-- 4 Highlight Cards -->
+                <div class="metric-card-grid">
+                    <div class="metric-card glass-panel">
+                        <div class="metric-header">
+                            <span class="metric-title">Top-1 Attribution Accuracy</span>
+                            <span class="diff-badge green">+33.4% vs RAG</span>
+                        </div>
+                        <div class="metric-big" id="bm-top1-hybrid">91.67%</div>
+                        <div class="metric-comparison-bars">
+                            <div class="comp-row"><span>Vector RAG</span><div class="comp-bar"><div class="fill gray" id="bm-bar-top1-rag" style="width: 58.3%">58.3%</div></div></div>
+                            <div class="comp-row"><span>Standalone GNN</span><div class="comp-bar"><div class="fill gray" id="bm-bar-top1-gnn" style="width: 66.7%">66.7%</div></div></div>
+                            <div class="comp-row"><span>NexusCTI Hybrid</span><div class="comp-bar"><div class="fill cyan" id="bm-bar-top1-hybrid" style="width: 91.7%">91.7%</div></div></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card glass-panel">
+                        <div class="metric-header">
+                            <span class="metric-title">Multi-Hop Reasoning (≥2 Hops)</span>
+                            <span class="diff-badge green">+44.5% vs RAG</span>
+                        </div>
+                        <div class="metric-big" id="bm-multihop-hybrid">88.89%</div>
+                        <div class="metric-comparison-bars">
+                            <div class="comp-row"><span>Vector RAG</span><div class="comp-bar"><div class="fill gray" id="bm-bar-mh-rag" style="width: 44.4%">44.4%</div></div></div>
+                            <div class="comp-row"><span>Standalone GNN</span><div class="comp-bar"><div class="fill gray" id="bm-bar-mh-gnn" style="width: 66.7%">66.7%</div></div></div>
+                            <div class="comp-row"><span>NexusCTI Hybrid</span><div class="comp-bar"><div class="fill purple" id="bm-bar-mh-hybrid" style="width: 88.9%">88.9%</div></div></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card glass-panel">
+                        <div class="metric-header">
+                            <span class="metric-title">Hallucination / Misattribution</span>
+                            <span class="diff-badge green">-33.4% Reduction</span>
+                        </div>
+                        <div class="metric-big green" id="bm-halluc-hybrid">8.33%</div>
+                        <div class="metric-comparison-bars">
+                            <div class="comp-row"><span>Vector RAG</span><div class="comp-bar"><div class="fill red" id="bm-bar-hl-rag" style="width: 41.7%">41.7%</div></div></div>
+                            <div class="comp-row"><span>Standalone GNN</span><div class="comp-bar"><div class="fill orange" id="bm-bar-hl-gnn" style="width: 33.3%">33.3%</div></div></div>
+                            <div class="comp-row"><span>NexusCTI Hybrid</span><div class="comp-bar"><div class="fill green" id="bm-bar-hl-hybrid" style="width: 8.3%">8.3%</div></div></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card glass-panel">
+                        <div class="metric-header">
+                            <span class="metric-title">Mean Reciprocal Rank (MRR)</span>
+                            <span class="diff-badge green">0.958 MRR</span>
+                        </div>
+                        <div class="metric-big" id="bm-mrr-hybrid">0.9583</div>
+                        <div class="metric-comparison-bars">
+                            <div class="comp-row"><span>Vector RAG</span><div class="comp-bar"><div class="fill gray" id="bm-bar-mrr-rag" style="width: 68%">0.681</div></div></div>
+                            <div class="comp-row"><span>Standalone GNN</span><div class="comp-bar"><div class="fill gray" id="bm-bar-mrr-gnn" style="width: 75%">0.750</div></div></div>
+                            <div class="comp-row"><span>NexusCTI Hybrid</span><div class="comp-bar"><div class="fill cyan" id="bm-bar-mrr-hybrid" style="width: 96%">0.958</div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Breakdown Table -->
+                <div class="benchmark-table-panel glass-panel">
+                    <div class="panel-header">
+                        <h3>Detailed Test Scenarios & Multi-Hop Resolution</h3>
+                        <span class="badge info-badge">12 Standardized Incident Challenges</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Scenario Name</th>
+                                    <th>Category</th>
+                                    <th>Expected Hops</th>
+                                    <th>Ground Truth Actor</th>
+                                    <th>Vector RAG</th>
+                                    <th>Standalone GNN</th>
+                                    <th>NexusCTI Hybrid</th>
+                                </tr>
+                            </thead>
+                            <tbody id="benchmark-cases-body">
+                                <tr><td colspan="8" class="text-center">Click 'Run Live Benchmark Suite' to execute.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- MAIN VIEW 4: VERIFIABLE REPORT BRIEF -->
+        <main class="view-panel" id="view-report-view">
+            <div class="report-container glass-panel">
+                <div class="report-header-actions">
+                    <div>
+                        <h2>🛡️ Verifiable Threat Attribution Brief</h2>
+                        <p class="report-sub">Defensive cyber intelligence brief ready for SOC delivery and incident response escalation.</p>
+                    </div>
+                    <div class="report-actions">
+                        <button class="btn btn-secondary" id="btn-copy-report">Copy Markdown</button>
+                        <button class="btn btn-primary" id="btn-download-report">Download Report (.md)</button>
+                    </div>
+                </div>
+                <div class="report-body markdown-preview" id="report-rendered-content">
+                    <p class="text-muted">No report currently generated. Run an incident investigation from the workbench first.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-10-11T01:20:00+05:30",
+  "indexed_training_corpus_size": 6,
+  "external_reports_audited": 48,
+  "external_reports_indexed_in_training_corpus": 0,
+  "conclusion": "ZERO_RETRIEVAL_CONTAMINATION: Exactly 0 of the 48 external reports are indexed in the baseline retrieval index."
+}

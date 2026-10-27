@@ -1,0 +1,97 @@
+{
+  "Regime 1: Primary Planning (N=100, q=0.25, theta=0.80, Delta=+0.15)": {
+    "true_delta": 0.15,
+    "N": 100,
+    "n_sim": 25000,
+    "agresti_min": {
+      "coverage_pct": 95.16,
+      "mean_width": 0.1859,
+      "lower_error_pct": 3.06,
+      "upper_error_pct": 1.78
+    },
+    "uncorrected_wald": {
+      "coverage_pct": 94.73,
+      "mean_width": 0.1853
+    },
+    "cc_wald": {
+      "coverage_pct": 93.78,
+      "mean_width": 0.1853
+    }
+  },
+  "Regime 2: Null / Symmetric (N=100, q=0.25, theta=0.50, Delta=0.00)": {
+    "true_delta": 0.0,
+    "N": 100,
+    "n_sim": 25000,
+    "agresti_min": {
+      "coverage_pct": 95.02,
+      "mean_width": 0.1942,
+      "lower_error_pct": 2.46,
+      "upper_error_pct": 2.52
+    },
+    "uncorrected_wald": {
+      "coverage_pct": 94.64,
+      "mean_width": 0.1941
+    },
+    "cc_wald": {
+      "coverage_pct": 96.37,
+      "mean_width": 0.1941
+    }
+  },
+  "Regime 3: Sparse Discordance (N=100, q=0.05, theta=0.80, Delta=+0.03)": {
+    "true_delta": 0.03,
+    "N": 100,
+    "n_sim": 25000,
+    "agresti_min": {
+      "coverage_pct": 96.08,
+      "mean_width": 0.0913,
+      "lower_error_pct": 3.58,
+      "upper_error_pct": 0.34
+    },
+    "uncorrected_wald": {
+      "coverage_pct": 90.08,
+      "mean_width": 0.0839
+    },
+    "cc_wald": {
+      "coverage_pct": 92.17,
+      "mean_width": 0.0839
+    }
+  },
+  "Regime 4: Extreme Asymmetry (N=100, q=0.25, theta=0.95, Delta=+0.225)": {
+    "true_delta": 0.225,
+    "N": 100,
+    "n_sim": 25000,
+    "agresti_min": {
+      "coverage_pct": 94.65,
+      "mean_width": 0.175,
+      "lower_error_pct": 4.07,
+      "upper_error_pct": 1.28
+    },
+    "uncorrected_wald": {
+      "coverage_pct": 94.63,
+      "mean_width": 0.1736
+    },
+    "cc_wald": {
+      "coverage_pct": 93.15,
+      "mean_width": 0.1736
+    }
+  },
+  "Regime 5: Small Sample Baseline (N=24, q=0.29, theta=0.857, Delta=+0.208)": {
+    "true_delta": 0.208,
+    "N": 24,
+    "n_sim": 25000,
+    "agresti_min": {
+      "coverage_pct": 94.2,
+      "mean_width": 0.3906,
+      "lower_error_pct": 4.61,
+      "upper_error_pct": 1.19
+    },
+    "uncorrected_wald": {
+      "coverage_pct": 92.55,
+      "mean_width": 0.3862
+    },
+    "cc_wald": {
+      "coverage_pct": 90.15,
+      "mean_width": 0.3862
+    }
+  }
+}

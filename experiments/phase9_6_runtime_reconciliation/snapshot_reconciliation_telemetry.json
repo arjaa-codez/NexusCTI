@@ -1,0 +1,286 @@
+{
+  "audit_timestamp": "2026-10-11T22:18:00+05:30",
+  "phase": "Phase 9.6",
+  "master_database": {
+    "path": "cyber_attribution_engine\\data\\chroma_db\\chroma.sqlite3",
+    "pre_raw_sha256": "a93e9561add3b86c064642d0fc6b9dc21222e6322ea91e03d233e76060bfb8d3",
+    "post_raw_sha256": "a93e9561add3b86c064642d0fc6b9dc21222e6322ea91e03d233e76060bfb8d3",
+    "raw_sha256_invariant": true,
+    "pre_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+    "post_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+    "content_sha256_invariant": true,
+    "pre_change_counter": 29,
+    "post_change_counter": 29,
+    "change_counter_delta": 0
+  },
+  "option_c_runtime_snapshot": {
+    "pre_snapshot_raw_sha256": "a93e9561add3b86c064642d0fc6b9dc21222e6322ea91e03d233e76060bfb8d3",
+    "post_snapshot_raw_sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc",
+    "snapshot_raw_sha256_invariant": false,
+    "pre_snapshot_change_counter": 29,
+    "post_snapshot_change_counter": 30,
+    "snapshot_change_counter_delta": 1,
+    "canonical_content_preserved": true,
+    "sidecar_files_detected": [],
+    "disposed_after_run": true
+  },
+  "reproducibility_and_determinism": {
+    "trial1_vs_trial2_identical": true,
+    "fresh_snapshot_vs_trial1_identical": true
+  },
+  "option_b_vs_option_c_comparison": {
+    "total_queries_tested": 10,
+    "full_rank_matches": 10,
+    "top1_matches": 10,
+    "query_comparisons": [
+      {
+        "test_id": "T1_SolarWinds_APT29",
+        "query": "SolarWinds backdoor SUNBURST 185.225.17.42",
+        "gnn_actor": "APT29",
+        "top_k": 2,
+        "top1_native": "APT29",
+        "top1_adapter": "APT29",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0,
+          0.0
+        ],
+        "adapter_scores": [
+          0.0,
+          0.0
+        ],
+        "native_actors": [
+          "APT29",
+          "APT29"
+        ],
+        "adapter_actors": [
+          "APT29",
+          "APT29"
+        ]
+      },
+      {
+        "test_id": "T2_Industroyer2_Sandworm",
+        "query": "Sandworm wiper high voltage substation Industroyer2",
+        "gnn_actor": "Sandworm Team",
+        "top_k": 2,
+        "top1_native": "Sandworm Team",
+        "top1_adapter": "Sandworm Team",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0322
+        ],
+        "adapter_scores": [
+          0.0322
+        ],
+        "native_actors": [
+          "Sandworm Team"
+        ],
+        "adapter_actors": [
+          "Sandworm Team"
+        ]
+      },
+      {
+        "test_id": "T3_AppleJeus_Lazarus",
+        "query": "AppleJeus cryptocurrency exchange trojanized application",
+        "gnn_actor": "Lazarus Group",
+        "top_k": 2,
+        "top1_native": "Lazarus Group",
+        "top1_adapter": "Lazarus Group",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0
+        ],
+        "adapter_scores": [
+          0.0
+        ],
+        "native_actors": [
+          "Lazarus Group"
+        ],
+        "adapter_actors": [
+          "Lazarus Group"
+        ]
+      },
+      {
+        "test_id": "T4_VoltTyphoon_CriticalInfra",
+        "query": "Volt Typhoon living off the land wmic powershell cve",
+        "gnn_actor": "Volt Typhoon",
+        "top_k": 2,
+        "top1_native": "Volt Typhoon",
+        "top1_adapter": "Volt Typhoon",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0743
+        ],
+        "adapter_scores": [
+          0.0743
+        ],
+        "native_actors": [
+          "Volt Typhoon"
+        ],
+        "adapter_actors": [
+          "Volt Typhoon"
+        ]
+      },
+      {
+        "test_id": "T5_FIN7_Carbanak",
+        "query": "FIN7 financial POS malware Carbanak cash out",
+        "gnn_actor": "FIN7",
+        "top_k": 2,
+        "top1_native": "FIN7",
+        "top1_adapter": "FIN7",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0
+        ],
+        "adapter_scores": [
+          0.0
+        ],
+        "native_actors": [
+          "FIN7"
+        ],
+        "adapter_actors": [
+          "FIN7"
+        ]
+      },
+      {
+        "test_id": "T6_APT28_FancyBear",
+        "query": "APT28 Fancy Bear Zebrocy spearphishing credential harvesting",
+        "gnn_actor": "APT28",
+        "top_k": 2,
+        "top1_native": "APT28",
+        "top1_adapter": "APT28",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0
+        ],
+        "adapter_scores": [
+          0.0
+        ],
+        "native_actors": [
+          "APT28"
+        ],
+        "adapter_actors": [
+          "APT28"
+        ]
+      },
+      {
+        "test_id": "T7_Unknown_Actor_Filter",
+        "query": "generic ransomware c2 beaconing payload",
+        "gnn_actor": "Unknown",
+        "top_k": 3,
+        "top1_native": "Volt Typhoon",
+        "top1_adapter": "Volt Typhoon",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.1085,
+          0.0894,
+          0.0683
+        ],
+        "adapter_scores": [
+          0.1085,
+          0.0894,
+          0.0683
+        ],
+        "native_actors": [
+          "Volt Typhoon",
+          "Lazarus Group",
+          "APT29"
+        ],
+        "adapter_actors": [
+          "Volt Typhoon",
+          "Lazarus Group",
+          "APT29"
+        ]
+      },
+      {
+        "test_id": "T8_NonExistent_Actor",
+        "query": "threat actor not in registry",
+        "gnn_actor": "NovelUnseenActor",
+        "top_k": 3,
+        "top1_native": "Volt Typhoon",
+        "top1_adapter": "Volt Typhoon",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.082,
+          0.0722,
+          0.0
+        ],
+        "adapter_scores": [
+          0.082,
+          0.0722,
+          0.0
+        ],
+        "native_actors": [
+          "Volt Typhoon",
+          "Lazarus Group",
+          "Sandworm Team"
+        ],
+        "adapter_actors": [
+          "Volt Typhoon",
+          "Lazarus Group",
+          "Sandworm Team"
+        ]
+      },
+      {
+        "test_id": "T9_Empty_Query_String",
+        "query": "",
+        "gnn_actor": "APT28",
+        "top_k": 2,
+        "top1_native": "APT28",
+        "top1_adapter": "APT28",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0284
+        ],
+        "adapter_scores": [
+          0.0284
+        ],
+        "native_actors": [
+          "APT28"
+        ],
+        "adapter_actors": [
+          "APT28"
+        ]
+      },
+      {
+        "test_id": "T10_Special_Chars_Query",
+        "query": "!@#$%^&*()_+~`{}[]:;'<>?,./",
+        "gnn_actor": null,
+        "top_k": 3,
+        "top1_native": "APT29",
+        "top1_adapter": "APT29",
+        "top1_match": true,
+        "full_rank_match": true,
+        "native_scores": [
+          0.0689,
+          0.054,
+          0.0527
+        ],
+        "adapter_scores": [
+          0.0689,
+          0.054,
+          0.0527
+        ],
+        "native_actors": [
+          "APT29",
+          "APT28",
+          "Volt Typhoon"
+        ],
+        "adapter_actors": [
+          "APT29",
+          "APT28",
+          "Volt Typhoon"
+        ]
+      }
+    ]
+  }
+}

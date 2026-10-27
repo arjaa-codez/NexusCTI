@@ -1,0 +1,334 @@
+{
+  "test_case_01": {
+    "query": "Infected SolarWinds Orion build beaconing to primary C2 domain avsvmcloud[.]com with encoded DGA queries",
+    "anchor_ioc": "avsvmcloud[.]com",
+    "ground_truth_actor": "actor_apt29",
+    "retrieved_documents": [
+      "rpt_cisa_apt29_solarwinds"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c1",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "target_actor": "actor_apt29",
+        "retrieval_score": 1.6393,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c2",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "target_actor": "actor_apt29",
+        "retrieval_score": 1.5927,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_02": {
+    "query": "ICS substation telemetry detecting CrashOverride Industroyer IEC-104 breaker manipulation payload",
+    "anchor_ioc": "Industroyer (CrashOverride)",
+    "ground_truth_actor": "actor_sandworm",
+    "retrieved_documents": [
+      "rpt_dragos_sandworm_industroyer_wiper"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_dragos_sandworm_industroyer_wiper_c1",
+        "doc_id": "rpt_dragos_sandworm_industroyer_wiper",
+        "source": "Dragos Industrial Security & ESET",
+        "target_actor": "actor_sandworm",
+        "retrieval_score": 1.6393,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_03": {
+    "query": "Cryptocurrency exchange employee downloaded fake DeFi wallet installer communicating with secure-crypto-wallet[.]org",
+    "anchor_ioc": "secure-crypto-wallet[.]org",
+    "ground_truth_actor": "actor_lazarus",
+    "retrieved_documents": [
+      "rpt_cisa_lazarus_applejeus"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_cisa_lazarus_applejeus_c1",
+        "doc_id": "rpt_cisa_lazarus_applejeus",
+        "source": "CISA & Federal Bureau of Investigation",
+        "target_actor": "actor_lazarus",
+        "retrieval_score": 1.6393,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_cisa_lazarus_applejeus_c2",
+        "doc_id": "rpt_cisa_lazarus_applejeus",
+        "source": "CISA & Federal Bureau of Investigation",
+        "target_actor": "actor_lazarus",
+        "retrieval_score": 1.6129,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_cisa_lazarus_applejeus_c0",
+        "doc_id": "rpt_cisa_lazarus_applejeus",
+        "source": "CISA & Federal Bureau of Investigation",
+        "target_actor": "actor_lazarus",
+        "retrieval_score": 1.5774,
+        "cites_anchor_ioc": false
+      },
+      {
+        "chunk_id": "rpt_cisa_lazarus_applejeus_c3",
+        "doc_id": "rpt_cisa_lazarus_applejeus",
+        "source": "CISA & Federal Bureau of Investigation",
+        "target_actor": "actor_lazarus",
+        "retrieval_score": 1.5724,
+        "cites_anchor_ioc": false
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_04": {
+    "query": "Endpoint detection flagged suspicious Delphi downloader binary hash a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99 in temp folder",
+    "anchor_ioc": "a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99",
+    "ground_truth_actor": "actor_apt28",
+    "retrieved_documents": [
+      "rpt_mandiant_apt28_fancybear"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_mandiant_apt28_fancybear_c1",
+        "doc_id": "rpt_mandiant_apt28_fancybear",
+        "source": "Mandiant Threat Intelligence",
+        "target_actor": "actor_apt28",
+        "retrieval_score": 1.6393,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_mandiant_apt28_fancybear_c2",
+        "doc_id": "rpt_mandiant_apt28_fancybear",
+        "source": "Mandiant Threat Intelligence",
+        "target_actor": "actor_apt28",
+        "retrieval_score": 1.6129,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_05": {
+    "query": "HR recruiting lure document dropped JavaScript payload hash f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2 targeting CVE-2020-1472",
+    "anchor_ioc": "f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2",
+    "ground_truth_actor": "actor_fin7",
+    "retrieved_documents": [
+      "rpt_mandiant_fin7_carbanak"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_mandiant_fin7_carbanak_c1",
+        "doc_id": "rpt_mandiant_fin7_carbanak",
+        "source": "Mandiant Threat Intelligence",
+        "target_actor": "actor_fin7",
+        "retrieval_score": 1.6288,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_mandiant_fin7_carbanak_c2",
+        "doc_id": "rpt_mandiant_fin7_carbanak",
+        "source": "Mandiant Threat Intelligence",
+        "target_actor": "actor_fin7",
+        "retrieval_score": 1.5927,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_06": {
+    "query": "Critical infrastructure file server MBR corrupted by disk zeroing wiper artifact 027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826",
+    "anchor_ioc": "027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826",
+    "ground_truth_actor": "actor_sandworm",
+    "retrieved_documents": [
+      "rpt_dragos_sandworm_industroyer_wiper"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_dragos_sandworm_industroyer_wiper_c3",
+        "doc_id": "rpt_dragos_sandworm_industroyer_wiper",
+        "source": "Dragos Industrial Security & ESET",
+        "target_actor": "actor_sandworm",
+        "retrieval_score": 1.6393,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_dragos_sandworm_industroyer_wiper_c2",
+        "doc_id": "rpt_dragos_sandworm_industroyer_wiper",
+        "source": "Dragos Industrial Security & ESET",
+        "target_actor": "actor_sandworm",
+        "retrieval_score": 1.6129,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_07": {
+    "query": "Egress firewall logged suspicious beaconing to isolated external IP address 185.225.17.42 with forged certificate serials",
+    "anchor_ioc": "185.225.17.42",
+    "ground_truth_actor": "actor_apt29",
+    "retrieved_documents": [
+      "rpt_cisa_apt29_solarwinds"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c2",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "target_actor": "actor_apt29",
+        "retrieval_score": 1.6027,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_cisa_apt29_solarwinds_c3",
+        "doc_id": "rpt_cisa_apt29_solarwinds",
+        "source": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "target_actor": "actor_apt29",
+        "retrieval_score": 1.5718,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_08": {
+    "query": "DNS logging discovered host communicating with spoofed domain mail-update-service[.]net",
+    "anchor_ioc": "mail-update-service[.]net",
+    "ground_truth_actor": "actor_apt28",
+    "retrieved_documents": [
+      "rpt_cisa_lazarus_applejeus"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_cisa_lazarus_applejeus_c1",
+        "doc_id": "rpt_cisa_lazarus_applejeus",
+        "source": "CISA & Federal Bureau of Investigation",
+        "target_actor": "actor_lazarus",
+        "retrieval_score": 1.5774,
+        "cites_anchor_ioc": false
+      },
+      {
+        "chunk_id": "rpt_cisa_lazarus_applejeus_c2",
+        "doc_id": "rpt_cisa_lazarus_applejeus",
+        "source": "CISA & Federal Bureau of Investigation",
+        "target_actor": "actor_lazarus",
+        "retrieval_score": 1.558,
+        "cites_anchor_ioc": false
+      }
+    ],
+    "exact_ioc_retrieval_match": false
+  },
+  "test_case_09": {
+    "query": "Perimeter gateway observed reverse tunneling session originating from residential IP 203.0.113.88 over Fast Reverse Proxy",
+    "anchor_ioc": "203.0.113.88",
+    "ground_truth_actor": "actor_volt_typhoon",
+    "retrieved_documents": [
+      "rpt_cisa_volt_typhoon_critical_infra"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_cisa_volt_typhoon_critical_infra_c4",
+        "doc_id": "rpt_cisa_volt_typhoon_critical_infra",
+        "source": "CISA, NSA, FBI & International Partners",
+        "target_actor": "actor_volt_typhoon",
+        "retrieval_score": 1.6393,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_cisa_volt_typhoon_critical_infra_c3",
+        "doc_id": "rpt_cisa_volt_typhoon_critical_infra",
+        "source": "CISA, NSA, FBI & International Partners",
+        "target_actor": "actor_volt_typhoon",
+        "retrieval_score": 1.6129,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_cisa_volt_typhoon_critical_infra_c2",
+        "doc_id": "rpt_cisa_volt_typhoon_critical_infra",
+        "source": "CISA, NSA, FBI & International Partners",
+        "target_actor": "actor_volt_typhoon",
+        "retrieval_score": 1.5016,
+        "cites_anchor_ioc": false
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_10": {
+    "query": "Threat hunting discovered lateral movement traffic routing through dark subnet node 91.242.217.5 in European regional telecommunications segment",
+    "anchor_ioc": "91.242.217.5",
+    "ground_truth_actor": "actor_sandworm",
+    "retrieved_documents": [
+      "rpt_dragos_sandworm_industroyer_wiper"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_dragos_sandworm_industroyer_wiper_c4",
+        "doc_id": "rpt_dragos_sandworm_industroyer_wiper",
+        "source": "Dragos Industrial Security & ESET",
+        "target_actor": "actor_sandworm",
+        "retrieval_score": 1.599,
+        "cites_anchor_ioc": true
+      },
+      {
+        "chunk_id": "rpt_dragos_sandworm_industroyer_wiper_c3",
+        "doc_id": "rpt_dragos_sandworm_industroyer_wiper",
+        "source": "Dragos Industrial Security & ESET",
+        "target_actor": "actor_sandworm",
+        "retrieval_score": 0.9677,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  },
+  "test_case_11": {
+    "query": "DeFi liquidation contract authorization initiated from North Korean border IP address 175.45.176.8",
+    "anchor_ioc": "175.45.176.8",
+    "ground_truth_actor": "actor_lazarus",
+    "retrieved_documents": [
+      "rpt_mandiant_apt28_fancybear"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_mandiant_apt28_fancybear_c2",
+        "doc_id": "rpt_mandiant_apt28_fancybear",
+        "source": "Mandiant Threat Intelligence",
+        "target_actor": "actor_apt28",
+        "retrieval_score": 1.5625,
+        "cites_anchor_ioc": false
+      },
+      {
+        "chunk_id": "rpt_mandiant_apt28_fancybear_c3",
+        "doc_id": "rpt_mandiant_apt28_fancybear",
+        "source": "Mandiant Threat Intelligence",
+        "target_actor": "actor_apt28",
+        "retrieval_score": 1.5201,
+        "cites_anchor_ioc": false
+      }
+    ],
+    "exact_ioc_retrieval_match": false
+  },
+  "test_case_12": {
+    "query": "SIEM alert on suspicious outbound HTTPS connection to bulletproof hosting IP 193.106.191.4 carrying obfuscated payloads",
+    "anchor_ioc": "193.106.191.4",
+    "ground_truth_actor": "actor_fin7",
+    "retrieved_documents": [
+      "rpt_mandiant_fin7_carbanak"
+    ],
+    "proofs": [
+      {
+        "chunk_id": "rpt_mandiant_fin7_carbanak_c2",
+        "doc_id": "rpt_mandiant_fin7_carbanak",
+        "source": "Mandiant Threat Intelligence",
+        "target_actor": "actor_fin7",
+        "retrieval_score": 1.6393,
+        "cites_anchor_ioc": true
+      }
+    ],
+    "exact_ioc_retrieval_match": true
+  }
+}

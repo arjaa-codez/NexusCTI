@@ -1,0 +1,127 @@
+{
+  "timestamp": "2026-10-11T22:23:00+05:30",
+  "phase": "Phase 9.6",
+  "protocol_version": "NexusCTI Evaluation Protocol v2.2-amended (Proposed)",
+  "reconciliation_summary": {
+    "selected_runtime": "Option C (Disposable Runtime Snapshot Architecture)",
+    "master_database_protection": "STRICTLY_IMMUTABLE_AND_VERIFIED",
+    "prospective_test_labels": "UNACCESSED_AND_UNTOUCHED"
+  },
+  "frozen_master_artifacts": {
+    "cyber_attribution_engine/data/chroma_db/chroma.sqlite3": {
+      "sha256": "a93e9561add3b86c064642d0fc6b9dc21222e6322ea91e03d233e76060bfb8d3",
+      "canonical_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+      "size_bytes": 294912,
+      "change_counter": 29,
+      "classification": "UNCHANGED_FROZEN_MASTER"
+    },
+    "cyber_attribution_engine/src/rag_engine.py": {
+      "sha256": "a01697cca819c854e113daf7e4c69dd82d8649b1b3664969b1ad549860207b38",
+      "size_bytes": 7960,
+      "classification": "UNCHANGED_FROZEN_CODE"
+    },
+    "cyber_attribution_engine/src/api.py": {
+      "sha256": "c2fe7672d4ae39670e6ef461a236bea2f84bf7a684aaa8a808810ad7447b7843",
+      "size_bytes": 11903,
+      "classification": "UNCHANGED_FROZEN_CODE"
+    },
+    "cyber_attribution_engine/src/gnn_model.py": {
+      "sha256": "b9df21d3180ff6d1dfc644cfa39dbdf4b4259af7f428dc01a10d047c3210ca1f",
+      "size_bytes": 16786,
+      "classification": "UNCHANGED_FROZEN_CODE"
+    },
+    "cyber_attribution_engine/src/graph_builder.py": {
+      "sha256": "b41b64b0f479b2cc7eba9e91cbc51bced48533c5729af8a59f04f6f0d60f4ce0",
+      "size_bytes": 13172,
+      "classification": "UNCHANGED_FROZEN_CODE"
+    },
+    "cyber_attribution_engine/src/fusion_layer.py": {
+      "sha256": "72419e5ee896dd11c74c7cb7f13302b4f33393d73ded1c6d147d9c413119d38d",
+      "size_bytes": 13094,
+      "classification": "UNCHANGED_FROZEN_CODE"
+    },
+    "cyber_attribution_engine/data/processed_graph/rgcn_weights.pt": {
+      "sha256": "dd438fad443bcfeffd1a34ce02f6d7150c93e909a864c62378e7ed90aff3adcf",
+      "size_bytes": 182036,
+      "classification": "UNCHANGED_FROZEN_MODEL"
+    },
+    "cyber_attribution_engine/data/processed_graph/hetero_graph.pt": {
+      "sha256": "b8b09d30a76badaad617810d8687604720c15de72f8ac67e5076719e1b1e7748",
+      "size_bytes": 22445,
+      "classification": "UNCHANGED_FROZEN_GRAPH"
+    },
+    "cyber_attribution_engine/data/processed_graph/graph_metadata.json": {
+      "sha256": "f4794b9dbb7a392249c1717b54aeda791a924809da0b0457682b823fa1d9c14a",
+      "size_bytes": 10345,
+      "classification": "UNCHANGED_FROZEN_METADATA"
+    },
+    "nexuscti/service.py": {
+      "sha256": "f9fcf4b6971f4f88ff3b3e2ccedffcc7406fe6ce269996f92e311f10a2b92613",
+      "size_bytes": 4099,
+      "classification": "UNCHANGED_FROZEN_SERVICE"
+    },
+    "nexuscti/config.py": {
+      "sha256": "52f777fa7ae934dbbea8205be97fb4035616d4b81eb80f12ac56fb4ca6c47f94",
+      "size_bytes": 988,
+      "classification": "UNCHANGED_FROZEN_CONFIG"
+    }
+  },
+  "runtime_snapshot_lifecycle_audit": {
+    "pre_execution_snapshot": {
+      "sha256": "a93e9561add3b86c064642d0fc6b9dc21222e6322ea91e03d233e76060bfb8d3",
+      "canonical_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+      "change_counter": 29
+    },
+    "post_execution_snapshot": {
+      "sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc",
+      "canonical_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+      "change_counter": 30,
+      "change_counter_delta": 1,
+      "mutations_permitted": "SQLITE_HEADER_COUNTER_INCREMENT_ONLY"
+    },
+    "disposal_status": "EPHEMERAL_SNAPSHOT_DESTROYED_POST_RUN"
+  },
+  "phase9_6_deliverables": {
+    "runtime_architecture_decision.md": {
+      "sha256": "614eae78533d470a2dd78d837a326ed411565ddd2bf4e5e5c155043b01b4bc18",
+      "size_bytes": 6779,
+      "classification": "PHASE9_6_DECISION_SPEC"
+    },
+    "native_snapshot_equivalence.md": {
+      "sha256": "ef997f596c5e169d81405202d0975729ec8ea0a8164a03b9ec7989dd06f4111c",
+      "size_bytes": 7156,
+      "classification": "PHASE9_6_EQUIVALENCE_REPORT"
+    },
+    "adapter_tie_discrepancy.md": {
+      "sha256": "2012865e7f6c10ebf41a841ebf6225c0d4f8896c00aff50f2963ca0c752c8c7b",
+      "size_bytes": 6674,
+      "classification": "PHASE9_6_TIE_ANALYSIS"
+    },
+    "protocol_amendment_proposal.md": {
+      "sha256": "31b4a48e8c0e4250c37b4bd7bf9d22536b2b964648f4a329b9f6e3fc0ca63e4b",
+      "size_bytes": 6776,
+      "classification": "PHASE9_6_AMENDMENT_PROPOSAL"
+    },
+    "run_phase9_6_reconciliation.py": {
+      "sha256": "49049501db7fa566ac07ab4e06541cdc8eea2a342f7dcdaf2cf0420bf62a41af",
+      "size_bytes": 15076,
+      "classification": "PHASE9_6_AUDIT_SCRIPT"
+    },
+    "snapshot_reconciliation_telemetry.json": {
+      "sha256": "be922574d93bcc2622cd5873a2937e346821f146cabe33dd5c1be6c15a639db5",
+      "size_bytes": 7720,
+      "classification": "PHASE9_6_TELEMETRY"
+    },
+    "phase9_6_decision.md": {
+      "sha256": "1ad34380d2ae6f317c706e2c64969a8f44221a79d7b4b40465509d9e74f7719b",
+      "size_bytes": 5420,
+      "classification": "PHASE9_6_FINAL_DECISION"
+    }
+  },
+  "prospective_benchmark_protection": {
+    "task_a_test_cases": 100,
+    "task_b_test_cases": 30,
+    "ground_truth_labels": "UNACCESSED_AND_UNTOUCHED",
+    "evaluation_runner": "UNAUTHORIZED_PENDING_APPROVAL"
+  }
+}

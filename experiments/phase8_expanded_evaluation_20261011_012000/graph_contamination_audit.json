@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-10-11T01:20:00+05:30",
+  "training_graph_nodes_count": 65,
+  "external_benchmark_cases_audited": 48,
+  "exact_indicator_overlap_in_graph": 0,
+  "conclusion": "ZERO_GRAPH_LEAKAGE: Exactly 0 of the 48 external benchmark indicators were present in the training knowledge graph."
+}

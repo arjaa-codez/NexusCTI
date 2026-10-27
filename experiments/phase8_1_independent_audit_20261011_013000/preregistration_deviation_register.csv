@@ -1,0 +1,7 @@
+element,preregistered_requirement,executed_in_script,deviation_classification,audit_verdict
+Primary Endpoint Specification,Paired per-case Top-3 correctness difference on Task A closed-set frozen test cases.,Evaluated exactly as paired Top-3 correctness on Task A closed-set frozen test cases (N=24).,NONE,PERFECT_FIDELITY
+Primary Statistical Test,Two-sided Exact McNemar Test on discordant pairs at alpha = 0.05.,"Computed exact two-sided binomial test on discordant pairs (b=6, c=1, p=0.1250).",NONE,PERFECT_FIDELITY
+Confidence Interval Specification,Agresti-Min Paired Score Interval for risk difference.,"Script labeled interval 'Agresti-Min' but implemented the uncorrected asymptotic Wald formula, resulting in [+0.90%, +40.77%] which excluded 0.",DOCUMENTED_METHODOLOGICAL_DEVIATION,"CORRECTED_IN_PHASE_8_1_AUDIT (Correct exact/continuity-corrected interval spans [-1.98%, +39.42%], consistent with p=0.1250)"
+Practical Significance Threshold,Minimally meaningful effect Delta >= +15.0% in Top-3 accuracy.,Compared observed Delta (+20.83%) against pre-registered +15.0% threshold.,NONE,PERFECT_FIDELITY
+Frozen Hyperparameters & Fusion Weights,"w_gnn = 0.45, w_topo = 0.55, tau_cv = 0.20, PyTorch seed = 42, MD5 hashing.",All weights and seeds frozen prior to test evaluation without tuning.,NONE,PERFECT_FIDELITY
+Decision Rule Consistency,Declare inconclusive if primary endpoint fails alpha = 0.05 even if practically meaningful.,Concluded RESULTS ARE INCONCLUSIVE because p = 0.1250 > 0.05.,NONE,PERFECT_FIDELITY

@@ -1,0 +1,6 @@
+configuration,top1_accuracy_pct,top1_count,top3_accuracy_pct,top3_count,multihop_accuracy_pct,multihop_count,hallucination_rate_pct,mrr,runtime_total_sec,avg_runtime_sec
+Config A (Vector-only),66.67,8/12,100.0,12/12,63.64,7/11,33.33,0.8056,0.015,0.0012
+Config B (Graph-only),100.0,12/12,100.0,12/12,100.0,11/11,0.0,1.0,0.106,0.0088
+Config C (GNN-only),58.33,7/12,100.0,12/12,54.55,6/11,41.67,0.7639,0.029,0.0024
+Config D (Graph + RAG),75.0,9/12,100.0,12/12,72.73,8/11,25.0,0.875,0.163,0.0136
+Config E (Full Hybrid),100.0,12/12,100.0,12/12,100.0,11/11,0.0,1.0,0.15,0.0125

@@ -1,0 +1,59 @@
+{
+  "protocol_name": "Phase 6 Campaign-Disjoint External Benchmark Split",
+  "freeze_timestamp": "2026-10-10T23:10:00+05:30",
+  "training_and_development_campaigns": [
+    "cmp_apt29_solarwinds (Baseline Phase 1-5)",
+    "cmp_sandworm_powergrid (Baseline Phase 1-5)",
+    "cmp_lazarus_applejeus (Baseline Phase 1-5)",
+    "cmp_apt28_fancybear (Baseline Phase 1-5)",
+    "cmp_fin7_retail (Baseline Phase 1-5)",
+    "cmp_volt_typhoon_mesh (Baseline Phase 1-5)"
+  ],
+  "validation_split": {
+    "purpose": "Threshold selection and fusion weight verification (Never used for final test scoring)",
+    "case_count": 4,
+    "cases": [
+      "bench_ext_02",
+      "bench_ext_04",
+      "bench_ext_08",
+      "bench_ext_10"
+    ]
+  },
+  "frozen_test_split": {
+    "purpose": "Single-pass frozen evaluation of unseen-campaign and open-set attribution",
+    "case_count": 12,
+    "task_a_known_actor_unseen_campaign_count": 8,
+    "task_b_open_set_unseen_actor_count": 4,
+    "cases": [
+      "bench_ext_01",
+      "bench_ext_03",
+      "bench_ext_05",
+      "bench_ext_06",
+      "bench_ext_07",
+      "bench_ext_09",
+      "bench_ext_11",
+      "bench_ext_12",
+      "bench_ext_13",
+      "bench_ext_14",
+      "bench_ext_15",
+      "bench_ext_16"
+    ]
+  },
+  "frozen_parameters": {
+    "gnn_epochs": 120,
+    "fusion_weights": {
+      "structural_gnn": 0.45,
+      "topological_graph": 0.55,
+      "cross_validation_gate": 0.2
+    },
+    "verdict_thresholds": {
+      "CONFIRMED": 0.85,
+      "PROBABLE": 0.5,
+      "INCONCLUSIVE": 0.0
+    },
+    "random_seeds": {
+      "pytorch_seed": 42,
+      "encoder_projection_seed": 42
+    }
+  }
+}

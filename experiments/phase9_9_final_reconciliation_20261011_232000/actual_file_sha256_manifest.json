@@ -1,0 +1,44 @@
+{
+  "verification_timestamp": "2026-10-11T23:20:00+05:30",
+  "master_store_path": "c:/Users/Arjaa Chatterjee/OneDrive/Desktop/NexusCTI/cyber_attribution_engine/data/chroma_db",
+  "canonical_content_hash": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+  "sqlite_change_counter": 30,
+  "total_files": 5,
+  "files": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/data_level0.bin": {
+      "size_bytes": 167600,
+      "sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8",
+      "sha256_len": 64,
+      "sha1": "6170c0a6fcb23a4dc7b33123091d349b44dcc3c2",
+      "sha1_len": 40
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/header.bin": {
+      "size_bytes": 100,
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+      "sha256_len": 64,
+      "sha1": "fde733fe51e188e94d58443857ec4f1f7eb327d4",
+      "sha1_len": 40
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/length.bin": {
+      "size_bytes": 400,
+      "sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06",
+      "sha256_len": 64,
+      "sha1": "7af5afeb6762c8e5ee3c26c90770ef5d37cd5970",
+      "sha1_len": 40
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/link_lists.bin": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_len": 64,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "sha1_len": 40
+    },
+    "chroma.sqlite3": {
+      "size_bytes": 294912,
+      "sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc",
+      "sha256_len": 64,
+      "sha1": "890765ed6d096023ac41f7a542999b59079b5ac6",
+      "sha1_len": 40
+    }
+  }
+}

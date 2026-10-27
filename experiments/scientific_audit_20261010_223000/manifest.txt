@@ -1,0 +1,4 @@
+# Experiment Run Manifest
+timestamp: 2026-10-10T22:30:00+05:30
+experiment_id: scientific_audit_20261010_223000
+objective: Scientific Benchmark Reliability Audit and Controlled Ablation Experiments

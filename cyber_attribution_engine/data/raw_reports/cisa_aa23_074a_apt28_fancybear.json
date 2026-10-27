@@ -1,0 +1,81 @@
+{
+  "id": "bundle--apt28-fancybear-zebrocy-2023",
+  "type": "bundle",
+  "spec_version": "2.1",
+  "threat_actor": "APT28",
+  "aliases": [
+    "Fancy Bear",
+    "Strontium",
+    "Forest Blizzard",
+    "Sednit",
+    "Pawn Storm"
+  ],
+  "origin": "Russian Main Intelligence Directorate (GRU 85th GTsSS)",
+  "confidence_base": 0.92,
+  "narrative": "Advisory CISA AA23-074A details persistent cyber operations by Russian military intelligence GRU Unit 26165 (APT28). APT28 actively weaponizes Microsoft Outlook zero-day CVE-2023-23397 (elevation of privilege via Net-NTLMv2 hash relay). Spearphishing payloads deploy the Zebrocy modular malware family and Golang downloaders, communicating via domain auth-microsoft365[.]com and staging server mail-update-service[.]net hosted on IP 185.141.63.12. APT28 leverages credential access via NTLM stealing (MITRE ATT&CK T1566.001 Spearphishing Attachment and T1059.001 PowerShell command execution) to target governmental, diplomatic, and defense entities across NATO members.",
+  "triples": [
+    {
+      "source_type": "ip",
+      "source": "185.141.63.12",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "auth-microsoft365.com"
+    },
+    {
+      "source_type": "ip",
+      "source": "185.141.63.12",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "mail-update-service.net"
+    },
+    {
+      "source_type": "domain",
+      "source": "auth-microsoft365.com",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "Zebrocy"
+    },
+    {
+      "source_type": "domain",
+      "source": "mail-update-service.net",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "Drovorub"
+    },
+    {
+      "source_type": "cve",
+      "source": "CVE-2023-23397",
+      "relation": "exploited_by",
+      "target_type": "malware",
+      "target": "Zebrocy"
+    },
+    {
+      "source_type": "malware",
+      "source": "Zebrocy",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "APT28"
+    },
+    {
+      "source_type": "malware",
+      "source": "Drovorub",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "APT28"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "APT28",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1566.001"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "APT28",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1059.001"
+    }
+  ]
+}

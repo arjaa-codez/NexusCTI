@@ -1,0 +1,69 @@
+{
+  "evaluation_phase": "Phase 10: Confirmatory Prospective Benchmark Evaluation",
+  "timestamp": "2026-10-28T02:08:00+05:30",
+  "governing_protocol": "NexusCTI Preregistered Evaluation Protocol v2.2-amended",
+  "frozen_predictions_file": "frozen_test_predictions.csv",
+  "frozen_predictions_sha256": "79e304118cc31f8d25edd44045eed162b45c952586224a272fa3039aeeb14cdb",
+  "primary_endpoint_task_a": {
+    "sample_size": 100,
+    "contingency_table": {
+      "a_both_correct": 64,
+      "b_hybrid_correct_retrieval_miss": 32,
+      "c_retrieval_correct_hybrid_miss": 0,
+      "d_both_incorrect": 4,
+      "total_discordant_pairs_nd": 32
+    },
+    "point_estimates": {
+      "full_hybrid_top3_accuracy": 0.96,
+      "retrieval_only_top3_accuracy": 0.64,
+      "standalone_gnn_top3_accuracy": 0.57,
+      "paired_risk_difference_delta": 0.32,
+      "paired_risk_difference_percentage_points": 32.0
+    },
+    "hypothesis_testing": {
+      "exact_mcnemar_p_value": 0.0,
+      "alpha_level": 0.05,
+      "statistically_significant": true,
+      "directional_superiority_delta_gt_0": true,
+      "confirmatory_superiority_achieved": true
+    },
+    "confidence_interval_agresti_min_2005": {
+      "ci_lower_percent": 21.97,
+      "ci_upper_percent": 40.78,
+      "interval_excludes_zero": true
+    },
+    "model_comparison_summary": {
+      "full_hybrid": {
+        "top1_accuracy": 55.0,
+        "top3_accuracy": 96.0,
+        "top5_accuracy": 100.0,
+        "mrr": 0.7083
+      },
+      "retrieval_only": {
+        "top1_accuracy": 36.0,
+        "top3_accuracy": 64.0,
+        "top5_accuracy": 74.0,
+        "mrr": 0.51
+      },
+      "standalone_gnn": {
+        "top1_accuracy": 23.0,
+        "top3_accuracy": 57.0,
+        "top5_accuracy": 84.0,
+        "mrr": 0.4608
+      }
+    }
+  },
+  "secondary_endpoint_task_b": {
+    "sample_size": 30,
+    "full_hybrid": {
+      "proper_abstentions": 30,
+      "false_attributions": 0,
+      "proper_abstention_rate_percent": 100.0
+    },
+    "retrieval_only": {
+      "proper_abstentions": 0,
+      "false_attributions": 30,
+      "proper_abstention_rate_percent": 0.0
+    }
+  }
+}

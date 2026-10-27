@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-11T01:20:00+05:30",
+  "total_candidate_reports_verified": 48,
+  "independent_campaigns_count": 48,
+  "threat_actors_represented": 14,
+  "deduplication_audit": {
+    "baseline_corpus_reports": 6,
+    "baseline_corpus_unique_iocs": 23,
+    "external_benchmark_unique_iocs": 48,
+    "exact_indicator_overlap_count": 0,
+    "exact_overlapping_indicators": [],
+    "overlap_ratio": "0 / 48 (0.0% overlap with training infrastructure)"
+  },
+  "methodological_guarantee": "Zero exact string overlap exists between the 48 expanded external indicators and baseline training infrastructure."
+}

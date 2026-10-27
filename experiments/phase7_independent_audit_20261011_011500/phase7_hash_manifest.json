@@ -1,0 +1,68 @@
+{
+  "audit_phase": "Phase 7 Independent Audit",
+  "phase6_directory": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000",
+  "phase6_file_hashes": {
+    "benchmark_metrics.json": {
+      "sha256": "a3ccdce9b79229a414a5e9ae806f0bbdc97ad42e4834617d75c787a116fbee4e",
+      "size_bytes": 3324,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\benchmark_metrics.json"
+    },
+    "campaign_deduplication_report.json": {
+      "sha256": "bf4d592f8273de4903807b903dd317936e451c16378d65d78956604bf3d5d621",
+      "size_bytes": 920,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\campaign_deduplication_report.json"
+    },
+    "external_report_manifest.csv": {
+      "sha256": "cb241e23a536693894520d7bb4cc7c36a06e855a9e670f8f4e463ff9ea946bdc",
+      "size_bytes": 14340,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\external_report_manifest.csv"
+    },
+    "frozen_predictions.csv": {
+      "sha256": "d70fe9652a79dbbf632825a3e838857d0baf361a34d6192d5bd29e43ba48f2fd",
+      "size_bytes": 4078,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\frozen_predictions.csv"
+    },
+    "graph_contamination_audit.json": {
+      "sha256": "a615899188c6a587e6a5e865bcfb3b0ffbfcbe4fa973ec16c7c2422f916b771a",
+      "size_bytes": 738,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\graph_contamination_audit.json"
+    },
+    "ground_truth_evidence_manifest.csv": {
+      "sha256": "e88815d99904f9bdedd548d617351a47ae4c32b0d071db23c86eb8bd7f4c284f",
+      "size_bytes": 6902,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\ground_truth_evidence_manifest.csv"
+    },
+    "limitations_and_claims_register.md": {
+      "sha256": "9747e7234865caa6bc527bd4e9b92975c23152cea050151591a07a3dd816dbf4",
+      "size_bytes": 9845,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\limitations_and_claims_register.md"
+    },
+    "phase6_report.md": {
+      "sha256": "c5b32fb946cb579fd0301f1067ba184148fbbcafe8af8d1724c397c7feca51b3",
+      "size_bytes": 19751,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\phase6_report.md"
+    },
+    "reproducibility_manifest.json": {
+      "sha256": "58cba50f111a005259e9696612fa098e75be02ce04621009d987fa4f846dff5d",
+      "size_bytes": 1811,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\reproducibility_manifest.json"
+    },
+    "retrieval_contamination_audit.json": {
+      "sha256": "fe2e7f013b5ad14e43f6a1151ddd2c60b3b8342e320ae5f0b4c026d60ec0166d",
+      "size_bytes": 387,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\retrieval_contamination_audit.json"
+    },
+    "run_phase6_benchmark.py": {
+      "sha256": "15b601ee7a7c4fecfc4dc54153a98d818ff34c445e975489df24492b180797a4",
+      "size_bytes": 57977,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\run_phase6_benchmark.py"
+    },
+    "split_manifest.json": {
+      "sha256": "c410feffb93aed50f30eb0755a3c96f9ccaee5110507a81aa536ea787b16c55a",
+      "size_bytes": 1690,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000\\split_manifest.json"
+    }
+  },
+  "hash_algorithm": "SHA-256",
+  "timestamp": "2026-10-11T01:15:00+05:30"
+}

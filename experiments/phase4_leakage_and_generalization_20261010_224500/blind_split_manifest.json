@@ -1,0 +1,100 @@
+{
+  "protocol_name": "Campaign-Level Disjoint Blind Evaluation",
+  "split_type": "Campaign / Incident Disjoint (Zero Shared Infrastructure)",
+  "total_campaigns": 6,
+  "training_development_campaigns": [
+    {
+      "campaign_id": "cmp_apt28_ntlm",
+      "actor": "actor_apt28",
+      "actor_name": "APT28 (Fancy Bear)",
+      "associated_cases": [
+        "test_case_04",
+        "test_case_08"
+      ],
+      "source_reports": [
+        "rpt_mandiant_apt28_fancybear"
+      ]
+    },
+    {
+      "campaign_id": "cmp_lazarus_applejeus",
+      "actor": "actor_lazarus",
+      "actor_name": "Lazarus Group",
+      "associated_cases": [
+        "test_case_03",
+        "test_case_11"
+      ],
+      "source_reports": [
+        "rpt_cisa_lazarus_applejeus"
+      ]
+    },
+    {
+      "campaign_id": "cmp_sandworm_ics",
+      "actor": "actor_sandworm",
+      "actor_name": "Sandworm Team",
+      "associated_cases": [
+        "test_case_02",
+        "test_case_06",
+        "test_case_10"
+      ],
+      "source_reports": [
+        "rpt_cisa_sandworm_powergrid"
+      ]
+    },
+    {
+      "campaign_id": "cmp_fin7_retail",
+      "actor": "actor_fin7",
+      "actor_name": "FIN7",
+      "associated_cases": [
+        "test_case_05",
+        "test_case_12"
+      ],
+      "source_reports": [
+        "rpt_mandiant_fin7_retail"
+      ]
+    }
+  ],
+  "held_out_blind_test_campaigns": [
+    {
+      "campaign_id": "cmp_apt29_solarwinds",
+      "actor": "actor_apt29",
+      "actor_name": "APT29 (Cozy Bear / NOBELIUM)",
+      "associated_cases": [
+        "test_case_01",
+        "test_case_07"
+      ],
+      "source_reports": [
+        "rpt_cisa_apt29_solarwinds"
+      ],
+      "indicators_held_out": [
+        "avsvmcloud[.]com",
+        "freescanonline[.]com",
+        "185.225.17.42",
+        "20.140.8.11",
+        "ac1b2b4d..."
+      ]
+    },
+    {
+      "campaign_id": "cmp_volt_typhoon_mesh",
+      "actor": "actor_volt_typhoon",
+      "actor_name": "Volt Typhoon",
+      "associated_cases": [
+        "test_case_09"
+      ],
+      "source_reports": [
+        "rpt_cisa_volt_typhoon_mesh"
+      ],
+      "indicators_held_out": [
+        "203.0.113.88",
+        "198.51.100.44",
+        "cisco-gateway-mesh[.]org"
+      ]
+    }
+  ],
+  "split_statistics": {
+    "train_cases_count": 9,
+    "held_out_test_cases_count": 3,
+    "infrastructure_overlap_between_splits": "0.0% (Zero shared IPs, domains, or hashes)",
+    "ttp_overlap_between_splits": "Permitted (Universal MITRE ATT&CK techniques T1078, T1195, T1059)"
+  },
+  "scientific_justification": "A campaign-level split guarantees that no indicator or incident narrative from the held-out campaigns (SolarWinds or SOHO Mesh) is present during model training or hyperparameter calibration. This isolates true generalizability from memorization of known campaign artifacts."
+}

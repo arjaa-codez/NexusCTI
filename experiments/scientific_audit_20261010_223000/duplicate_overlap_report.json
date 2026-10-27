@@ -1,0 +1,53 @@
+{
+  "report_count": 6,
+  "test_case_count": 12,
+  "actor_coverage": {},
+  "exact_indicator_matches": [
+    {
+      "case_id": "test_case_02",
+      "indicator": "Industroyer (CrashOverride)",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_04",
+      "indicator": "a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_05",
+      "indicator": "f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_06",
+      "indicator": "027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_07",
+      "indicator": "185.225.17.42",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_09",
+      "indicator": "203.0.113.88",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_10",
+      "indicator": "91.242.217.5",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_11",
+      "indicator": "175.45.176.8",
+      "found_in_corpus": true
+    },
+    {
+      "case_id": "test_case_12",
+      "indicator": "193.106.191.4",
+      "found_in_corpus": true
+    }
+  ],
+  "query_text_overlap": []
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-11T01:15:00+05:30",
+  "exact_indicator_overlap": {
+    "claimed_overlap": "0 / 33 (0.0% overlap with training infrastructure)",
+    "verified_exact_overlap_count": 0,
+    "verdict": "VERIFIED_ZERO_EXACT_IOC_OVERLAP"
+  },
+  "graph_containment_leakage": {
+    "exact_nodes_in_training_graph": 0,
+    "substring_prefix_matches": 1,
+    "flagged_case": "bench_ext_04 (185.141.63.120 matched 185.141.63.12 via prefix)",
+    "quarantine_status": "PROPERLY_QUARANTINED_TO_VALIDATION_SET",
+    "frozen_test_containment": 0,
+    "verdict": "VERIFIED_ZERO_TEST_GRAPH_CONTAMINATION"
+  },
+  "retrieval_index_leakage": {
+    "external_reports_indexed_in_training": 0,
+    "verdict": "VERIFIED_ZERO_TEST_REPORT_INDEXING"
+  },
+  "semantic_feature_leakage_analysis": {
+    "finding": "Test queries provide TTP descriptions (e.g. 'Living-off-the-land', 'Print Spooler LPE', 'TraderTraitor macOS'). Semantic dense retriever uses pre-trained text embeddings to match these against training corpus profiles. This represents legitimate behavioral similarity rather than verbatim text leakage.",
+    "risk_level": "LOW_TO_MODERATE (Standard cross-campaign behavioral attribution protocol)"
+  }
+}

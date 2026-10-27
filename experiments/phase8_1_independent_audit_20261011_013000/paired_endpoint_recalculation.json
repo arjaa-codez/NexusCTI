@@ -1,0 +1,237 @@
+{
+  "audit_timestamp": "2026-10-11T01:30:00+05:30",
+  "verified_total_task_a_cases": 24,
+  "contingency_table": {
+    "both_correct_a": 11,
+    "hybrid_only_correct_b": 6,
+    "retrieval_only_correct_c": 1,
+    "both_incorrect_d": 6
+  },
+  "marginal_totals": {
+    "full_hybrid_top3_count": "17/24",
+    "full_hybrid_top3_percent": 70.83,
+    "retrieval_only_top3_count": "12/24",
+    "retrieval_only_top3_percent": 50.0,
+    "observed_risk_difference_delta_percent": 20.83
+  },
+  "exact_two_sided_mcnemar_p_value": 0.125,
+  "reported_counts_match_exactly": true,
+  "per_case_paired_breakdown": [
+    {
+      "case_id": "bench_exp_09",
+      "ground_truth_actor": "actor_apt29",
+      "hybrid_rank": 5,
+      "retrieval_rank": 4,
+      "hybrid_top3_hit": false,
+      "retrieval_top3_hit": false,
+      "paired_classification": "both_incorrect_d"
+    },
+    {
+      "case_id": "bench_exp_10",
+      "ground_truth_actor": "actor_apt29",
+      "hybrid_rank": 1,
+      "retrieval_rank": 1,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_11",
+      "ground_truth_actor": "actor_sandworm",
+      "hybrid_rank": 6,
+      "retrieval_rank": 5,
+      "hybrid_top3_hit": false,
+      "retrieval_top3_hit": false,
+      "paired_classification": "both_incorrect_d"
+    },
+    {
+      "case_id": "bench_exp_12",
+      "ground_truth_actor": "actor_sandworm",
+      "hybrid_rank": 2,
+      "retrieval_rank": 1,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_13",
+      "ground_truth_actor": "actor_sandworm",
+      "hybrid_rank": 3,
+      "retrieval_rank": 2,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_14",
+      "ground_truth_actor": "actor_sandworm",
+      "hybrid_rank": 2,
+      "retrieval_rank": 2,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_15",
+      "ground_truth_actor": "actor_sandworm",
+      "hybrid_rank": 1,
+      "retrieval_rank": 5,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": false,
+      "paired_classification": "hybrid_only_correct_b"
+    },
+    {
+      "case_id": "bench_exp_16",
+      "ground_truth_actor": "actor_lazarus",
+      "hybrid_rank": 1,
+      "retrieval_rank": 1,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_17",
+      "ground_truth_actor": "actor_lazarus",
+      "hybrid_rank": 3,
+      "retrieval_rank": 5,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": false,
+      "paired_classification": "hybrid_only_correct_b"
+    },
+    {
+      "case_id": "bench_exp_18",
+      "ground_truth_actor": "actor_lazarus",
+      "hybrid_rank": 3,
+      "retrieval_rank": 4,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": false,
+      "paired_classification": "hybrid_only_correct_b"
+    },
+    {
+      "case_id": "bench_exp_19",
+      "ground_truth_actor": "actor_lazarus",
+      "hybrid_rank": 5,
+      "retrieval_rank": 4,
+      "hybrid_top3_hit": false,
+      "retrieval_top3_hit": false,
+      "paired_classification": "both_incorrect_d"
+    },
+    {
+      "case_id": "bench_exp_20",
+      "ground_truth_actor": "actor_lazarus",
+      "hybrid_rank": 5,
+      "retrieval_rank": 5,
+      "hybrid_top3_hit": false,
+      "retrieval_top3_hit": false,
+      "paired_classification": "both_incorrect_d"
+    },
+    {
+      "case_id": "bench_exp_21",
+      "ground_truth_actor": "actor_lazarus",
+      "hybrid_rank": 1,
+      "retrieval_rank": 1,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_22",
+      "ground_truth_actor": "actor_fin7",
+      "hybrid_rank": 5,
+      "retrieval_rank": 5,
+      "hybrid_top3_hit": false,
+      "retrieval_top3_hit": false,
+      "paired_classification": "both_incorrect_d"
+    },
+    {
+      "case_id": "bench_exp_23",
+      "ground_truth_actor": "actor_fin7",
+      "hybrid_rank": 2,
+      "retrieval_rank": 6,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": false,
+      "paired_classification": "hybrid_only_correct_b"
+    },
+    {
+      "case_id": "bench_exp_24",
+      "ground_truth_actor": "actor_fin7",
+      "hybrid_rank": 6,
+      "retrieval_rank": 1,
+      "hybrid_top3_hit": false,
+      "retrieval_top3_hit": true,
+      "paired_classification": "retrieval_only_correct_c"
+    },
+    {
+      "case_id": "bench_exp_25",
+      "ground_truth_actor": "actor_fin7",
+      "hybrid_rank": 2,
+      "retrieval_rank": 3,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_26",
+      "ground_truth_actor": "actor_fin7",
+      "hybrid_rank": 3,
+      "retrieval_rank": 5,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": false,
+      "paired_classification": "hybrid_only_correct_b"
+    },
+    {
+      "case_id": "bench_exp_27",
+      "ground_truth_actor": "actor_volt_typhoon",
+      "hybrid_rank": 2,
+      "retrieval_rank": 6,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": false,
+      "paired_classification": "hybrid_only_correct_b"
+    },
+    {
+      "case_id": "bench_exp_28",
+      "ground_truth_actor": "actor_volt_typhoon",
+      "hybrid_rank": 1,
+      "retrieval_rank": 3,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_29",
+      "ground_truth_actor": "actor_volt_typhoon",
+      "hybrid_rank": 4,
+      "retrieval_rank": 6,
+      "hybrid_top3_hit": false,
+      "retrieval_top3_hit": false,
+      "paired_classification": "both_incorrect_d"
+    },
+    {
+      "case_id": "bench_exp_30",
+      "ground_truth_actor": "actor_volt_typhoon",
+      "hybrid_rank": 1,
+      "retrieval_rank": 2,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_31",
+      "ground_truth_actor": "actor_volt_typhoon",
+      "hybrid_rank": 1,
+      "retrieval_rank": 1,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    },
+    {
+      "case_id": "bench_exp_32",
+      "ground_truth_actor": "actor_volt_typhoon",
+      "hybrid_rank": 3,
+      "retrieval_rank": 3,
+      "hybrid_top3_hit": true,
+      "retrieval_top3_hit": true,
+      "paired_classification": "both_correct_a"
+    }
+  ]
+}

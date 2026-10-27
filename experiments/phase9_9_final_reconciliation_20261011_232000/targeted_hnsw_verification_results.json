@@ -1,0 +1,101 @@
+{
+  "verdict": "PASS",
+  "is_valid_0byte": true,
+  "header_info": {
+    "header_file_size": 100,
+    "version": 1,
+    "reserved": 0,
+    "max_elements": 100,
+    "cur_element_count": 0,
+    "size_data_per_element": 1676,
+    "size_links_per_element": 1668,
+    "offset_data": 132,
+    "enterpoint_node": -1,
+    "max_level": -1,
+    "M": 16,
+    "maxM0": 32,
+    "maxM": 16,
+    "mult": 0.36067376022224085,
+    "ef_construction": 100
+  },
+  "length_size": 400,
+  "data0_size": 167600,
+  "links_size": 0,
+  "retrieval_results": [
+    {
+      "query": "SolarWinds Orion supply chain backdoor SUNBURST DLL memory injection",
+      "top_id": "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+      "threat_actor": "Volt Typhoon",
+      "distance": 0.8959488868713379
+    },
+    {
+      "query": "Industroyer2 malware substation IEC 60870-5-104 grid outage Ukraine",
+      "top_id": "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+      "threat_actor": "Volt Typhoon",
+      "distance": 0.9154872298240662
+    },
+    {
+      "query": "AppleJeus cryptocurrency exchange trojan macOS Lazarus Group",
+      "top_id": "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+      "threat_actor": "Volt Typhoon",
+      "distance": 0.9405247569084167
+    },
+    {
+      "query": "Volt Typhoon living-off-the-land PowerShell wmic critical infrastructure",
+      "top_id": "fin7_bundle--fin7-carbanak-financial-2021_0",
+      "threat_actor": "FIN7",
+      "distance": 0.9131616353988647
+    },
+    {
+      "query": "FIN7 Carbanak syndicate POS malware financial retail hospitality",
+      "top_id": "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+      "threat_actor": "Volt Typhoon",
+      "distance": 0.9819054007530212
+    }
+  ],
+  "master_pre_manifest": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/data_level0.bin": {
+      "size": 167600,
+      "sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/header.bin": {
+      "size": 100,
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/length.bin": {
+      "size": 400,
+      "sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/link_lists.bin": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chroma.sqlite3": {
+      "size": 294912,
+      "sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc"
+    }
+  },
+  "master_post_manifest": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/data_level0.bin": {
+      "size": 167600,
+      "sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/header.bin": {
+      "size": 100,
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/length.bin": {
+      "size": 400,
+      "sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/link_lists.bin": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chroma.sqlite3": {
+      "size": 294912,
+      "sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc"
+    }
+  },
+  "delta_found": false
+}

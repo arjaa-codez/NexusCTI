@@ -1,0 +1,7 @@
+{
+  "a_both_correct": 64,
+  "b_hybrid_correct_retrieval_miss": 32,
+  "c_retrieval_correct_hybrid_miss": 0,
+  "d_both_incorrect": 4,
+  "total_discordant_pairs_nd": 32
+}

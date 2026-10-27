@@ -1,0 +1,99 @@
+{
+  "audit_timestamp": "2026-10-11T22:35:00+05:30",
+  "master_directory": "cyber_attribution_engine\\data\\chroma_db",
+  "master_inventory": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\data_level0.bin": {
+      "size_bytes": 167600,
+      "sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\header.bin": {
+      "size_bytes": 100,
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\length.bin": {
+      "size_bytes": 400,
+      "sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\link_lists.bin": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chroma.sqlite3": {
+      "size_bytes": 294912,
+      "sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc"
+    }
+  },
+  "master_active_sidecars": [],
+  "snapshot_pre_query_inventory": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\data_level0.bin": {
+      "size_bytes": 167600,
+      "sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\header.bin": {
+      "size_bytes": 100,
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\length.bin": {
+      "size_bytes": 400,
+      "sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\link_lists.bin": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chroma.sqlite3": {
+      "size_bytes": 294912,
+      "sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc"
+    }
+  },
+  "snapshot_post_query_inventory": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\data_level0.bin": {
+      "size_bytes": 167600,
+      "sha256": "b4ac5fb27373a3859218889b01ebbb9f3fbfed120dacd2c95a40e71d9ae45df4"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\header.bin": {
+      "size_bytes": 100,
+      "sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\length.bin": {
+      "size_bytes": 400,
+      "sha256": "3aa066eb8b59ca8a8d7db63033fa5ac49bd5b51cd351b682077eb43346e493d7"
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\link_lists.bin": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chroma.sqlite3": {
+      "size_bytes": 294912,
+      "sha256": "03f9ba62ceb370f9cc37589bd41216a9717a6e684a0a26ec2b32269c479b16e4"
+    }
+  },
+  "pre_vs_post_snapshot_comparison": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\data_level0.bin": {
+      "pre_sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8",
+      "post_sha256": "b4ac5fb27373a3859218889b01ebbb9f3fbfed120dacd2c95a40e71d9ae45df4",
+      "identical": false
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\header.bin": {
+      "pre_sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+      "post_sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+      "identical": true
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\length.bin": {
+      "pre_sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06",
+      "post_sha256": "3aa066eb8b59ca8a8d7db63033fa5ac49bd5b51cd351b682077eb43346e493d7",
+      "identical": false
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed\\link_lists.bin": {
+      "pre_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "post_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "identical": true
+    },
+    "chroma.sqlite3": {
+      "pre_sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc",
+      "post_sha256": "03f9ba62ceb370f9cc37589bd41216a9717a6e684a0a26ec2b32269c479b16e4",
+      "identical": false
+    }
+  },
+  "inventory_completeness": "VERIFIED_COMPLETE"
+}

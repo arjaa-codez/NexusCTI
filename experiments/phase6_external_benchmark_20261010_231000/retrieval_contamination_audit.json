@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-10-10T23:10:00+05:30",
+  "indexed_training_corpus_size": 6,
+  "external_reports_audited": 16,
+  "external_reports_indexed_in_training_corpus": 0,
+  "conclusion": "ZERO_RETRIEVAL_CONTAMINATION: Exactly 0 of the 16 external CTI reports were present in the training retrieval index. The retrieval database contains only legitimate prior background knowledge."
+}

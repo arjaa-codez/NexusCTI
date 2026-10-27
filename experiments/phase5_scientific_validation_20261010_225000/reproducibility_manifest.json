@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-10T22:50:00+05:30",
+  "environment": {
+    "python_executable": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\.venv\\Scripts\\python.exe",
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "os": "nt",
+    "platform": "win32",
+    "working_directory": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI",
+    "experiment_directory": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase5_scientific_validation_20261010_225000"
+  },
+  "source_code_integrity_hashes": {
+    "nexuscti/service.py": {
+      "sha256": "f9fcf4b6971f4f88ff3b3e2ccedffcc7406fe6ce269996f92e311f10a2b92613",
+      "size_bytes": 4099
+    },
+    "nexuscti/gnn/trainer.py": {
+      "sha256": "51fd0eed7768875ef91666e07726e964ba472b74466ff27b26b7f3e29c5c0ac4",
+      "size_bytes": 6159
+    },
+    "nexuscti/gnn/graph_builder.py": {
+      "sha256": "6e53faee0f34783d324be6246c1a1c64a13e3e6311a1ca36183cc25b5228e5cb",
+      "size_bytes": 7737
+    },
+    "nexuscti/rag/dense_retriever.py": {
+      "sha256": "add36f9b0fc2d5505fc87eae15238b6eaf76fdac1ddcd6aedb6aff0e60d51a95",
+      "size_bytes": 2965
+    },
+    "nexuscti/rag/hybrid_retriever.py": {
+      "sha256": "540194f948a64d6a96184c1b4880cae67cb0d11d10941fe7df48eaba312c3c81",
+      "size_bytes": 4743
+    },
+    "nexuscti/fusion/engine.py": {
+      "sha256": "ce3102da13ad6074ca88ef46abd1bff011e92d3e19835ff1e83065a97f8e50b1",
+      "size_bytes": 8563
+    },
+    "nexuscti/data/knowledge_base.py": {
+      "sha256": "5e16dde4cfff228b1b6e20919063ade121e56af93439ec55c37f94f0f02cb385",
+      "size_bytes": 23647
+    },
+    "nexuscti/data/corpus.py": {
+      "sha256": "cc6350e0d7aba75e8f74c818328f3c234243eef97fa165247cde268c47bedf99",
+      "size_bytes": 14189
+    },
+    "nexuscti/eval/benchmark_cases.py": {
+      "sha256": "ed60c09e5d7cac8bc709604fc989cff4aa421d3449e56fb2d377e4d9cbe9ac0a",
+      "size_bytes": 7382
+    }
+  },
+  "random_seeds_evaluated": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "dataset_hash": "ed60c09e5d7cac8bc709604fc989cff4aa421d3449e56fb2d377e4d9cbe9ac0a"
+}

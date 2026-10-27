@@ -1,0 +1,126 @@
+{
+  "audit_timestamp": "2026-10-11T03:06:00+05:30",
+  "environment": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch_version": "2.10.0+cpu",
+    "sentence_transformers_version": "6.1.0",
+    "chromadb_version": "1.5.9",
+    "numpy_version": "2.4.3",
+    "os_platform": "win32"
+  },
+  "static_file_hashes": {
+    "graph_and_weights/graph_metadata.json": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\processed_graph\\graph_metadata.json",
+      "sha256": "f4794b9dbb7a392249c1717b54aeda791a924809da0b0457682b823fa1d9c14a",
+      "size_bytes": 10345
+    },
+    "graph_and_weights/hetero_graph.pt": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\processed_graph\\hetero_graph.pt",
+      "sha256": "b8b09d30a76badaad617810d8687604720c15de72f8ac67e5076719e1b1e7748",
+      "size_bytes": 22445
+    },
+    "graph_and_weights/rgcn_weights.pt": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\processed_graph\\rgcn_weights.pt",
+      "sha256": "dd438fad443bcfeffd1a34ce02f6d7150c93e909a864c62378e7ed90aff3adcf",
+      "size_bytes": 182036
+    },
+    "training_reports/cisa_aa20_352a_apt29_solarwinds.json": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa20_352a_apt29_solarwinds.json",
+      "sha256": "c1d97558b13c79b679841cdeae582e9fd927f8154f40ff0b18d85d84d572b585",
+      "size_bytes": 2884
+    },
+    "training_reports/cisa_aa22_054a_sandworm_industroyer.json": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa22_054a_sandworm_industroyer.json",
+      "sha256": "3f833f54f7e0570035f020f886e92742481172cd1f45b6d5142ca3329991e975",
+      "size_bytes": 2735
+    },
+    "training_reports/cisa_aa22_110a_lazarus_applejeus.json": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa22_110a_lazarus_applejeus.json",
+      "sha256": "71e28d423f8528fd91d639d4e643d450cedd0034cb877babd67dc97320539f22",
+      "size_bytes": 2760
+    },
+    "training_reports/cisa_aa23_074a_apt28_fancybear.json": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa23_074a_apt28_fancybear.json",
+      "sha256": "e9f77621c56a6147f3380bca2c5a27494b1e827031fb9d07d268cd6e141d22ce",
+      "size_bytes": 2645
+    },
+    "training_reports/cisa_aa24_038a_volt_typhoon.json": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa24_038a_volt_typhoon.json",
+      "sha256": "9425e3ae6e98b1681b9402aca97ea2afe17f00d3e66073aa9f75cae79088d775",
+      "size_bytes": 2804
+    },
+    "training_reports/mandiant_m_trends_fin7.json": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\data\\raw_reports\\mandiant_m_trends_fin7.json",
+      "sha256": "9f96f73760f945d81d300df863a00c1446a92d8405b3b85717d890833bf1f9eb",
+      "size_bytes": 2494
+    },
+    "vector_retrieval/chroma_sqlite3": {
+      "status": "MUTABLE_ARTIFACT_RESOLVED",
+      "path": "cyber_attribution_engine\\data\\chroma_db\\chroma.sqlite3",
+      "expected_sha256": "f1619bf2182fe2cdeef65be2e6785262b5e2e5e0f83a7bbdfa3f9cb67a0232a5",
+      "current_sha256": "1ddc579d0d8324cd11970189d5652acca303f5840ab7dd7a6ede53bfa4744e11",
+      "size_bytes": 294912
+    },
+    "source_code/__init__.py": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\src\\__init__.py",
+      "sha256": "15f8e99100af011eb817cc801107959628cbf35ddc5e7a5768ef85565a423410",
+      "size_bytes": 174
+    },
+    "source_code/api.py": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\src\\api.py",
+      "sha256": "c2fe7672d4ae39670e6ef461a236bea2f84bf7a684aaa8a808810ad7447b7843",
+      "size_bytes": 11903
+    },
+    "source_code/fusion_layer.py": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\src\\fusion_layer.py",
+      "sha256": "72419e5ee896dd11c74c7cb7f13302b4f33393d73ded1c6d147d9c413119d38d",
+      "size_bytes": 13094
+    },
+    "source_code/gnn_model.py": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\src\\gnn_model.py",
+      "sha256": "b9df21d3180ff6d1dfc644cfa39dbdf4b4259af7f428dc01a10d047c3210ca1f",
+      "size_bytes": 16786
+    },
+    "source_code/graph_builder.py": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\src\\graph_builder.py",
+      "sha256": "b41b64b0f479b2cc7eba9e91cbc51bced48533c5729af8a59f04f6f0d60f4ce0",
+      "size_bytes": 13172
+    },
+    "source_code/rag_engine.py": {
+      "status": "REPRODUCED",
+      "path": "cyber_attribution_engine\\src\\rag_engine.py",
+      "sha256": "a01697cca819c854e113daf7e4c69dd82d8649b1b3664969b1ad549860207b38",
+      "size_bytes": 7960
+    }
+  },
+  "chromadb_readonly_instrumentation": {
+    "isolated_test_file": "experiments\\phase9_3_final_authorization_20261011\\scratch\\chroma_test_copy\\chroma.sqlite3",
+    "initial_raw_sha256": "1ddc579d0d8324cd11970189d5652acca303f5840ab7dd7a6ede53bfa4744e11",
+    "post_query_raw_sha256": "1ddc579d0d8324cd11970189d5652acca303f5840ab7dd7a6ede53bfa4744e11",
+    "raw_binary_invariant": true,
+    "canonical_content_sha256": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+    "content_invariant": true,
+    "protocol_requirement": "Benchmark runner must open SQLite connection with URI mode ?mode=ro."
+  },
+  "encoder_provenance": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dimension": 384,
+    "is_l2_normalized": true,
+    "multi_run_deterministic": true,
+    "fallback_triggered": false
+  }
+}

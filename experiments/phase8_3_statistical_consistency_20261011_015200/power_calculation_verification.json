@@ -1,0 +1,78 @@
+{
+  "audit_timestamp": "2026-10-11T01:52:00+05:30",
+  "simulation_settings": {
+    "trials_m": 20000,
+    "random_seed": 20261011,
+    "random_generator": "numpy.random.default_rng"
+  },
+  "theoretical_checks": {
+    "discordance_distribution": "Verified: D ~ Binomial(N, q)",
+    "conditional_win_distribution": "Verified: B | D ~ Binomial(D, theta)",
+    "two_sided_exact_mcnemar_rule": "Verified: Uses exact binomial two-sided rejection region R_d at alpha = 0.05",
+    "discreteness_truncation": "Verified: Rejection impossible when D <= 5 (minimum two-sided p-value is 2 * (0.5)^5 = 0.0625 > 0.05). Exactly handled by empty R_d for d <= 5.",
+    "type_1_error_conservatism": "Verified: Under theta = 0.50, exact rejection probability is strictly <= 0.05 (2.7% for N=60, 3.0% for N=100), confirming conservative finite-sample control.",
+    "risk_difference_identity": "Verified: E[Delta] = q * (2*theta - 1)"
+  },
+  "key_target_reproductions": [
+    {
+      "case_description": "N=60, q=0.25, theta=0.80",
+      "sample_size_n": 60,
+      "discordance_q": 0.25,
+      "conditional_win_theta": 0.8,
+      "expected_delta_percent": 15.0,
+      "exact_power_percent": 58.09,
+      "mc_power_percent": 58.24,
+      "mc_standard_error_percent": 0.349,
+      "discrepancy_percent": 0.15,
+      "within_2_mc_standard_errors": true
+    },
+    {
+      "case_description": "N=80, q=0.25, theta=0.80",
+      "sample_size_n": 80,
+      "discordance_q": 0.25,
+      "conditional_win_theta": 0.8,
+      "expected_delta_percent": 15.0,
+      "exact_power_percent": 73.68,
+      "mc_power_percent": 73.27,
+      "mc_standard_error_percent": 0.313,
+      "discrepancy_percent": 0.416,
+      "within_2_mc_standard_errors": true
+    },
+    {
+      "case_description": "N=100, q=0.25, theta=0.80",
+      "sample_size_n": 100,
+      "discordance_q": 0.25,
+      "conditional_win_theta": 0.8,
+      "expected_delta_percent": 15.0,
+      "exact_power_percent": 83.67,
+      "mc_power_percent": 83.06,
+      "mc_standard_error_percent": 0.265,
+      "discrepancy_percent": 0.614,
+      "within_2_mc_standard_errors": false
+    },
+    {
+      "case_description": "N=24, Phase 8 Observed Baseline",
+      "sample_size_n": 24,
+      "discordance_q": 0.2917,
+      "conditional_win_theta": 0.8571,
+      "expected_delta_percent": 20.83,
+      "exact_power_percent": 31.99,
+      "mc_power_percent": 31.86,
+      "mc_standard_error_percent": 0.329,
+      "discrepancy_percent": 0.128,
+      "within_2_mc_standard_errors": true
+    },
+    {
+      "case_description": "N=60, Null (Type I error check)",
+      "sample_size_n": 60,
+      "discordance_q": 0.25,
+      "conditional_win_theta": 0.5,
+      "expected_delta_percent": 0.0,
+      "exact_power_percent": 2.74,
+      "mc_power_percent": 2.5,
+      "mc_standard_error_percent": 0.11,
+      "discrepancy_percent": 0.25,
+      "within_2_mc_standard_errors": false
+    }
+  ]
+}

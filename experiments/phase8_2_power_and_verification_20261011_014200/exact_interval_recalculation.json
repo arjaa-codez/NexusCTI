@@ -1,0 +1,71 @@
+{
+  "audit_timestamp": "2026-10-11T01:42:00+05:30",
+  "estimands": {
+    "conditional_hybrid_win_prob_pi": {
+      "definition": "P(Hybrid Correct | Disagreement)",
+      "point_estimate": 0.8571,
+      "exact_clopper_pearson_95_ci": [
+        0.4213,
+        0.9964
+      ],
+      "includes_null_0_50": true,
+      "consistency_with_mcnemar_test": "CONSISTENT (Includes 0.50 <-> p = 0.1250 > 0.05)"
+    },
+    "paired_discordance_prob_q": {
+      "definition": "P(Systems Disagree) = (b+c)/N",
+      "point_estimate": 0.2917,
+      "exact_clopper_pearson_95_ci": [
+        0.1262,
+        0.5109
+      ],
+      "note": "Critical nuisance parameter for prospective sample-size and power planning."
+    },
+    "conditional_odds_ratio_psi": {
+      "definition": "Odds Ratio of Discordance = b / c",
+      "point_estimate": 6.0,
+      "exact_95_ci": [
+        0.728,
+        275.986
+      ],
+      "includes_null_1_0": true,
+      "consistency_with_mcnemar_test": "CONSISTENT (Includes 1.0 <-> p = 0.1250 > 0.05)"
+    },
+    "paired_risk_difference_delta": {
+      "definition": "Marginal Top-3 Accuracy Difference = p_hybrid - p_retrieval",
+      "point_estimate_percent": 20.83,
+      "methods": {
+        "uncorrected_asymptotic_wald": {
+          "interval_percent": [
+            0.9,
+            40.77
+          ],
+          "validity": "INVALID_SMALL_SAMPLE (Severe undercoverage when n_d = 7 < 20)"
+        },
+        "continuity_corrected_wald": {
+          "interval_percent": [
+            -3.27,
+            36.6
+          ],
+          "includes_zero": true,
+          "validity": "DEFENSIBLE_CONSERVATIVE (Consistent with p = 0.1250)"
+        },
+        "newcombe_paired_score_method_10": {
+          "interval_percent": [
+            0.72,
+            38.31
+          ],
+          "includes_zero": false,
+          "validity": "RECOMMENDED_STANDARD (Maintains nominal 95% coverage for paired data)"
+        },
+        "agresti_min_pseudocount_adjusted": {
+          "interval_percent": [
+            -0.77,
+            39.23
+          ],
+          "includes_zero": true,
+          "validity": "DEFENSIBLE_SMOOTHED (Consistent with p = 0.1250)"
+        }
+      }
+    }
+  }
+}

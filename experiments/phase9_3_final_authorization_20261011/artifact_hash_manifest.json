@@ -1,0 +1,447 @@
+{
+  "phase8/benchmark_metrics.json": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/benchmark_metrics.json",
+    "size_bytes": 3401,
+    "sha256": "6e8547fed909804495c2bb25c6e58143bc236951bd4704a9827278a53937027e"
+  },
+  "phase8/campaign_deduplication_report.json": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/campaign_deduplication_report.json",
+    "size_bytes": 623,
+    "sha256": "aeed85c32e5b310eb8624d74c3a8e826afba7d458c20866e5518b10751ab7835"
+  },
+  "phase8/external_report_manifest.csv": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/external_report_manifest.csv",
+    "size_bytes": 31053,
+    "sha256": "029f434c43f6535c68870ec53f7d8478791cd5f1faceef8a45c62e78777e0f22"
+  },
+  "phase8/frozen_predictions.csv": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/frozen_predictions.csv",
+    "size_bytes": 12321,
+    "sha256": "4ef09685ae3b01d89ea5b13e8ac0e96f362e3788772125bde86d793de4040a61"
+  },
+  "phase8/graph_contamination_audit.json": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/graph_contamination_audit.json",
+    "size_bytes": 306,
+    "sha256": "cd0642802c5e4f95f6829b60202f3779e0b5aa0eee566257fda13c71c9f4349e"
+  },
+  "phase8/ground_truth_evidence_manifest.csv": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/ground_truth_evidence_manifest.csv",
+    "size_bytes": 17107,
+    "sha256": "7d631f51e0e8020720abbfc23745baee3bbbdbcf34ae52bc57ecbd1545b9e19d"
+  },
+  "phase8/limitations_and_claims_register.md": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/limitations_and_claims_register.md",
+    "size_bytes": 4284,
+    "sha256": "b466ce2d37f892dc24abfd365b646958faf3003748bdd9c97060c44043e7d8c5"
+  },
+  "phase8/paired_comparison_results.json": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/paired_comparison_results.json",
+    "size_bytes": 1073,
+    "sha256": "97405513d534d8e5b5df2975df76fcb8ebf4f96c22bf4e9a73b1572fbe9fc311"
+  },
+  "phase8/phase8_report.md": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/phase8_report.md",
+    "size_bytes": 17014,
+    "sha256": "b42ff3543c2501b97225bf8afceb6cb165fca6b185d4813bc9c31d9fc5f472d9"
+  },
+  "phase8/power_analysis.md": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/power_analysis.md",
+    "size_bytes": 4770,
+    "sha256": "db59ef1fcea540ae12b18b0b96f1ad40a87856e5dadd07e5526ef50bdebf5e92"
+  },
+  "phase8/preregistered_evaluation_protocol.md": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/preregistered_evaluation_protocol.md",
+    "size_bytes": 7630,
+    "sha256": "cc205bd2d01fb72fcdd271e3f54f67a157ddf1c0ea42f69324f0b8799a812de2"
+  },
+  "phase8/reproducibility_manifest.json": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/reproducibility_manifest.json",
+    "size_bytes": 968,
+    "sha256": "ad025514ca70bfdc6a77455fcb31b166c0caeacd8153693c5f59eed20ebb409c"
+  },
+  "phase8/retrieval_contamination_audit.json": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/retrieval_contamination_audit.json",
+    "size_bytes": 306,
+    "sha256": "eb2b424f3e297b37f2f7e14a04eb773fe43adf27a8e12ff9ed5a183f0c6822b5"
+  },
+  "phase8/run_phase8_evaluation.py": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/run_phase8_evaluation.py",
+    "size_bytes": 84911,
+    "sha256": "308fdcc338b56aab8998a5b6dec19926cd63070b8567089dbaf95a190b106e46"
+  },
+  "phase8/split_manifest.json": {
+    "path": "experiments/phase8_expanded_evaluation_20261011_012000/split_manifest.json",
+    "size_bytes": 1636,
+    "sha256": "cacd410db76abfe4d9e3a9ba64a9323e7501fc232c06229cd8bfc038fc4e0d85"
+  },
+  "phase8_1/artifact_hash_manifest.json": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/artifact_hash_manifest.json",
+    "size_bytes": 5085,
+    "sha256": "097cfd4ea6e15b10a8efd0d29be3ccbd4262f4603abdd82eeaad1fd6f6d53d0d"
+  },
+  "phase8_1/confidence_interval_method_audit.md": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/confidence_interval_method_audit.md",
+    "size_bytes": 4829,
+    "sha256": "5ecba3f6f3e945a9ae1b7840fc7840dccb0d1aa3017438a941197659bcb5e3ae"
+  },
+  "phase8_1/dataset_case_flow.csv": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/dataset_case_flow.csv",
+    "size_bytes": 12519,
+    "sha256": "4a5e6178b8716e3efb9b20af460e25bd6fe64719023f578d44cec28337b59a02"
+  },
+  "phase8_1/leakage_recalculation.json": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/leakage_recalculation.json",
+    "size_bytes": 1137,
+    "sha256": "1b5cf223d883c459e3a0d9476a53aab9ea34feaba9a77255d19b530eb1e2b54e"
+  },
+  "phase8_1/paired_endpoint_recalculation.json": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/paired_endpoint_recalculation.json",
+    "size_bytes": 7056,
+    "sha256": "4ab1672a715a6dad1c2c10cb4d51000376f406dd12e03e5340270a8fb5a9229c"
+  },
+  "phase8_1/phase8_1_audit_report.md": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/phase8_1_audit_report.md",
+    "size_bytes": 9368,
+    "sha256": "61e9bf45bc1c556f313dcbcaadaedb3e48c99d4da695d455c1993fa6a5e4a866"
+  },
+  "phase8_1/preregistration_deviation_register.csv": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/preregistration_deviation_register.csv",
+    "size_bytes": 1529,
+    "sha256": "3178f58ade0188d89603d0d082ea9823f18823154d57b80208729144473c6225"
+  },
+  "phase8_1/run_phase8_1_audit.py": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/run_phase8_1_audit.py",
+    "size_bytes": 24102,
+    "sha256": "2f17ccd3b1d64104b7dfe7602b28441030226de08733a8ffbb29738847c134a8"
+  },
+  "phase8_1/source_and_ground_truth_audit.csv": {
+    "path": "experiments/phase8_1_independent_audit_20261011_013000/source_and_ground_truth_audit.csv",
+    "size_bytes": 13947,
+    "sha256": "12fd7ce6f6864b365e64be369f6fbd907fbe33d2491cd932094dd71370b18099"
+  },
+  "phase8_2/artifact_hash_manifest.json": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/artifact_hash_manifest.json",
+    "size_bytes": 8049,
+    "sha256": "8161575a31b2d8ce844c14a1b7142638d80b021755b91142b05ed424b7c01b71"
+  },
+  "phase8_2/exact_interval_recalculation.json": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/exact_interval_recalculation.json",
+    "size_bytes": 2255,
+    "sha256": "d186f86cebd0988b4b2689588504994a3828a2330dd7fdca29b6adc776bd1861"
+  },
+  "phase8_2/mcnemar_verification.json": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/mcnemar_verification.json",
+    "size_bytes": 1145,
+    "sha256": "a90089f4fe8c8ad20f1b15fb074006c613a89d2619cf86ce2eacae932701de40"
+  },
+  "phase8_2/phase8_2_statistical_audit_report.md": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/phase8_2_statistical_audit_report.md",
+    "size_bytes": 18677,
+    "sha256": "6b41c3061c56dc072bbd30206bf7940978c26c114290ce9b699c1fee2dc5a0fb"
+  },
+  "phase8_2/power_analysis_assumptions.md": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/power_analysis_assumptions.md",
+    "size_bytes": 7765,
+    "sha256": "8070564bd0492eae7af12e89c2da559908838599d41eaccb866c568bc1afa81d"
+  },
+  "phase8_2/prospective_power_analysis.csv": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/prospective_power_analysis.csv",
+    "size_bytes": 12229,
+    "sha256": "585ca1bc78254d1993d791aecf55785055dfa80a4b0867d929e5316235a8738e"
+  },
+  "phase8_2/reproduction_instructions.md": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/reproduction_instructions.md",
+    "size_bytes": 1377,
+    "sha256": "bb7ad0d1094eafb5c55bb641d4032671dfe0515998ff17f4e75857613ac23b56"
+  },
+  "phase8_2/run_phase8_2_audit.py": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/run_phase8_2_audit.py",
+    "size_bytes": 15998,
+    "sha256": "278bc2a80f20be194e3f6532cda49b87f7379f55dabf1b84ae99c007866894fe"
+  },
+  "phase8_2/sample_size_recommendation.md": {
+    "path": "experiments/phase8_2_power_and_verification_20261011_014200/sample_size_recommendation.md",
+    "size_bytes": 4220,
+    "sha256": "e083dc5a530fd2bd0bff37452a8895160f39aabfde32b4f4116440ce7576beef"
+  },
+  "phase8_3/artifact_hash_manifest.json": {
+    "path": "experiments/phase8_3_statistical_consistency_20261011_015200/artifact_hash_manifest.json",
+    "size_bytes": 10556,
+    "sha256": "d4101f0c6b634a5e79c81a5c59905ffb23331b2ca0f0304de64ecc6356b8ba8a"
+  },
+  "phase8_3/final_preregistered_protocol_draft.md": {
+    "path": "experiments/phase8_3_statistical_consistency_20261011_015200/final_preregistered_protocol_draft.md",
+    "size_bytes": 9951,
+    "sha256": "ce6e4dd6fac25a59ec9c4022848e1c573a80f111d0b82a3665ac374fbe276608"
+  },
+  "phase8_3/paired_interval_reproduction.json": {
+    "path": "experiments/phase8_3_statistical_consistency_20261011_015200/paired_interval_reproduction.json",
+    "size_bytes": 4861,
+    "sha256": "58d79213e1648e11e82b536ffb406bdc21845266ff430fd143e7ff9c110f7a68"
+  },
+  "phase8_3/phase8_3_consistency_review.md": {
+    "path": "experiments/phase8_3_statistical_consistency_20261011_015200/phase8_3_consistency_review.md",
+    "size_bytes": 19586,
+    "sha256": "ac907f35180972d631896c7be0001bc0015aacb2b9cc348597228b56fbf5a1aa"
+  },
+  "phase8_3/power_calculation_verification.json": {
+    "path": "experiments/phase8_3_statistical_consistency_20261011_015200/power_calculation_verification.json",
+    "size_bytes": 2979,
+    "sha256": "da8c0da1756d1febf4f161c6c2d5c41402f66e19e71aab1cb707192574a55d06"
+  },
+  "phase8_3/run_phase8_3_review.py": {
+    "path": "experiments/phase8_3_statistical_consistency_20261011_015200/run_phase8_3_review.py",
+    "size_bytes": 19284,
+    "sha256": "443578f00a84c003c58f6d7e887b26e0752a5c4bfc6fc48fd9f56f8b58425b9e"
+  },
+  "phase8_3/sample_size_sensitivity.csv": {
+    "path": "experiments/phase8_3_statistical_consistency_20261011_015200/sample_size_sensitivity.csv",
+    "size_bytes": 21478,
+    "sha256": "c32168a8ce11f7786ae74f57a0ca86a74f7a4ed5717690c9fb0643cd18b08e83"
+  },
+  "phase9/artifact_hash_manifest.json": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/artifact_hash_manifest.json",
+    "size_bytes": 12119,
+    "sha256": "5b1bb223f0ede66c7a46d22b39d2490452d855df4ef7da14e55a921c59c13181"
+  },
+  "phase9/campaign_deduplication_report.md": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/campaign_deduplication_report.md",
+    "size_bytes": 7473,
+    "sha256": "cf58d65ad69a9e9ddcdacee9a1f7d831a3c6fe31f94115b2329fbb0ff8bb26a8"
+  },
+  "phase9/candidate_campaign_manifest.csv": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/candidate_campaign_manifest.csv",
+    "size_bytes": 101364,
+    "sha256": "dc22e88f0ef28a26249dd3f54e5c073d5270c7f6e1660c3421660f7cace01353"
+  },
+  "phase9/evaluation_pipeline_test_report.md": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/evaluation_pipeline_test_report.md",
+    "size_bytes": 5624,
+    "sha256": "373c0e7b65595fc4dbec8947ebaaa5345878a94ea36d3c26f4fc9ecf3b4a48de"
+  },
+  "phase9/frozen_system_manifest.json": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/frozen_system_manifest.json",
+    "size_bytes": 5276,
+    "sha256": "3fd7186c12260cb7f2dc25d016281db28160005b3e735414b900b1e830badcd1"
+  },
+  "phase9/leakage_audit_report.md": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/leakage_audit_report.md",
+    "size_bytes": 6093,
+    "sha256": "4c6a574c918445df935c6923e477337372e87cb77883da8ab7324111e8fa1932"
+  },
+  "phase9/phase9_protocol_freeze.md": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/phase9_protocol_freeze.md",
+    "size_bytes": 15454,
+    "sha256": "22d87f9249828e976b19885dc8b2d202f4124dbfb86faf550e68ed073b01c85f"
+  },
+  "phase9/pipeline_validation_data.json": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/pipeline_validation_data.json",
+    "size_bytes": 5890,
+    "sha256": "c398045fd023d79c3ba97a3ea1214e3aae92481c33d81391d78503bc523dbe1e"
+  },
+  "phase9/run_phase9_prep.py": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/run_phase9_prep.py",
+    "size_bytes": 29008,
+    "sha256": "2dd49bd167b20f863dc02d2fd50f6999d450bbf885737a8c22e85c420264e6a4"
+  },
+  "phase9/sample_size_and_power_justification.md": {
+    "path": "experiments/phase9_benchmark_preparation_20261011_020400/sample_size_and_power_justification.md",
+    "size_bytes": 8149,
+    "sha256": "955dbc13a9de978abf819e990402bdca688a6d7bc21e03ecb0b1aac76747ccce"
+  },
+  "phase9_1/artifact_hash_manifest.json": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/artifact_hash_manifest.json",
+    "size_bytes": 15030,
+    "sha256": "7d13997afcbd76423a66e14c30d2dc3833d2bbae515ed7ef2756afd23ca43275"
+  },
+  "phase9_1/confidence_interval_simulation_results.json": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/confidence_interval_simulation_results.json",
+    "size_bytes": 2365,
+    "sha256": "f9769b7b7489ed584f5d46dadf1f2556d62f7116c7b035e6859809b2f3176b61"
+  },
+  "phase9_1/confidence_interval_validation.md": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/confidence_interval_validation.md",
+    "size_bytes": 10210,
+    "sha256": "698e48884f08e048b3bc97ed352b81fddf77c60e33c0107a86785c3e7aab3271"
+  },
+  "phase9_1/joint_decision_rule_power.csv": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/joint_decision_rule_power.csv",
+    "size_bytes": 13395,
+    "sha256": "02706b60a6841271313b49a909bdb9bd6989136a43712178fdb6b10d95238196"
+  },
+  "phase9_1/leakage_audit_reproducibility.md": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/leakage_audit_reproducibility.md",
+    "size_bytes": 10685,
+    "sha256": "a5fdd7c07ea4b833d0fb4b5584eeb85b9f041d07dfe96d36e810b71b588d360e"
+  },
+  "phase9_1/phase9_1_preflight_audit.md": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/phase9_1_preflight_audit.md",
+    "size_bytes": 17602,
+    "sha256": "ec00d4597d0f5d9b3aa497c4d2cbecf6ef95f26dd437eb2c056c9567153052c6"
+  },
+  "phase9_1/run_preflight_audit.py": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/run_preflight_audit.py",
+    "size_bytes": 24280,
+    "sha256": "fc7b97d278636d7fd650c7c6fdefce61df6480a4d15e32056f255628c91fee6b"
+  },
+  "phase9_1/runtime_freeze_verification.json": {
+    "path": "experiments/phase9_1_preflight_audit_20261011_023000/runtime_freeze_verification.json",
+    "size_bytes": 7383,
+    "sha256": "5a374b461864725fe4ea3444915f028c8df350ecbad311bbbaf44fbd60def422"
+  },
+  "phase9_2/artifact_hash_manifest.json": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/artifact_hash_manifest.json",
+    "size_bytes": 18827,
+    "sha256": "ccc23bc46445d3e5fb6c2a7222beb34e4a560d60d312e4db86056b1ec200106e"
+  },
+  "phase9_2/database_integrity_summary.json": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/database_integrity_summary.json",
+    "size_bytes": 4319,
+    "sha256": "291e511875c57ea0a6ea1d548b38bcd8b16cd0510992f5a95bc7d72752fd684e"
+  },
+  "phase9_2/database_integrity_verification.md": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/database_integrity_verification.md",
+    "size_bytes": 8635,
+    "sha256": "24786838c463dd585230076ce9fb61a8dd68ec9fa48b505bd5038de26d4e6519"
+  },
+  "phase9_2/joint_decision_rule_power_recheck.csv": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/joint_decision_rule_power_recheck.csv",
+    "size_bytes": 17191,
+    "sha256": "a63df3baf61fe97d89b721a6e040e4ef00a6b999cb354500b504d81d07a1ac86"
+  },
+  "phase9_2/leakage_audit_reproducibility_v2.md": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/leakage_audit_reproducibility_v2.md",
+    "size_bytes": 10887,
+    "sha256": "6de492953e73666021316adcd1446cf78f7acc65231fb96b97b8a820b70f0eb2"
+  },
+  "phase9_2/leakage_audit_summary_v2.json": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/leakage_audit_summary_v2.json",
+    "size_bytes": 2643,
+    "sha256": "982ef908de33587dbc03f7e8bef4e93cd222112e45c1b30ac1a10c14b126de59"
+  },
+  "phase9_2/phase9_2_protocol_amendment_proposal.md": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/phase9_2_protocol_amendment_proposal.md",
+    "size_bytes": 11060,
+    "sha256": "8de55e896129360573dd8af6163c34c55bfcf4082f6a864ae01150a7c6830d1a"
+  },
+  "phase9_2/phase9_2_readiness_decision.md": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/phase9_2_readiness_decision.md",
+    "size_bytes": 8333,
+    "sha256": "b8e878baaeef74f7ef0b5982c1d03c322ed52f32efc1b353f1c25b42ac0ca744"
+  },
+  "phase9_2/run_database_integrity_check.py": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/run_database_integrity_check.py",
+    "size_bytes": 7823,
+    "sha256": "782f120bb882cc915ed95edafa32346ef73170c6d59d064bffb4ed3a1e9a511d"
+  },
+  "phase9_2/run_leakage_audit_v2.py": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/run_leakage_audit_v2.py",
+    "size_bytes": 16975,
+    "sha256": "cce265378d9906465a6dde61f930af0bd66c51818723a27d08165570586305a8"
+  },
+  "phase9_2/run_power_recheck.py": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/run_power_recheck.py",
+    "size_bytes": 6249,
+    "sha256": "12a1eb1291753e50e70a05096520b43a690792e47d873baaa4ac03f560ea0b04"
+  },
+  "phase9_2/run_runtime_determinism_check.py": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/run_runtime_determinism_check.py",
+    "size_bytes": 7048,
+    "sha256": "d4736c2916b7d8d717f7737bb0ed6b57aad9855ec625fe8fb42c9693960db2ea"
+  },
+  "phase9_2/runtime_determinism_report.md": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/runtime_determinism_report.md",
+    "size_bytes": 9153,
+    "sha256": "d81e20c4b40f0af4ef99b82d72a5dfed5623c9fb46a3294864ce4658d4e3b7b9"
+  },
+  "phase9_2/runtime_determinism_summary.json": {
+    "path": "experiments/phase9_2_protocol_clarification_20261011_030000/runtime_determinism_summary.json",
+    "size_bytes": 25790,
+    "sha256": "1e06080054245e7079ab37f35a49e57ee95307db233b860d0e09cdd85d3fc374"
+  },
+  "phase9_3/artifact_hash_manifest.json": {
+    "path": "experiments/phase9_3_final_authorization_20261011/artifact_hash_manifest.json",
+    "size_bytes": 22542,
+    "sha256": "737fa9a2e2b1f17449d21a1028def241a796aa204681750395a70d176a6936ac"
+  },
+  "phase9_3/authorization_checklist.json": {
+    "path": "experiments/phase9_3_final_authorization_20261011/authorization_checklist.json",
+    "size_bytes": 6796,
+    "sha256": "deb62a435b9f5ccdcea684c885fba62d94dabdb5eab707a0d1478586281e8d74"
+  },
+  "phase9_3/build_phase9_3_manifests.py": {
+    "path": "experiments/phase9_3_final_authorization_20261011/build_phase9_3_manifests.py",
+    "size_bytes": 9642,
+    "sha256": "a759adbdff04413f0446ee28b283cd2e4ad7a9aac92f3d21f7a76625b103fe25"
+  },
+  "phase9_3/dataset_blinding_and_dedup_audit.md": {
+    "path": "experiments/phase9_3_final_authorization_20261011/dataset_blinding_and_dedup_audit.md",
+    "size_bytes": 6763,
+    "sha256": "0c9158927f3b1d979dd48485a32e550797e7e09684c0e7db638ddc108cf108fa"
+  },
+  "phase9_3/phase9_3_authorization_decision.md": {
+    "path": "experiments/phase9_3_final_authorization_20261011/phase9_3_authorization_decision.md",
+    "size_bytes": 8174,
+    "sha256": "b2627948a3c84df8193f25251a46acdeacdbc90d5a05ab6fc4400d5f3d88ca59"
+  },
+  "phase9_3/phase9_3_final_protocol.md": {
+    "path": "experiments/phase9_3_final_authorization_20261011/phase9_3_final_protocol.md",
+    "size_bytes": 9716,
+    "sha256": "6209936983d77acf8b7160c4c28e6cfe1edfb54f21bf3d1fa7e737c26401b065"
+  },
+  "phase9_3/power_calculation_reproduction.md": {
+    "path": "experiments/phase9_3_final_authorization_20261011/power_calculation_reproduction.md",
+    "size_bytes": 6783,
+    "sha256": "b7ef2466b1f37c23c1917ecbb48586b90bba33f411ced5a56dfef8281cfb65d7"
+  },
+  "phase9_3/power_statement_audit_grid.csv": {
+    "path": "experiments/phase9_3_final_authorization_20261011/power_statement_audit_grid.csv",
+    "size_bytes": 905,
+    "sha256": "6443ce4c76580c6e2f93d73e85980f235d2bb8881200de31cef16dd0757a8455"
+  },
+  "phase9_3/protocol_change_log.md": {
+    "path": "experiments/phase9_3_final_authorization_20261011/protocol_change_log.md",
+    "size_bytes": 6906,
+    "sha256": "d810f20d6a8622ba2631c6b2fc09ad017ecbdd2caa234889f8b0dcafcea6e20b"
+  },
+  "phase9_3/run_power_audit.py": {
+    "path": "experiments/phase9_3_final_authorization_20261011/run_power_audit.py",
+    "size_bytes": 6431,
+    "sha256": "fd7b0989686aa3781162df19f64a2fc18cb655f39a7b3baecb262c6407a1c1d8"
+  },
+  "phase9_3/run_runtime_artifact_integrity.py": {
+    "path": "experiments/phase9_3_final_authorization_20261011/run_runtime_artifact_integrity.py",
+    "size_bytes": 8825,
+    "sha256": "025ed0ade568329c989b3ff71742b130807bf27e1708b3274dd266b5d7bd78d4"
+  },
+  "phase9_3/run_synthetic_runner_validation.py": {
+    "path": "experiments/phase9_3_final_authorization_20261011/run_synthetic_runner_validation.py",
+    "size_bytes": 13849,
+    "sha256": "995c49453c0f2de9ba22a1443aaf0b44b8f075036e7de368a369fc616d619d3f"
+  },
+  "phase9_3/runtime_and_artifact_integrity.md": {
+    "path": "experiments/phase9_3_final_authorization_20261011/runtime_and_artifact_integrity.md",
+    "size_bytes": 6451,
+    "sha256": "0d90608561082c47a1efce28506d98bc910435b116e4dc1e9dee9559ee697128"
+  },
+  "phase9_3/runtime_integrity_telemetry.json": {
+    "path": "experiments/phase9_3_final_authorization_20261011/runtime_integrity_telemetry.json",
+    "size_bytes": 5853,
+    "sha256": "7efe8263c1020a6fbd6609f4723f79e2ccb9a4169e181ec2b2b09fe645afc0cb"
+  },
+  "phase9_3/synthetic_predictions_dev.csv": {
+    "path": "experiments/phase9_3_final_authorization_20261011/synthetic_predictions_dev.csv",
+    "size_bytes": 4373,
+    "sha256": "36afa7953b8e261808870a0b590d6c7590f1a2c830d52542107ae2832ea40d63"
+  },
+  "phase9_3/synthetic_runner_metrics.json": {
+    "path": "experiments/phase9_3_final_authorization_20261011/synthetic_runner_metrics.json",
+    "size_bytes": 1176,
+    "sha256": "af463ac9c10f9eec3717cc9edce44e6324d0accb42811e8ca3ec54953fb909c5"
+  },
+  "phase9_3/synthetic_runner_validation.md": {
+    "path": "experiments/phase9_3_final_authorization_20261011/synthetic_runner_validation.md",
+    "size_bytes": 5729,
+    "sha256": "9fe3fdf58a432a0cbf4d0eb3afba2ddd46c2533fe8ac774bc9219e6c370cdf43"
+  }
+}

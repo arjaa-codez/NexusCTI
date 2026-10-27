@@ -1,0 +1,127 @@
+{
+  "audit_timestamp": "2026-10-11T03:20:00+05:30",
+  "chromadb_readonly_audit": {
+    "configured_absolute_path": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\cyber_attribution_engine\\data\\chroma_db\\chroma.sqlite3",
+    "path_exists": true,
+    "initial_change_counter": 20,
+    "post_change_counter": 21,
+    "raw_binary_invariant": false,
+    "content_invariant": true,
+    "write_prevented_error": "InternalError: error returned from database: (code: 8) attempt to write a readonly database",
+    "finding": "ChromaDB's active PersistentClient opens SQLite in read-write mode via PerThreadPool, updating the file change counter upon connection. When database writes are prevented at the OS filesystem level, ChromaDB raises InternalError: (code: 8) attempt to write a readonly database."
+  },
+  "ground_truth_isolation": {
+    "manifest_path": "experiments\\phase9_benchmark_preparation_20261011_020400\\candidate_campaign_manifest.csv",
+    "label_columns": [
+      "attributed_actor",
+      "actor_aliases"
+    ],
+    "api_signatures_checked": [
+      "AttributionReasoner.attribute_ioc",
+      "ThreatRAGEngine.hybrid_search",
+      "HybridFusionEngine.compute_hybrid_attribution"
+    ],
+    "parameter_leakage": false,
+    "prospective_predictions_found": 0
+  },
+  "frozen_artifact_provenance": {
+    "manifest_path": "experiments\\phase9_benchmark_preparation_20261011_020400\\frozen_system_manifest.json",
+    "total_files": 16,
+    "exact_matches": 15,
+    "mismatches": 1,
+    "details": {
+      "graph_and_weights/graph_metadata.json": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\processed_graph\\graph_metadata.json",
+        "sha256": "f4794b9dbb7a392249c1717b54aeda791a924809da0b0457682b823fa1d9c14a"
+      },
+      "graph_and_weights/hetero_graph.pt": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\processed_graph\\hetero_graph.pt",
+        "sha256": "b8b09d30a76badaad617810d8687604720c15de72f8ac67e5076719e1b1e7748"
+      },
+      "graph_and_weights/rgcn_weights.pt": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\processed_graph\\rgcn_weights.pt",
+        "sha256": "dd438fad443bcfeffd1a34ce02f6d7150c93e909a864c62378e7ed90aff3adcf"
+      },
+      "training_reports/cisa_aa20_352a_apt29_solarwinds.json": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa20_352a_apt29_solarwinds.json",
+        "sha256": "c1d97558b13c79b679841cdeae582e9fd927f8154f40ff0b18d85d84d572b585"
+      },
+      "training_reports/cisa_aa22_054a_sandworm_industroyer.json": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa22_054a_sandworm_industroyer.json",
+        "sha256": "3f833f54f7e0570035f020f886e92742481172cd1f45b6d5142ca3329991e975"
+      },
+      "training_reports/cisa_aa22_110a_lazarus_applejeus.json": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa22_110a_lazarus_applejeus.json",
+        "sha256": "71e28d423f8528fd91d639d4e643d450cedd0034cb877babd67dc97320539f22"
+      },
+      "training_reports/cisa_aa23_074a_apt28_fancybear.json": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa23_074a_apt28_fancybear.json",
+        "sha256": "e9f77621c56a6147f3380bca2c5a27494b1e827031fb9d07d268cd6e141d22ce"
+      },
+      "training_reports/cisa_aa24_038a_volt_typhoon.json": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\cisa_aa24_038a_volt_typhoon.json",
+        "sha256": "9425e3ae6e98b1681b9402aca97ea2afe17f00d3e66073aa9f75cae79088d775"
+      },
+      "training_reports/mandiant_m_trends_fin7.json": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\data\\raw_reports\\mandiant_m_trends_fin7.json",
+        "sha256": "9f96f73760f945d81d300df863a00c1446a92d8405b3b85717d890833bf1f9eb"
+      },
+      "vector_retrieval/chroma_sqlite3": {
+        "status": "EXPECTED_SQLITE_MUTATION",
+        "path": "cyber_attribution_engine\\data\\chroma_db\\chroma.sqlite3",
+        "expected_sha256": "f1619bf2182fe2cdeef65be2e6785262b5e2e5e0f83a7bbdfa3f9cb67a0232a5",
+        "current_sha256": "1ddc579d0d8324cd11970189d5652acca303f5840ab7dd7a6ede53bfa4744e11"
+      },
+      "source_code/__init__.py": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\src\\__init__.py",
+        "sha256": "15f8e99100af011eb817cc801107959628cbf35ddc5e7a5768ef85565a423410"
+      },
+      "source_code/api.py": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\src\\api.py",
+        "sha256": "c2fe7672d4ae39670e6ef461a236bea2f84bf7a684aaa8a808810ad7447b7843"
+      },
+      "source_code/fusion_layer.py": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\src\\fusion_layer.py",
+        "sha256": "72419e5ee896dd11c74c7cb7f13302b4f33393d73ded1c6d147d9c413119d38d"
+      },
+      "source_code/gnn_model.py": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\src\\gnn_model.py",
+        "sha256": "b9df21d3180ff6d1dfc644cfa39dbdf4b4259af7f428dc01a10d047c3210ca1f"
+      },
+      "source_code/graph_builder.py": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\src\\graph_builder.py",
+        "sha256": "b41b64b0f479b2cc7eba9e91cbc51bced48533c5729af8a59f04f6f0d60f4ce0"
+      },
+      "source_code/rag_engine.py": {
+        "status": "REPRODUCED_EXACT",
+        "path": "cyber_attribution_engine\\src\\rag_engine.py",
+        "sha256": "a01697cca819c854e113daf7e4c69dd82d8649b1b3664969b1ad549860207b38"
+      }
+    }
+  },
+  "execution_contract": {
+    "task_a_count": 100,
+    "task_b_count": 30,
+    "unique_ids_count": 130,
+    "primary_endpoint": "Paired Top-3 accuracy Full Hybrid vs Retrieval-only",
+    "primary_test": "Exact two-sided McNemar test, alpha = 0.05",
+    "directional_condition": "Delta > 0",
+    "planning_mde": "+15.0 percentage points",
+    "ci_method": "Agresti-Min (2005) 95% paired interval",
+    "missing_data_policy": "Rank = 99 (Incorrect) for timeouts, errors, or empty predictions"
+  }
+}

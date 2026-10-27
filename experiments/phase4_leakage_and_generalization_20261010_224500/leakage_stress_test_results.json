@@ -1,0 +1,317 @@
+{
+  "setup_1_original_transductive": {
+    "description": "Standard GNN training where indicators within 3 hops receive direct actor supervision targets.",
+    "top1_accuracy": 75.0,
+    "top1_count": "9/12",
+    "mrr": 0.8472,
+    "supervised_indicator_leakage_present": true,
+    "cases": [
+      {
+        "case_id": "test_case_01",
+        "anchor_ioc": "avsvmcloud[.]com",
+        "ground_truth": "actor_apt29",
+        "top1": "actor_volt_typhoon",
+        "rank": 2,
+        "is_correct": false
+      },
+      {
+        "case_id": "test_case_02",
+        "anchor_ioc": "Industroyer (CrashOverride)",
+        "ground_truth": "actor_sandworm",
+        "top1": "actor_sandworm",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_03",
+        "anchor_ioc": "secure-crypto-wallet[.]org",
+        "ground_truth": "actor_lazarus",
+        "top1": "actor_lazarus",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_04",
+        "anchor_ioc": "a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99",
+        "ground_truth": "actor_apt28",
+        "top1": "actor_fin7",
+        "rank": 3,
+        "is_correct": false
+      },
+      {
+        "case_id": "test_case_05",
+        "anchor_ioc": "f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2",
+        "ground_truth": "actor_fin7",
+        "top1": "actor_fin7",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_06",
+        "anchor_ioc": "027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826",
+        "ground_truth": "actor_sandworm",
+        "top1": "actor_sandworm",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_07",
+        "anchor_ioc": "185.225.17.42",
+        "ground_truth": "actor_apt29",
+        "top1": "actor_apt29",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_08",
+        "anchor_ioc": "mail-update-service[.]net",
+        "ground_truth": "actor_apt28",
+        "top1": "actor_fin7",
+        "rank": 3,
+        "is_correct": false
+      },
+      {
+        "case_id": "test_case_09",
+        "anchor_ioc": "203.0.113.88",
+        "ground_truth": "actor_volt_typhoon",
+        "top1": "actor_volt_typhoon",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_10",
+        "anchor_ioc": "91.242.217.5",
+        "ground_truth": "actor_sandworm",
+        "top1": "actor_sandworm",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_11",
+        "anchor_ioc": "175.45.176.8",
+        "ground_truth": "actor_lazarus",
+        "top1": "actor_lazarus",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_12",
+        "anchor_ioc": "193.106.191.4",
+        "ground_truth": "actor_fin7",
+        "top1": "actor_fin7",
+        "rank": 1,
+        "is_correct": true
+      }
+    ]
+  },
+  "setup_2_strict_unsupervised_indicators": {
+    "description": "GNN trained with ZERO indicator nodes in supervision targets (trained only on malware, TTPs, and CVEs). Indicator embeddings derived solely via relational message passing.",
+    "top1_accuracy": 91.67,
+    "top1_count": "11/12",
+    "mrr": 0.9583,
+    "supervised_indicator_leakage_present": false,
+    "cases": [
+      {
+        "case_id": "test_case_01",
+        "anchor_ioc": "avsvmcloud[.]com",
+        "ground_truth": "actor_apt29",
+        "top1": "actor_apt29",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_02",
+        "anchor_ioc": "Industroyer (CrashOverride)",
+        "ground_truth": "actor_sandworm",
+        "top1": "actor_sandworm",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_03",
+        "anchor_ioc": "secure-crypto-wallet[.]org",
+        "ground_truth": "actor_lazarus",
+        "top1": "actor_lazarus",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_04",
+        "anchor_ioc": "a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99",
+        "ground_truth": "actor_apt28",
+        "top1": "actor_apt28",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_05",
+        "anchor_ioc": "f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2",
+        "ground_truth": "actor_fin7",
+        "top1": "actor_fin7",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_06",
+        "anchor_ioc": "027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826",
+        "ground_truth": "actor_sandworm",
+        "top1": "actor_sandworm",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_07",
+        "anchor_ioc": "185.225.17.42",
+        "ground_truth": "actor_apt29",
+        "top1": "actor_apt29",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_08",
+        "anchor_ioc": "mail-update-service[.]net",
+        "ground_truth": "actor_apt28",
+        "top1": "actor_apt28",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_09",
+        "anchor_ioc": "203.0.113.88",
+        "ground_truth": "actor_volt_typhoon",
+        "top1": "actor_apt29",
+        "rank": 2,
+        "is_correct": false
+      },
+      {
+        "case_id": "test_case_10",
+        "anchor_ioc": "91.242.217.5",
+        "ground_truth": "actor_sandworm",
+        "top1": "actor_sandworm",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_11",
+        "anchor_ioc": "175.45.176.8",
+        "ground_truth": "actor_lazarus",
+        "top1": "actor_lazarus",
+        "rank": 1,
+        "is_correct": true
+      },
+      {
+        "case_id": "test_case_12",
+        "anchor_ioc": "193.106.191.4",
+        "ground_truth": "actor_fin7",
+        "top1": "actor_fin7",
+        "rank": 1,
+        "is_correct": true
+      }
+    ]
+  },
+  "setup_3_inductive_unlinked_evaluation": {
+    "description": "Zero graph connectivity at test time (indicator introduced as novel isolated node). Evaluates pure GNN baseline when graph infrastructure is completely absent.",
+    "top1_accuracy": 0.0,
+    "top1_count": "0/12",
+    "mrr": 0.0,
+    "supervised_indicator_leakage_present": false,
+    "cases": [
+      {
+        "case_id": "test_case_01",
+        "anchor_ioc": "avsvmcloud[.]com",
+        "ground_truth": "actor_apt29",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_02",
+        "anchor_ioc": "Industroyer (CrashOverride)",
+        "ground_truth": "actor_sandworm",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_03",
+        "anchor_ioc": "secure-crypto-wallet[.]org",
+        "ground_truth": "actor_lazarus",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_04",
+        "anchor_ioc": "a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99",
+        "ground_truth": "actor_apt28",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_05",
+        "anchor_ioc": "f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2",
+        "ground_truth": "actor_fin7",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_06",
+        "anchor_ioc": "027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826",
+        "ground_truth": "actor_sandworm",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_07",
+        "anchor_ioc": "185.225.17.42",
+        "ground_truth": "actor_apt29",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_08",
+        "anchor_ioc": "mail-update-service[.]net",
+        "ground_truth": "actor_apt28",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_09",
+        "anchor_ioc": "203.0.113.88",
+        "ground_truth": "actor_volt_typhoon",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_10",
+        "anchor_ioc": "91.242.217.5",
+        "ground_truth": "actor_sandworm",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_11",
+        "anchor_ioc": "175.45.176.8",
+        "ground_truth": "actor_lazarus",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      },
+      {
+        "case_id": "test_case_12",
+        "anchor_ioc": "193.106.191.4",
+        "ground_truth": "actor_fin7",
+        "top1": "None",
+        "rank": 99,
+        "is_correct": []
+      }
+    ]
+  }
+}

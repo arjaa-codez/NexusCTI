@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-10-10T23:10:00+05:30",
+  "environment": {
+    "python_executable": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\.venv\\Scripts\\python.exe",
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "os": "nt",
+    "platform": "win32",
+    "working_directory": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI",
+    "phase6_experiment_directory": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase6_external_benchmark_20261010_231000"
+  },
+  "source_code_integrity_hashes": {
+    "nexuscti/service.py": {
+      "sha256": "f9fcf4b6971f4f88ff3b3e2ccedffcc7406fe6ce269996f92e311f10a2b92613",
+      "size_bytes": 4099
+    },
+    "nexuscti/gnn/trainer.py": {
+      "sha256": "51fd0eed7768875ef91666e07726e964ba472b74466ff27b26b7f3e29c5c0ac4",
+      "size_bytes": 6159
+    },
+    "nexuscti/gnn/graph_builder.py": {
+      "sha256": "6e53faee0f34783d324be6246c1a1c64a13e3e6311a1ca36183cc25b5228e5cb",
+      "size_bytes": 7737
+    },
+    "nexuscti/rag/dense_retriever.py": {
+      "sha256": "87b237954c9c80e0ff235492c90a6d563b6eeee349774c07036fba8a1c70b248",
+      "size_bytes": 3190
+    },
+    "nexuscti/fusion/engine.py": {
+      "sha256": "ce3102da13ad6074ca88ef46abd1bff011e92d3e19835ff1e83065a97f8e50b1",
+      "size_bytes": 8563
+    },
+    "experiments/phase6_external_benchmark_20261010_231000/run_phase6_benchmark.py": {
+      "sha256": "15b601ee7a7c4fecfc4dc54153a98d818ff34c445e975489df24492b180797a4",
+      "size_bytes": 57977
+    }
+  },
+  "deterministic_improvements": {
+    "dense_retriever_hashing": "Replaced process-randomized abs(hash()) with stable int(hashlib.md5().hexdigest(), 16) % 8192",
+    "pytorch_seed": 42
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "bundle--sandworm-industroyer2-2022",
+  "type": "bundle",
+  "spec_version": "2.1",
+  "threat_actor": "Sandworm Team",
+  "aliases": [
+    "TeleBots",
+    "Voodoo Bear",
+    "Iron Viking",
+    "Seashell Blizzard",
+    "GRU Unit 74455"
+  ],
+  "origin": "Russian Main Intelligence Directorate (GRU Main Center for Special Technologies)",
+  "confidence_base": 0.93,
+  "narrative": "CISA Advisory AA22-054A exposes destructive cyber attacks executed by Sandworm Team against industrial control systems (ICS). Sandworm engineered Industroyer (CrashOverride) and Industroyer2 to transmit IEC 60870-5-104 commands directly opening electrical transmission circuit breakers. Auxiliary wipers including NotPetya and CaddyWiper were staged via domains kiev-energy-update[.]com and grid-telemetry-sync[.]org on IPs 194.28.172.10 and 91.242.217.5. Initial penetration leverages EternalBlue SMB vulnerability CVE-2017-0144 and Fortinet VPN exploits, culminating in automated data destruction (MITRE ATT&CK T1485 Data Destruction and T1190 Exploit Public-Facing Application).",
+  "triples": [
+    {
+      "source_type": "ip",
+      "source": "194.28.172.10",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "kiev-energy-update.com"
+    },
+    {
+      "source_type": "ip",
+      "source": "91.242.217.5",
+      "relation": "resolves_to",
+      "target_type": "domain",
+      "target": "grid-telemetry-sync.org"
+    },
+    {
+      "source_type": "domain",
+      "source": "kiev-energy-update.com",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "Industroyer"
+    },
+    {
+      "source_type": "domain",
+      "source": "grid-telemetry-sync.org",
+      "relation": "drops",
+      "target_type": "malware",
+      "target": "NotPetya"
+    },
+    {
+      "source_type": "cve",
+      "source": "CVE-2017-0144",
+      "relation": "exploited_by",
+      "target_type": "malware",
+      "target": "Industroyer"
+    },
+    {
+      "source_type": "malware",
+      "source": "Industroyer",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "Sandworm Team"
+    },
+    {
+      "source_type": "malware",
+      "source": "NotPetya",
+      "relation": "attributed_to",
+      "target_type": "attack_group",
+      "target": "Sandworm Team"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "Sandworm Team",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1485"
+    },
+    {
+      "source_type": "attack_group",
+      "source": "Sandworm Team",
+      "relation": "uses",
+      "target_type": "technique",
+      "target": "T1190"
+    }
+  ]
+}

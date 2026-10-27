@@ -1,0 +1,37 @@
+{
+  "protocol_endpoint": "Primary Endpoint: Paired Top-3 Correctness Difference on Task A Closed Set",
+  "sample_size_n": 24,
+  "contingency_table": {
+    "both_correct_a": 11,
+    "hybrid_correct_retrieval_incorrect_b": 6,
+    "retrieval_correct_hybrid_incorrect_c": 1,
+    "both_incorrect_d": 6
+  },
+  "discordant_cases_detail": {
+    "hybrid_alone_correct_b_cases": [
+      "bench_exp_15",
+      "bench_exp_17",
+      "bench_exp_18",
+      "bench_exp_23",
+      "bench_exp_26",
+      "bench_exp_27"
+    ],
+    "retrieval_alone_correct_c_cases": [
+      "bench_exp_24"
+    ]
+  },
+  "paired_metrics": {
+    "full_hybrid_top3_accuracy": 70.83,
+    "retrieval_only_top3_accuracy": 50.0,
+    "risk_difference_delta_percent": 20.83,
+    "risk_difference_95_ci": [
+      0.9,
+      40.77
+    ],
+    "discordance_odds_ratio_psi": 6.0,
+    "exact_mcnemar_p_value": 0.125,
+    "is_statistically_significant_at_alpha_0_05": false,
+    "is_practically_meaningful_delta_ge_15_percent": true
+  },
+  "scientific_conclusion": "RESULTS_INCONCLUSIVE"
+}

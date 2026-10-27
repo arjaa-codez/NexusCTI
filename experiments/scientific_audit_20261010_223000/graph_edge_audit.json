@@ -1,0 +1,170 @@
+{
+  "test_case_01": {
+    "case_name": "APT29 SUNBURST Direct Backdoor Detection",
+    "anchor_ioc": "avsvmcloud[.]com",
+    "resolved_node_id": "ioc_domain_avsvmcloud",
+    "shortest_distance_to_actor": 2,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "avsvmcloud[.]com --(rev_communicates_with)--> SUNBURST",
+      "SUNBURST --(rev_uses)--> APT29 (Cozy Bear / NOBELIUM)"
+    ],
+    "hop_count": 2
+  },
+  "test_case_02": {
+    "case_name": "Sandworm Industroyer Power Grid Payload",
+    "anchor_ioc": "Industroyer (CrashOverride)",
+    "resolved_node_id": "mal_industroyer",
+    "shortest_distance_to_actor": 1,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": true,
+    "traversed_path_hops": [
+      "Industroyer (CrashOverride) --(rev_uses)--> Sandworm (APT44 / Seashell Blizzard)"
+    ],
+    "hop_count": 1
+  },
+  "test_case_03": {
+    "case_name": "Lazarus AppleJeus Trojanized Installer",
+    "anchor_ioc": "secure-crypto-wallet[.]org",
+    "resolved_node_id": "ioc_domain_crypto_wallet",
+    "shortest_distance_to_actor": 2,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "secure-crypto-wallet[.]org --(rev_communicates_with)--> AppleJeus",
+      "AppleJeus --(rev_uses)--> Lazarus Group (HIDDEN COBRA)"
+    ],
+    "hop_count": 2
+  },
+  "test_case_04": {
+    "case_name": "APT28 Zebrocy Binary Hash to C2 Pivot",
+    "anchor_ioc": "a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99",
+    "resolved_node_id": "ioc_hash_zebrocy_bin",
+    "shortest_distance_to_actor": 2,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "a3d9e84b72110cfa2349e5d9c0281b37e221d604b1234f9a0c84112e31578e99 --(rev_communicates_with)--> Zebrocy",
+      "Zebrocy --(rev_uses)--> APT28 (Fancy Bear / STRONTIUM)"
+    ],
+    "hop_count": 2
+  },
+  "test_case_05": {
+    "case_name": "FIN7 Griffon Stager & Zerologon Exploitation",
+    "anchor_ioc": "f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2",
+    "resolved_node_id": "ioc_hash_griffon_js",
+    "shortest_distance_to_actor": 2,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "f441c21d84812a106e2cf61a5b8bb15e0a6d2139744e83f233481273891461f2 --(rev_communicates_with)--> Griffon",
+      "Griffon --(rev_uses)--> FIN7 (Carbanak / ELBRUS)"
+    ],
+    "hop_count": 2
+  },
+  "test_case_06": {
+    "case_name": "Sandworm NotPetya Wiper Binary Artifact",
+    "anchor_ioc": "027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826",
+    "resolved_node_id": "ioc_hash_notpetya_bin",
+    "shortest_distance_to_actor": 2,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "027cc45097f8c2342332e5964cb68104d41fbe70e6b4ae0a30e60f34647d7826 --(rev_communicates_with)--> NotPetya",
+      "NotPetya --(rev_uses)--> Sandworm (APT44 / Seashell Blizzard)"
+    ],
+    "hop_count": 2
+  },
+  "test_case_07": {
+    "case_name": "APT29 Multi-Hop Secondary Infrastructure Pivot",
+    "anchor_ioc": "185.225.17.42",
+    "resolved_node_id": "ioc_ip_185_225_17_42",
+    "shortest_distance_to_actor": 4,
+    "supervised_in_training_labels": false,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "185.225.17.42 --(rev_resolves_to)--> freescanonline[.]com",
+      "freescanonline[.]com --(rev_shares_infra)--> avsvmcloud[.]com",
+      "avsvmcloud[.]com --(rev_communicates_with)--> SUNBURST",
+      "SUNBURST --(rev_uses)--> APT29 (Cozy Bear / NOBELIUM)"
+    ],
+    "hop_count": 4
+  },
+  "test_case_08": {
+    "case_name": "APT28 Shared DNS Resolution Pivot",
+    "anchor_ioc": "mail-update-service[.]net",
+    "resolved_node_id": "ioc_domain_mail_update",
+    "shortest_distance_to_actor": 3,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "mail-update-service[.]net --(rev_shares_infra)--> auth-microsoft365[.]com",
+      "auth-microsoft365[.]com --(rev_communicates_with)--> Zebrocy",
+      "Zebrocy --(rev_uses)--> APT28 (Fancy Bear / STRONTIUM)",
+      "APT28 (Fancy Bear / STRONTIUM) --(targets)--> CVE-2021-44228",
+      "CVE-2021-44228 --(rev_targets)--> Lazarus Group (HIDDEN COBRA)"
+    ],
+    "hop_count": 5
+  },
+  "test_case_09": {
+    "case_name": "Volt Typhoon SOHO Mesh Egress Pivot",
+    "anchor_ioc": "203.0.113.88",
+    "resolved_node_id": "ioc_ip_203_0_113_88",
+    "shortest_distance_to_actor": 4,
+    "supervised_in_training_labels": false,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "203.0.113.88 --(rev_shares_infra)--> 198.51.100.44",
+      "198.51.100.44 --(rev_resolves_to)--> cisco-gateway-mesh[.]org",
+      "cisco-gateway-mesh[.]org --(rev_communicates_with)--> KV-botnet",
+      "KV-botnet --(rev_uses)--> Volt Typhoon (Vanguard Panda)"
+    ],
+    "hop_count": 4
+  },
+  "test_case_10": {
+    "case_name": "Sandworm Obfuscated Subnet Pivot to BlackEnergy C2",
+    "anchor_ioc": "91.242.217.5",
+    "resolved_node_id": "ioc_ip_91_242_217_5",
+    "shortest_distance_to_actor": 4,
+    "supervised_in_training_labels": false,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "91.242.217.5 --(rev_shares_infra)--> 194.28.172.10",
+      "194.28.172.10 --(rev_resolves_to)--> ukr-telecom-cert[.]net",
+      "ukr-telecom-cert[.]net --(rev_communicates_with)--> BlackEnergy3",
+      "BlackEnergy3 --(rev_uses)--> Sandworm (APT44 / Seashell Blizzard)"
+    ],
+    "hop_count": 4
+  },
+  "test_case_11": {
+    "case_name": "Lazarus North Korean AS131279 Gateway Correlation",
+    "anchor_ioc": "175.45.176.8",
+    "resolved_node_id": "ioc_ip_175_45_176_8",
+    "shortest_distance_to_actor": 3,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "175.45.176.8 --(rev_resolves_to)--> secure-crypto-wallet[.]org",
+      "secure-crypto-wallet[.]org --(rev_communicates_with)--> AppleJeus",
+      "AppleJeus --(rev_uses)--> Lazarus Group (HIDDEN COBRA)",
+      "Lazarus Group (HIDDEN COBRA) --(targets)--> CVE-2021-44228",
+      "CVE-2021-44228 --(rev_targets)--> APT28 (Fancy Bear / STRONTIUM)"
+    ],
+    "hop_count": 5
+  },
+  "test_case_12": {
+    "case_name": "FIN7 Hosting Staging Infrastructure Pivot",
+    "anchor_ioc": "193.106.191.4",
+    "resolved_node_id": "ioc_ip_193_106_191_4",
+    "shortest_distance_to_actor": 3,
+    "supervised_in_training_labels": true,
+    "has_direct_actor_shortcut_edge": false,
+    "traversed_path_hops": [
+      "193.106.191.4 --(rev_resolves_to)--> doc-secure-share[.]info",
+      "doc-secure-share[.]info --(rev_communicates_with)--> Griffon",
+      "Griffon --(rev_uses)--> FIN7 (Carbanak / ELBRUS)"
+    ],
+    "hop_count": 3
+  }
+}

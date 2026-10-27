@@ -1,0 +1,58 @@
+{
+  "verification_timestamp": "2026-10-13T00:06:08.211007",
+  "master_store_path": "c:/Users/Arjaa Chatterjee/OneDrive/Desktop/NexusCTI/cyber_attribution_engine/data/chroma_db",
+  "baseline_manifest_ref": "c:/Users/Arjaa Chatterjee/OneDrive/Desktop/NexusCTI/experiments/phase9_9_final_reconciliation_20261011_232000/actual_file_sha256_manifest.json",
+  "canonical_content_hash": {
+    "baseline": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+    "current": "668d0776c609e3253143dd4764652ec4e121e082247458e18699a5e63a2faee7",
+    "match": true
+  },
+  "sqlite_change_counter": {
+    "baseline": 30,
+    "current": 30,
+    "match": true
+  },
+  "file_comparisons": {
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/data_level0.bin": {
+      "status": "MATCH",
+      "baseline_size": 167600,
+      "current_size": 167600,
+      "baseline_sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8",
+      "current_sha256": "dd3bc35aff31318f10dab2111ad835e55926233f1e0e8922cdc30bc92ce171f8",
+      "match": true
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/header.bin": {
+      "status": "MATCH",
+      "baseline_size": 100,
+      "current_size": 100,
+      "baseline_sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+      "current_sha256": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+      "match": true
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/length.bin": {
+      "status": "MATCH",
+      "baseline_size": 400,
+      "current_size": 400,
+      "baseline_sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06",
+      "current_sha256": "a2cab3b7fffef0b5e24cb03aaf91e69be401e590bbff1c192c3d12be61d46f06",
+      "match": true
+    },
+    "3962f896-273d-4039-b97e-d0aa4e6d29ed/link_lists.bin": {
+      "status": "MATCH",
+      "baseline_size": 0,
+      "current_size": 0,
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    "chroma.sqlite3": {
+      "status": "MATCH",
+      "baseline_size": 294912,
+      "current_size": 294912,
+      "baseline_sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc",
+      "current_sha256": "f4a0960e60ef06d5669df55e648ad463ebbdcdff62381ec6d26e17dfaefc56dc",
+      "match": true
+    }
+  },
+  "all_files_match": true
+}

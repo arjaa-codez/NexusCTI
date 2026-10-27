@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  nexuscti:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nexuscti_engine
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - NEXUSCTI_HOST=0.0.0.0
+      - NEXUSCTI_PORT=8000
+    volumes:
+      - ./artifacts:/app/artifacts
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s

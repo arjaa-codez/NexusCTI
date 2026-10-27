@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-11T01:20:00+05:30",
+  "environment": {
+    "python_executable": "C:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\.venv\\Scripts\\python.exe",
+    "pytorch_seed": 42,
+    "dense_retriever_hashing": "MD5 bucketed hashing"
+  },
+  "source_code_hashes": {
+    "nexuscti/service.py": "f9fcf4b6971f4f88ff3b3e2ccedffcc7406fe6ce269996f92e311f10a2b92613",
+    "nexuscti/gnn/trainer.py": "51fd0eed7768875ef91666e07726e964ba472b74466ff27b26b7f3e29c5c0ac4",
+    "nexuscti/gnn/graph_builder.py": "6e53faee0f34783d324be6246c1a1c64a13e3e6311a1ca36183cc25b5228e5cb",
+    "nexuscti/rag/dense_retriever.py": "87b237954c9c80e0ff235492c90a6d563b6eeee349774c07036fba8a1c70b248",
+    "nexuscti/fusion/engine.py": "ce3102da13ad6074ca88ef46abd1bff011e92d3e19835ff1e83065a97f8e50b1",
+    "experiments/phase8_expanded_evaluation_20261011_012000/run_phase8_evaluation.py": "308fdcc338b56aab8998a5b6dec19926cd63070b8567089dbaf95a190b106e46"
+  }
+}

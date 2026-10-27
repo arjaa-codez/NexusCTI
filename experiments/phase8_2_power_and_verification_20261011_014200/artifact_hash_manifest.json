@@ -1,0 +1,127 @@
+{
+  "audit_phase": "Phase 8.2 Statistical Audit and Prospective Power Analysis",
+  "timestamp": "2026-10-11T01:42:00+05:30",
+  "preserved_artifacts_count": 24,
+  "artifacts": {
+    "phase8/benchmark_metrics.json": {
+      "sha256": "6e8547fed909804495c2bb25c6e58143bc236951bd4704a9827278a53937027e",
+      "size_bytes": 3401,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\benchmark_metrics.json"
+    },
+    "phase8/campaign_deduplication_report.json": {
+      "sha256": "aeed85c32e5b310eb8624d74c3a8e826afba7d458c20866e5518b10751ab7835",
+      "size_bytes": 623,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\campaign_deduplication_report.json"
+    },
+    "phase8/external_report_manifest.csv": {
+      "sha256": "029f434c43f6535c68870ec53f7d8478791cd5f1faceef8a45c62e78777e0f22",
+      "size_bytes": 31053,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\external_report_manifest.csv"
+    },
+    "phase8/frozen_predictions.csv": {
+      "sha256": "4ef09685ae3b01d89ea5b13e8ac0e96f362e3788772125bde86d793de4040a61",
+      "size_bytes": 12321,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\frozen_predictions.csv"
+    },
+    "phase8/graph_contamination_audit.json": {
+      "sha256": "cd0642802c5e4f95f6829b60202f3779e0b5aa0eee566257fda13c71c9f4349e",
+      "size_bytes": 306,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\graph_contamination_audit.json"
+    },
+    "phase8/ground_truth_evidence_manifest.csv": {
+      "sha256": "7d631f51e0e8020720abbfc23745baee3bbbdbcf34ae52bc57ecbd1545b9e19d",
+      "size_bytes": 17107,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\ground_truth_evidence_manifest.csv"
+    },
+    "phase8/limitations_and_claims_register.md": {
+      "sha256": "b466ce2d37f892dc24abfd365b646958faf3003748bdd9c97060c44043e7d8c5",
+      "size_bytes": 4284,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\limitations_and_claims_register.md"
+    },
+    "phase8/paired_comparison_results.json": {
+      "sha256": "97405513d534d8e5b5df2975df76fcb8ebf4f96c22bf4e9a73b1572fbe9fc311",
+      "size_bytes": 1073,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\paired_comparison_results.json"
+    },
+    "phase8/phase8_report.md": {
+      "sha256": "b42ff3543c2501b97225bf8afceb6cb165fca6b185d4813bc9c31d9fc5f472d9",
+      "size_bytes": 17014,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\phase8_report.md"
+    },
+    "phase8/power_analysis.md": {
+      "sha256": "db59ef1fcea540ae12b18b0b96f1ad40a87856e5dadd07e5526ef50bdebf5e92",
+      "size_bytes": 4770,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\power_analysis.md"
+    },
+    "phase8/preregistered_evaluation_protocol.md": {
+      "sha256": "cc205bd2d01fb72fcdd271e3f54f67a157ddf1c0ea42f69324f0b8799a812de2",
+      "size_bytes": 7630,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\preregistered_evaluation_protocol.md"
+    },
+    "phase8/reproducibility_manifest.json": {
+      "sha256": "ad025514ca70bfdc6a77455fcb31b166c0caeacd8153693c5f59eed20ebb409c",
+      "size_bytes": 968,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\reproducibility_manifest.json"
+    },
+    "phase8/retrieval_contamination_audit.json": {
+      "sha256": "eb2b424f3e297b37f2f7e14a04eb773fe43adf27a8e12ff9ed5a183f0c6822b5",
+      "size_bytes": 306,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\retrieval_contamination_audit.json"
+    },
+    "phase8/run_phase8_evaluation.py": {
+      "sha256": "308fdcc338b56aab8998a5b6dec19926cd63070b8567089dbaf95a190b106e46",
+      "size_bytes": 84911,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\run_phase8_evaluation.py"
+    },
+    "phase8/split_manifest.json": {
+      "sha256": "cacd410db76abfe4d9e3a9ba64a9323e7501fc232c06229cd8bfc038fc4e0d85",
+      "size_bytes": 1636,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_expanded_evaluation_20261011_012000\\split_manifest.json"
+    },
+    "phase8_1/artifact_hash_manifest.json": {
+      "sha256": "097cfd4ea6e15b10a8efd0d29be3ccbd4262f4603abdd82eeaad1fd6f6d53d0d",
+      "size_bytes": 5085,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\artifact_hash_manifest.json"
+    },
+    "phase8_1/confidence_interval_method_audit.md": {
+      "sha256": "5ecba3f6f3e945a9ae1b7840fc7840dccb0d1aa3017438a941197659bcb5e3ae",
+      "size_bytes": 4829,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\confidence_interval_method_audit.md"
+    },
+    "phase8_1/dataset_case_flow.csv": {
+      "sha256": "4a5e6178b8716e3efb9b20af460e25bd6fe64719023f578d44cec28337b59a02",
+      "size_bytes": 12519,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\dataset_case_flow.csv"
+    },
+    "phase8_1/leakage_recalculation.json": {
+      "sha256": "1b5cf223d883c459e3a0d9476a53aab9ea34feaba9a77255d19b530eb1e2b54e",
+      "size_bytes": 1137,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\leakage_recalculation.json"
+    },
+    "phase8_1/paired_endpoint_recalculation.json": {
+      "sha256": "4ab1672a715a6dad1c2c10cb4d51000376f406dd12e03e5340270a8fb5a9229c",
+      "size_bytes": 7056,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\paired_endpoint_recalculation.json"
+    },
+    "phase8_1/phase8_1_audit_report.md": {
+      "sha256": "61e9bf45bc1c556f313dcbcaadaedb3e48c99d4da695d455c1993fa6a5e4a866",
+      "size_bytes": 9368,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\phase8_1_audit_report.md"
+    },
+    "phase8_1/preregistration_deviation_register.csv": {
+      "sha256": "3178f58ade0188d89603d0d082ea9823f18823154d57b80208729144473c6225",
+      "size_bytes": 1529,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\preregistration_deviation_register.csv"
+    },
+    "phase8_1/run_phase8_1_audit.py": {
+      "sha256": "2f17ccd3b1d64104b7dfe7602b28441030226de08733a8ffbb29738847c134a8",
+      "size_bytes": 24102,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\run_phase8_1_audit.py"
+    },
+    "phase8_1/source_and_ground_truth_audit.csv": {
+      "sha256": "12fd7ce6f6864b365e64be369f6fbd907fbe33d2491cd932094dd71370b18099",
+      "size_bytes": 13947,
+      "path": "c:\\Users\\Arjaa Chatterjee\\OneDrive\\Desktop\\NexusCTI\\experiments\\phase8_1_independent_audit_20261011_013000\\source_and_ground_truth_audit.csv"
+    }
+  }
+}

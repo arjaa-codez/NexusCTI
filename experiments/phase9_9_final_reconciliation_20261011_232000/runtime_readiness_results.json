@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-10-12T23:03:11",
+  "retrieval_verification": {
+    "status": "PASS",
+    "expected_documents": 7,
+    "observed_documents": 7,
+    "retrieved_record_ids": [
+      "apt29_bundle--apt29-solarwinds-sunburst-2020_0",
+      "apt29_bundle--apt29-solarwinds-sunburst-2020_1",
+      "sandworm_team_bundle--sandworm-industroyer2-2022_0",
+      "lazarus_group_bundle--lazarus-applejeus-crypto-2022_0",
+      "apt28_bundle--apt28-fancybear-zebrocy-2023_0",
+      "volt_typhoon_bundle--volt-typhoon-critical-infra-2024_0",
+      "fin7_bundle--fin7-carbanak-financial-2021_0"
+    ],
+    "indexed_threat_actors": [
+      "APT28",
+      "APT29",
+      "FIN7",
+      "Lazarus Group",
+      "Sandworm Team",
+      "Volt Typhoon"
+    ],
+    "synthetic_query": "SYNTHETIC TEST: spearphishing PowerShell backdoor command and control Cobalt Strike beacon",
+    "top_k_results_count": 3,
+    "top_k_sample": {
+      "text": "Joint Advisory CISA AA24-038A details PRC state-sponsored group Volt Typhoon compromising critical infrastructure sectors across the United States (communications, energy, transportation, water). Volt Typhoon emphasizes living-off-the-land (LotL) techniques, abusing built-in Windows admin binaries (wmic, netsh, ntdsutil) rather than traditional malware. To build resilient proxy networks, the group deploys the KV-botnet and Fast Reverse Proxy (FRP) across end-of-life SOHO routers routing through 198.51.100.44 and 203.0.113.88 with dynamic domains like cisco-gateway-mesh[.]org. The actor exploits FortiOS SSL-VPN vulnerability CVE-2023-27997 for edge appliance infiltration and maintains years-long persistence via stolen administrator credentials (MITRE ATT&CK T1078 Valid Accounts and T1572 Protocol Tunneling).",
+      "threat_actor": "Volt Typhoon",
+      "aliases": "Vanguard Panda, Bronze Silhouette, Insidious Taurus",
+      "origin": "People's Republic of China State-Sponsored Actor",
+      "report_id": "bundle--volt-typhoon-critical-infra-2024",
+      "similarity": 0.0553
+    }
+  },
+  "snapshot_lifecycle": {
+    "status": "PASS",
+    "pre_copy_parity": true,
+    "snapshot_parity": true,
+    "cleanup_verified": true,
+    "post_run_master_immutability": true,
+    "master_sha256_delta": 0,
+    "canonical_hash_invariant": true
+  },
+  "task_b_accounting_validation": {
+    "status": "PASS",
+    "fixtures_tested": 8,
+    "failures_credited_as_abstentions": false,
+    "total_denominator": 30,
+    "conservation_law_verified": true
+  }
+}
